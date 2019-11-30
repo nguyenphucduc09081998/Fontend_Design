@@ -1,0 +1,117 @@
+.main{
+    display: flex;
+
+}
+
+/*menu right*/
+.menu-right{
+    padding-top: 20px;
+}
+.menu-right >h3{
+    font-family: Lora;
+    font-weight: bold;
+    font-size: 28px;
+    align-items: center;
+    text-align: center;
+    color: #000000;
+}
+
+.menu-right .btn >button{ 
+    background: rgba(234, 12, 65, 0.84);
+    border-radius: 6px;
+    width: 277px;
+    height: 49px;
+    
+    color: #ffffff;
+    font-family: Lora;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 32px;
+}
+.menu-right .rate{
+   align-items: center;
+   display: flex;
+    justify-content: center;
+}
+.menu-right .price{
+    display: flex;
+    justify-content: center;
+}
+.menu-right .price >span{
+    font-family: Lora;
+    font-style: normal;
+    font-size: 28px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+.menu-right .price >span:first-child{
+    font-weight: bold;
+    color: #000000;
+    font-size: 36px;
+}
+
+.menu-right .discount{
+    font-family: Lora;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 21px;
+    color: #545151;     
+    text-align: center;
+}
+/*end menu right*/
+
+.check-in .time, 
+.check-in .text, 
+.people .text,
+.people .number{
+    display: flex;
+    font-family: Lora;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    color: #797474;   
+}
+
+.check-in .text >p, 
+.people .text >p{
+    margin-bottom: unset;
+}
+
+.check-in .time p,
+.people .number p{
+   padding: unset;
+   height: 45px;
+   border-top: 1px solid #C6C6C6;
+   border-bottom: 1px solid #C6C6C6;
+}
+.check-in .time p:first-child,
+.people .number p:first-child{
+    border-left: 1px solid #C6C6C6;
+}
+
+.check-in .time p:last-child,
+.people .number p:last-child{
+    border-right: 1px solid #C6C6C6;
+}
+
+.check-in .time p >span,
+.people .number p >span{
+   
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 9px;
+    margin-bottom: 5px;
+    border-left: 1px solid #C6C6C6;
+    height: 60%;
+}
+.check-in .time .first-p >span:first-child,
+.people .number .first-p >span:first-child{
+    border-left: unset;
+} 
+
+.vc ul li{
+    width: 50%;
+}
