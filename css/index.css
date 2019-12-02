@@ -112,6 +112,9 @@
     border-left: unset;
 } 
 
-.vc ul li{
-    width: 50%;
+.convenient .list{
+    display: flex;
+}
+.convenient .list li{
+    list-style: none;
 }
