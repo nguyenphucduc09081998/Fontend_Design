@@ -1,0 +1,265 @@
+.hoso_row{
+    margin-top: 5px;
+}
+hr{
+    width: 96%;
+}
+.user_canhan{
+    margin-left:5px;
+    padding-left: 10px;
+    color:#2E2E2E;
+}
+.hoso_border{
+    border: 1px;
+}
+.hoso_user_icon{
+    margin:auto;
+    padding-left:35px ;
+}
+
+
+.hoso_name{
+    color: #F65C05;
+}
+.hoso_user_text{
+    padding-top: 10px;
+    width:70%;
+    float:right;
+}
+.hoso_user_text .attch_file{
+    font-family: Lora;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 17px;
+    line-height: 43px;
+}
+.hoso_user_image{
+    width: 30%;
+    float:left;
+}
+.hoso_chuyendi{
+    float: right;
+    margin: auto;
+    
+}
+
+
+.hoso_chuyendi .hoso_chuyendi_so{
+    text-align: center;
+    font-family: Lora;
+font-style: normal;
+font-weight: normal;
+font-size: 25px;
+line-height: 43px
+
+}
+.hoso_chuyendi_so, .hoso_diadiem_so, .hoso_songay_so{
+    margin-bottom: 0;
+}
+.hoso_chuyendi .hoso_chuyendi_text{
+    text-align: center;
+   
+font-family: Lora;
+font-style: normal;
+font-weight: normal;
+font-size: 21px;
+line-height: 43px; 
+}
+.hoso_diadiem{
+    
+    margin-top: auto;
+    margin-bottom: auto;
+}
+.hoso_diadiem .hoso_diadiem_so{
+    text-align: center;
+    font-family: Lora;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 25px;
+    line-height: 43px
+}
+.hoso_diadiem .hoso_diadiem_text{
+    text-align: center;  
+    font-family: Lora;
+font-style: normal;
+font-weight: normal;
+font-size: 21px;
+line-height: 43px; 
+}
+.hoso_songay{
+    float: left;
+}
+.hoso_songay .hoso_songay_so{
+    text-align: center;
+    font-family: Lora;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 25px;
+    line-height: 43px
+}
+.hoso_songay .hoso_songay_text{
+    text-align: center;
+    font-family: Lora;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 21px;
+    line-height: 43px; 
+}
+.hoso_border p{
+    font-family: Lora;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 43px;
+}
+.hoso_container{
+    border-style:solid;
+    border-width:1px ;
+}
+.hoso_row_icon_form{
+    margin-bottom: 20px;
+    border-top: 1px solid;
+    border-color: #8A8383;
+}
+.hoso_incon{
+    background: #F0F0F0;
+}
+.hoso_icon_item{
+    text-align: center;
+    padding-top: 12px;
+    border-top: 1px solid;
+    border-color: #E1E0E0;
+}
+.hoso_register{
+    margin-top:10px ;
+    padding-left: 20px;
+}
+.hoso_register_title{
+    font-size: 30px;
+}
+.hoso_register_sub{
+    font-size: 20px;
+}
+.hoso_register_form{
+    padding-left: 20px;
+}
+.input_type_text{
+    width: 60%;
+}
+.hoso_icon_item p{
+    font-family: Lora;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 43px;
+}
+.input_type_number{
+    width: 15%;
+}
+.hoso_register_form .display_line{
+   display: flex;
+}
+
+.hoso_register_form .display_line input{
+    padding-right: 5px;
+ }
+ .input_type_number_1{
+    width: 15%;
+   
+}
+ .input_type_number_2{
+     width: 15%;
+     margin-left: 67px;
+    
+}
+.input_type_number_3{
+    width: 15%;
+    margin-left: 67px;
+}
+.hoso_register_address{
+    padding-left: 20px;
+}
+.hoso_register_address p, .hoso_register_form p,.hoso_register_form span {
+    font-family: Lora;
+font-style: normal;
+font-weight: normal;
+font-size: 20px;
+line-height: 43px;
+}
+.btn_dangki{
+    margin-top: 20px;
+}
+.btn_dangki span{
+    font-family: Times New Roman;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    /* line-height: 72px; */
+}
+
+.hoso_register_address button{
+    width: 183px;
+    height: 47px;
+    left: 390px;
+    top: 1895px;
+}
+
+
+
+.hoso_footer{
+    display: flex;
+    padding-left: 20px;
+    margin-top: 10px;
+
+}
+
+.hoso_footer_hr{
+    margin-left: 0px;
+    width: 80%;
+}
+.hoso_footer > div {
+    width: 33.333%;
+  }
+.hoso_footer_xemganday_title{
+    font-family: Lora;
+font-style: normal;
+font-weight: normal;
+font-size: 25px;
+line-height: 72px;
+}
+  .hoso_user_text span{
+    font-family: Lora;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 43px;
+  }
+  .hoso_user_text .hoso_name{
+    font-weight: bold;
+}
+.ho_so_change_image{
+    padding-left:0px;
+}
+.hoso_footer_xemganday a{
+    font-family: Lora;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 17px;
+    line-height: 43px;
+}
+
+.hoso_footer_xemganday span{
+    font-family: Lora;
+font-style: normal;
+font-weight: normal;
+font-size: 15px;
+line-height: 43px;
+}
+
+.hoso_footer_xemganday .price{
+    font-family: Lora;
+font-style: normal;
+font-weight: bold;
+font-size: px;
+line-height: 43px;
+}

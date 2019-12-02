@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Hồ Sơ Cá Nhân</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/hosocanhan.css">
+
+</head>
+
+<body>
+    <br />
+    <div class="container hoso_container">
+        <div class="row hoso_row">
+            <div class="col-sm-2 col-md-2 col-lg-2 col-xl-2 hoso_border">
+                <img class="hoso_user_icon" alt="user" src="image/user.png" />
+                <p class="user_canhan">Hồ Sơ Cá Nhân</p>
+            </div>
+            <div class="col-sm-4 col-md-4 col-lg-4 col-xl-4 ho_so_change_image">
+                <div class="hoso_user_image">
+                    <img class="hoso_user_icon" alt="user" src="image/boy.png" />
+                </div>
+                <div class="hoso_user_text">
+                    <span>Xin Chào:&nbsp;</span>
+                    <span class="hoso_name">Nguyễn Phúc Đức</span>
+                    <a href="#"><span class="attch_file">Change Picture</span></a>
+                </div>
+            </div>
+            <div class="col-sm-2 col-md-2 col-lg-2 col-xl-2">
+                <div class="hoso_chuyendi">
+                    <p class="hoso_chuyendi_so">2</p>
+                    <p class="hoso_chuyendi_text">Chuyến Đi</p>
+                </div>
+
+            </div>
+            <div class="col-sm-2 col-md-2 col-lg-2 col-xl-2">
+                <div class="hoso_diadiem">
+                    <p class="hoso_diadiem_so">5</p>
+                    <p class="hoso_diadiem_text">Địa Điểm</p>
+                </div>
+            </div>
+            <div class="col-sm-2 col-md-2 col-lg-2 col-xl-2">
+                <div class="hoso_songay">
+                    <p class="hoso_songay_so">15</p>
+                    <p class="hoso_songay_text">Ngày</p>
+                </div>
+            </div>
+        </div>
+        <!---end row --->
+        <div class="row hoso_row_icon_form">
+
+            <div class="col-sm-2 col-md-2 col-lg-2 col-xl-2 hoso_incon">
+                <div class="hoso_icon_item">
+                    <a href="#">
+                        <img alt="s" src="image/open-book.png" />
+                        <p>Đặt Phòng</p>
+                    </a>
+                </div>
+                <div class="hoso_icon_item">
+                    <a href="#">
+                        <img alt="s" src="image/heart.png" />
+                        <p>Whishlist</p>
+                    </a>
+                </div>
+                <div class="hoso_icon_item">
+                    <a href="#">
+                        <img alt="s" src="image/settings.png" />
+                        <p>Cài Đặt</p>
+                    </a>
+                </div>
+                <div class="hoso_icon_item">
+                    <a href="#">
+                        <img alt="s" src="image/clock.png" />
+                        <p>Lịch Sử Đặt Phòng</p>
+                    </a>
+                </div>
+                <div class="hoso_icon_item">
+                    <a href="#">
+                        <img alt="s" src="image/password.png" />
+                        <p>Đổi Mật Khẩu</p>
+                    </a>
+                </div>
+                <div class="hoso_icon_item ">
+                    <a href="#">
+                        <img alt="s" src="image/notification.png" />
+                        <p>Thông Báo</p>
+                    </a>
+                </div>
+                <hr />
+            </div>
+            <div class="col-sm-10 col-md-10 col-lg-10 col-xl-10">
+                <div class="hoso_register">
+                    <p class="hoso_register_title">Thông Tin Cá Nhân</p>
+                    <p class="hoso_register_sub">Thông tin chi tiết khách hàng</p>
+                </div>
+                <hr />
+                <div class="hoso_register_form">
+                    <span>Mr <input type="radio"></span> &nbsp;&nbsp;&nbsp;
+                    <span>Ms <input type="radio" checked></span>
+                    <p>Tên Khách Hàng</p>
+                    <input type="text" class="form-control input_type_text">
+                    <p>Email</p>
+                    <input type="email" class="form-control input_type_text">
+                    <p>Số Điện Thoại</p>
+                    <input type="text" class="form-control input_type_text">
+                    <p>Ngày Sinh</p>
+                    <div class="display_line">
+                        <input type="number" class="form-control input_type_number_1">
+                        <input type="number" class="form-control input_type_number_2">
+                        <input type="number" class="form-control input_type_number_3">
+                    </div>
+                    <p class="hoso_register_title">Thông Tin Địa Chỉ</p>
+                </div>
+                <hr />
+                <div class="hoso_register_address">
+
+                    <p>Tên Công Ty</p>
+                    <input type="text" class="form-control input_type_text">
+                    <p>Địa Chỉ</p>
+                    <input type="email" class="form-control input_type_text">
+                    <p>Mã Zip</p>
+                    <input type="text" class="form-control input_type_text">
+                    <p>Quốc Gia</p>
+
+                    <select class="form-control input_type_text">
+                        <option>Việt Nam</option>
+                        <option>Lào</option>
+                        <option>Campodia</option>
+                        <option>Thái Lan</option>
+                    </select>
+                    <p>Thành Phố</p>
+                    <select class="form-control input_type_text">
+                        <option>Đà Nẵng</option>
+                        <option>Nha Trang</option>
+                        <option>Tp Hồ Chí Minh</option>
+                        <option>Hà Nội</option>
+                    </select>
+                    <button type="submit" class="btn btn-primary btn_dangki"><span>Đăng Kí</span></button>
+
+
+                </div>
+                <div class="hoso_footer">
+                    <div class="hoso_footer_xemganday">
+                        <p class="hoso_footer_xemganday_title">Xem Gần Đây</p>
+                        <hr class="hoso_footer_hr" />
+                        <a>99 Bùi Viện (Boutique)</a> &nbsp; &nbsp;<span>from</span>&nbsp; <span class="price">$200</span>
+                        <p><a>Sora Studio (Ben Thanh)</a> &nbsp; &nbsp;<span>from</span>&nbsp; <span class="price">$50</span></p>
+                    </div>
+                    <div class="hoso_footer_xemganday">
+                        <p class="hoso_footer_xemganday_title">Whish List</p>
+                        <hr class="hoso_footer_hr" />
+                        <a>Incredible place</a> &nbsp; &nbsp;<span class="price">(1)</span>
+                        <p><a>Next place</a> &nbsp; &nbsp;<span class="price">(0)</span></p>
+                    </div>
+                    <div class="hoso_footer_xemganday">
+                        <p class="hoso_footer_xemganday_title">Chuyến Đi Trước Đó</p>
+                        <hr class="hoso_footer_hr" />
+                        <a>Sophia Hotel</a> &nbsp; &nbsp;<span>from</span>&nbsp; <span class="price">$250</span>
+                        <p><a>Diamon Hotel</a> &nbsp; &nbsp;<span>from</span>&nbsp; <span class="price">$200</span></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
