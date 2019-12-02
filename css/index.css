@@ -1,11 +1,30 @@
+body, html{
+    background-color: #cdcdcd26;
+}
+
+/*.container {
+
+}*/
+
+
 .main{
-    display: flex;
+    background-color: #FFFFFF;
+    width: 100%;
+    border: 1px solid #c6c6c661;
 
 }
+
+.menu-left{
+    margin-left: 20px;
+    
+}
+
 
 /*menu right*/
 .menu-right{
     padding-top: 20px;
+    margin-left: 26px;
+    
 }
 .menu-right >h3{
     font-family: Lora;
@@ -14,51 +33,65 @@
     align-items: center;
     text-align: center;
     color: #000000;
+    letter-spacing: -0.015em;
 }
 
-.menu-right .btn >button{ 
+.menu-right .btn{ 
     background: rgba(234, 12, 65, 0.84);
-    border-radius: 6px;
-    width: 277px;
-    height: 49px;
-    
+    border-radius: 20px;
+    width: 204px;
+    height: 39px;
+    margin: 0 auto;
+    display: block;
     color: #ffffff;
     font-family: Lora;
     font-style: normal;
     font-weight: bold;
-    font-size: 32px;
+    font-size: 19px;
+    margin-bottom: 20px;
+    margin-top: 10px;
 }
+
+
 .menu-right .rate{
-   align-items: center;
    display: flex;
-    justify-content: center;
+   justify-content: space-around;
+   margin: 0 auto;
+   max-width: 40%;
 }
 .menu-right .price{
     display: flex;
     justify-content: center;
+    margin-top: 10px;
 }
 .menu-right .price >span{
     font-family: Lora;
     font-style: normal;
-    font-size: 28px;
+    font-size: 20px;
     display: flex;
     align-items: center;
-    text-align: center;
 }
 .menu-right .price >span:first-child{
     font-weight: bold;
     color: #000000;
-    font-size: 36px;
+    font-size: 32px;
+    margin-right: 6px;
 }
 
 .menu-right .discount{
     font-family: Lora;
     font-style: normal;
     font-weight: normal;
-    font-size: 21px;
+    font-size: 20px;
     color: #545151;     
     text-align: center;
 }
+
+.menu-right .discount span{
+    font-size: 18px;  
+    font-weight: bold; 
+}
+
 /*end menu right*/
 
 .check-in .time, 
@@ -69,22 +102,44 @@
     font-family: Lora;
     font-style: normal;
     font-weight: normal;
-    font-size: 18px;
-    color: #797474;   
+    font-size: 17px;
+    color: #797474;  
+}
+
+.check-in .time{
+    font-size: 23px;
+    font-weight: 600;
+    color: #505050;  
+    margin-bottom: 6px; 
 }
 
 .check-in .text >p, 
 .people .text >p{
     margin-bottom: unset;
+    padding: 0;
 }
 
 .check-in .time p,
 .people .number p{
    padding: unset;
-   height: 45px;
+   height: 60px;
    border-top: 1px solid #C6C6C6;
    border-bottom: 1px solid #C6C6C6;
+   box-shadow: 1px 2px #8888885e;
 }
+
+.check-in .time p >span{
+    margin-top: 13px !important;
+}
+
+.people .number p{
+    height: 47px;
+}
+
+.people .number p{
+    font-size: 25px;
+}
+
 .check-in .time p:first-child,
 .people .number p:first-child{
     border-left: 1px solid #C6C6C6;
@@ -112,9 +167,351 @@
     border-left: unset;
 } 
 
+.vc ul li{
+    width: 50%;
+}
+
+/*For multiple Image*/
+.img-hotel-res{
+    display: flex; 
+    width: 100%;
+}
+
+.block-arrow{
+    background-color: gray;
+    flex: 0.25;
+    border: 1px solid #c6c6c661;
+}
+
+.block-img{
+    flex: 1;
+}
+
+.blk-change {
+    background-color: #cdcdcd;
+}
+
+.block-img div img{
+    padding: 12px 12px 11px 12px; 
+    border-right: 1px solid #c6c6c661;
+    border-bottom: 1px solid #c6c6c661;
+}
+/*End Multiple Image*/
+
+/*For Tabs*/
+.tab{
+    padding: 0;
+    margin-top: 30px;
+}
+
+.nav-tabs .nav-link.active, 
+.nav-tabs .nav-link{ 
+    font-family: Lora;
+    font-style: normal;
+    font-size: 17px;
+    color: #fff;
+    text-align: center;
+    border-right: 1px solid #c6c6c661;
+    padding-left: 0;
+    padding-top: 10px;
+}
+
+.nav-tabs .nav-link img{
+    width: 22px;
+    height: 22px;
+}
+
+.nav-tabs .nav-link span{
+    margin-left: 10px;
+    padding-top: 10px;
+}
+
+.nav-tabs .nav-item:nth-child(2),
+.nav-tabs .nav-item:nth-child(3){
+    width: 29.1%;
+}
+
+.nav-tabs .nav-item:nth-child(1),
+.nav-tabs .nav-item:nth-child(4){
+    width: 20.9%;
+}
+
+.nav-tabs .nav-link.active{
+    background-color: #1F6EB7;
+}
+.nav-tabs .nav-link {
+    background-color: #099EDE;
+}
+
+.tab-content .tab-pane {
+    background-color: #fff;
+}
+
+.info-schedule{
+    padding-left: 42px;
+    padding-top: 31px;
+}
+
+.info-schedule .title,
+.info-booking .title,
+.info-schedule .chu-thich,
+.info-rating .title,
+.info-service .title, 
+.info-comment .title{
+    font-family: Lora;
+    font-style: normal;
+    font-size: 20px;
+    color: black;
+    font-weight: bold;
+}
+
+.info-schedule .chu-thich{
+    color: #6A6767;
+    font-size: 18px;
+    font-weight: 200;
+}
+
+.info-booking .title, 
+.info-rating .title, 
+.info-service .title, 
+.info-comment .title{
+    padding-left: 42px; 
+    padding-top: 31px;
+}
+
+#scheduling {
+  font-family: Lora;
+  color: #6A6767;
+  font-size: 18px;
+  display: block;
+  margin: 0 0 0 0;
+}
+
+#scheduling td{
+  border-top: 0.5px solid #dddddd1a;
+  padding: 8px;
+}
+
+#scheduling tr:nth-child(odd){background-color: #f2f2f2;}
+
+#scheduling tr td:nth-child(1){width: 60%;}
+
+#scheduling tr:hover {background-color: #ddd;}
+
+#scheduling th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #4CAF50;
+  color: white;
+}
+/*End For Tabs*/
+
+/*For DateTimePicker*/
+.dhx_sample-container{
+    -webkit-flex-wrap:wrap;
+    -ms-flex-wrap:wrap;
+    flex-wrap:wrap;
+    min-height: 350px !important;
+}
+
+.calendar1{
+    margin-right: 20px; 
+    justify-content: flex-end;
+}
+
+.calendar2{
+    margin-right: 20px; 
+    justify-content: flex-start;
+}
+
+
 .convenient .list{
     display: flex;
 }
 .convenient .list li{
     list-style: none;
+}
+
+.blk-rating{
+    display: flex;
+}
+
+.blk-service{
+    width: 100%;
+}
+
+.blk-rating .prc-rating{
+    flex: 0.4;
+}
+
+.blk-rating .prc-rating>span{
+    font-family: Lora;
+    color: #6A6767;
+    font-size: 37px;
+    font-weight: bold;
+    padding-left: 73px;
+}
+
+.blk-rating .cm-rating{
+    flex: 0.5;
+}
+
+.blk-rating .cm-rating div{
+    margin-bottom: 13px;
+    text-align: left;
+}
+
+
+.blk-service .detail-service{
+    display: inline-block;
+    width: 30%;
+    padding-left: 45px;
+}
+
+.blk-service .detail-service>span{
+    margin-left: 20px;
+    font-family: Lora;
+    color: #6A6767;
+    font-size: 17px;
+    padding-left: 0;
+    font-weight: 600;
+}
+
+
+.info-comment .search-bar,
+.info-comment .info,
+.info-comment .content-cm{
+    padding-left: 42px; 
+    padding-top: 20px;
+    font-family: "Times New Roman", Times, serif;
+    color: #6A6767;
+    font-size: 18px;
+}
+
+.info-comment .content-cm{
+    width: 94%;
+}
+
+.info-comment .info{
+    display: flex;
+}
+
+.info-comment .info img{
+    width: 45px;
+    height: 45px;
+    margin-right: 20px;
+}
+
+#pageId{
+    padding-left: 230px;
+    padding-top: 30px;
+    padding-bottom: 5px;
+}
+
+
+
+.aaa ul{
+    display: flex;
+}
+.aaa ul li {
+    list-style-type: none; 
+    padding-left:5px ;
+    font-family: Times New Roman;
+font-style: normal;
+font-weight: normal;
+font-size: 27px;
+line-height: 43px;
+ }
+ .aaa ul img {
+    height: 16px; 
+    margin-top: 13px;
+ }
+ .title{
+    font-family: Lora;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 43px;
+ }
+ .tile_1{
+    font-family: Times New Roman;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 26px;
+    line-height: 43px;
+ }
+ .content{
+     display: flex;
+ }
+ .abc1, .abc2{
+   background:  #ffff;
+ }
+.abc1_tile{
+ font-family: Lora;
+font-style: normal;
+font-weight: bold;
+font-size: 28px;
+line-height: 43px;
+text-align: center;
+}
+.abc1 img{
+    margin: 8px;
+
+
+}
+.abc1 .sub_title{
+font-family: Times New Roman;
+font-style: normal;
+font-weight: normal;
+font-size: 23px;
+line-height: 43px;
+}
+
+
+.abc1 .abc1_tile_size{
+font-family: Lora;
+font-style: normal;
+text-align: center;
+font-weight: normal;
+font-size: 32px;
+line-height: 43px;
+color: #1382B1;
+}
+.hhh{
+    float: right;
+padding-left: 10px;
+}
+.add_hotel img{
+padding-left: 20px;
+}
+.add_hotel{
+    display: flex;
+}
+.hhh p{
+    font-family: Lora;
+font-style: normal;
+font-weight: bold;
+font-size: 19px;
+margin-bottom: 0px;
+}
+.hhh span{
+    color: #1BBB78;
+font-family: Lora;
+font-style: normal;
+font-weight: bold;
+font-size: 17px;
+
+}
+.hhh .sss{
+    color: #F65E39;
+font-family: Times New Roman;
+font-style: normal;
+font-weight: normal;
+font-size: 18px;
+
+}
+.tab_4_des{
+
+    left: 30px;
 }

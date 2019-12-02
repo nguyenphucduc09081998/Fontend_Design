@@ -1,163 +1,514 @@
 <!DOCTYPE html>
 <html>
     <head>
+    	<!-- For Bootstrap 4.0 -->
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+        <!-- For DateTimePicker -->
+		<link rel="stylesheet" href="./css/codebase/calendar.css?v=6.2.3">
+		<link rel="stylesheet" href="./css/common/index.css?v=6.2.3">
+		<link rel="stylesheet" href="./css/common/calendar.css?v=6.2.3">
+
         <link rel="stylesheet" href="./css/index.css">
     </head>
     <body>
         <div class="container">
-          <div class="main">
-            <div class="img-hotel col-md-8">
-                <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
-                    <span class="code">Mã chỗ ở 324</span>
-                    <div class="carousel-inner">
-                      <div class="carousel-item active">
-                        <img class="d-block w-100" src="./img/73118462.jpg" alt="First slide">
-                      </div>
-                      <div class="carousel-item">
-                        <img class="d-block w-100" src="./img/73118462.jpg" alt="Second slide">
-                      </div>
-                      <div class="carousel-item">
-                        <img class="d-block w-100" src="./img/73118462.jpg" alt="Third slide">
-                      </div>
-                    </div>
-                    <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
-                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                      <span class="sr-only">Previous</span>
-                    </a>
-                    <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
-                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                      <span class="sr-only">Next</span>
-                    </a>
-                </div>
-            </div>
+          	<div class="main row col-md-11" style="padding: 0; margin: 0;">
+	            <div class="col-md-7 menu-left" style="display: flex; flex-direction: column; margin: 0; padding: 0;">
+	            	<div class="img-hotel" > <!-- style="position: absolute; top: 0; left: -19px; width: 100%;" -->
+	            		<div id="carouselExampleControls" class="carousel slide" data-ride="carousel" style="width: 100% !important;">
+		                   <!--  <span class="code" id="code">Mã chỗ ở 324</span> -->
+		                    <div class="carousel-inner">
+		                      <div class="carousel-item active">
+		                        <img class="d-block w-100" src="./img/room1.jpg" id="img-1" alt="First slide">
+		                      </div>
+		                      <div class="carousel-item">
+		                        <img class="d-block w-100" src="./img/room2.jpg" id="img-2" alt="Second slide">
+		                      </div>
+		                      <div class="carousel-item">
+		                        <img class="d-block w-100" src="./img/room3.jpg" id="img-3" alt="Third slide">
+		                      </div>
+		                      <div class="carousel-item"> 
+		                        <img class="d-block w-100" src="./img/room4.jpg" id="img-4" alt="Fouth slide">
+		                      </div>
+		                      <div class="carousel-item">
+		                        <img class="d-block w-100" src="./img/room5.jpg" id="img-5" alt="Fifth slide">
+		                      </div>
+		                    </div>
+		                    <!-- <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev" style="top: 56px;">
+		                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+		                      <span class="sr-only">Previous</span>
+		                    </a>
+		                    <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+		                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+		                      <span class="sr-only">Next</span>
+		                    </a> -->
+		                </div>
+	            	</div> 
+	            	<div class="img-hotel-res">
+	            		<div class="block-arrow">
+	            			<a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev" style="top: 332px; left: -34px;">
+		                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+		                      <span class="sr-only">Previous</span>
+		                    </a>
+	            		</div>
+	            		<div class="block-img">
+	            			<div class="blk-change">
+	            				<img class="d-block w-100" src="./img/room1.jpg" id="1" alt="First slide" onclick="changeImage()">
+	            			</div>
+	            		</div>
+	            		<div class="block-img">
+	            			<div >
+	            				<img class="d-block w-100" src="./img/room2.jpg" id="2" alt="Second slide" onclick="changeImage()">
+	            			</div>
+	            		</div>
+	            		<div class="block-img">
+	            			<div >
+	            				<img class="d-block w-100" src="./img/room3.jpg" id="3" alt="Third slide" onclick="changeImage()">
+	            			</div>
+	            		</div>
+	            		<div class="block-img">
+	            			<div >
+	            				<img class="d-block w-100" src="./img/room4.jpg" id="4" alt="Fouth slide" onclick="changeImage()">
+	            			</div>
+	            		</div>
+	            		<div class="block-img">
+	            			<div >
+	            				<img class="d-block w-100" src="./img/room5.jpg" id="5" alt="Fifth slide" onclick="changeImage()">
+	            			</div>
+	            		</div>
+	            		<div class="block-arrow">
+	            			<a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next" style="top: 332px; left: 535px;">
+		                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+		                      <span class="sr-only">Next</span>
+		                    </a>
+	            		</div>
+	            	</div>     
+	            </div>
               
-          <div class="col-md-4 menu-right">
-              <h3>Mường Thanh Luxury Apartment_35a18</h3>
-              <div class="rate">
-                  <span><img src="./img/star.png" alt="rate"></span>
-                  <span><img src="./img/star.png" alt="rate"></span>
-                  <span><img src="./img/star.png" alt="rate"></span>
-                  <span><img src="./img/star.png" alt="rate"></span>
-                  <span><img src="./img/star_brow.png" alt="rate"></span>
-              </div>
-              <p class="price"><span>1,669,784₫</span><span>/Đêm</span></p>
-              <p class="discount">Giảm 35% cho đặt phòng có checkin từ 01/11 đến 30/11</p>
-              <div class="check-in">
-                  <div class="text">
-                          <p class="col-md-6">Check-in:</p>
-                          <p class="col-md-6">Check-out:</p>
-                  </div>
-                  <div class="time">
-                      <p class="col-md-6 first-p"><span>Thứ 4 20/11</span></p>
-                      <p class="col-md-6"><span>Thứ 6 22/11</span></p>
-                  </div>
-              </div>
-              <div class="people">
-                  <div class="text">
-                      <p class="col-md-4">Khách:</p>
-                      <p class="col-md-4">Người lớn:</p>
-                      <p class="col-md-4">Trẻ em:</p>
-                  </div>
-                  <div class="number">
-                          <p class="col-md-4 first-p"><span>04</span></p>
-                          <p class="col-md-4"><span>04</span></p>
-                          <p class="col-md-4"><span>02</span></p>
-                  </div>
-              </div>
-              <div class="btn" style="width: 100%;">
-                      <button>Đặt ngay</button>
-              </div>
-          </div>
-          </div>
-          <div class="content">
-            <div class="tab col-md-8">
-                <ul class="nav nav-tabs" role="tablist">
-                    <li class="nav-item">
-                      <a class="nav-link active" href="#profile" role="tab" data-toggle="tab">
-                        <img src="./img/index/information.png">Tóm tắt
-                      </a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link" href="#buzz" role="tab" data-toggle="tab">
-                        <img src="./img/index/tien-nghi.svg"/>
-                        Tiện nghi
-                      </a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link" href="#references" role="tab" data-toggle="tab">
-                        <img src="./img/index/booking.svg"/>
-                        Giá và đặt lịch
-                      </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#references" role="tab" data-toggle="tab">
-                          <img src="./img/index/rate.svg"/>
-                          Đánh giá
-                        </a>
-                      </li>
-                </ul>
-                  
-                  <!-- Tab panes -->
-                  <div class="tab-content">
-                    <div role="tabpanel" class="tab-pane fade in active show" id="profile">
-                      <p class="address">
-                        <img src="./img/index/location.svg"/>
-                        <span>Ngũ Hành Sơn, Đà Nẵng, Việt Nam</span>
-                        <div class="mapouter"><div class="gmap_canvas">
-                          <iframe width="600" height="500" id="gmap_canvas" src="https://maps.google.com/maps?q=university%20of%20san%20francisco&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0">
-                          </iframe>
-                          <a href="https://www.couponflat.com">couponflat.com</a>
-                        </div>
-                        <style>.mapouter{position:relative;text-align:right;height:500px;width:600px;}.gmap_canvas {overflow:hidden;background:none!important;height:500px;width:600px;}</style></div>
-                      </p>
-                      <p class="infor">
-                        <img src="./img/index/home.png"/>
-                        <span>Nhà riêng 65 m2</span>
-                      </p>
-                      <p class="type">Nguyên căn · 2 phòng tắm · 2 giường · 2 phòng ngủ · 6 khách (tối đa 6 khách)</p>
-                      <div class="introduce">
-                        <h3>Giới thiệu tổng quan</h3>
-                        <p>
-                          Được xây dựng theo tiêu chuẩn 5 sao Mường Thanh Luxury Đà Nẵng nằm bên bờ biển Mỹ Khê xinh đẹp, 
-                          sẽ mang đến cho du khách một không gian sang trọng, quý phái khi đển thăm thành phố Đà Nẵng.
-                        </p>
-                        <p class="wifi">Wifi Miễn phí</p>
-                        <p>Bãi Đổ xe</p>
-                        <div class="convenient">
-                          <p>Cơ sở vật chất</p>
-                          <div class="list">
-                            <ul class="col-md-6">
-                              <li>
-                                <img src="./img/index/wifi.png"/> 
-                                Wifi
-                              </li>
-                              <li>Facility A</li>
-                              <li>Facility A</li>
-                            </ul>
-                            <ul class="col-md-6">
-                              <li>Facility A</li>
-                              <li>Facility A</li>
-                              <li>Facility A</li>
-                            </ul>  
-                          </div>
-                         
-                        </div>
-                      </div>
-                    </div>
-                    <div role="tabpanel" class="tab-pane fade" id="buzz">bbb</div>
-                    <div role="tabpanel" class="tab-pane fade" id="references">ccc</div>
-                  </div>
-            </div>
-              
-          </div>
-            
-      </div>
-        
+	          	<div class="col-md-4 menu-right">
+	              	  <h3>Mường Thanh Luxury Apartment_35a18</h3>
+		              <div class="rate">
+		                  <span><img src="./img/star.png" alt="rate"></span>
+		                  <span><img src="./img/star.png" alt="rate"></span>
+		                  <span><img src="./img/star.png" alt="rate" style="width: 18px; height: 18px;"></span>
+		                  <span><img src="./img/star.png" alt="rate"></span>
+		                  <span><img src="./img/star.png" alt="rate"></span>
+		              </div>
+		              <p class="price"><span>1,669,784₫</span><span>/đêm</span></p>
+		              <p class="discount">Giảm <span>35%</span> cho đặt phòng có <span>checkin</span> từ <span>01/11</span> đến <span>30/11</span></p>
+		              <div class="check-in">
+		                  <div class="text">
+		                          <p class="col-md-6">Check-in:</p>
+		                          <p class="col-md-6">Check-out:</p>
+		                  </div>
+		                  <div class="time">
+		                      <p class="col-md-6 first-p"><span>Thứ 4, 20/11</span></p>
+		                      <p class="col-md-6"><span>Thứ 6, 22/11</span></p>
+		                  </div>
+		              </div>
+		              <div class="people">
+		                  <div class="text">
+		                      <p class="col-md-4">Khách:</p>
+		                      <p class="col-md-4">Người lớn:</p>
+		                      <p class="col-md-4">Trẻ em:</p>
+		                  </div>
+		                  <div class="number">
+		                      <p class="col-md-4 first-p"><span>04</span></p>
+		                      <p class="col-md-4"><span>02</span></p>
+		                      <p class="col-md-4"><span>02</span></p>
+		                  </div>
+		              </div>
+		              <button type="button" class="btn btn-danger">Đặt Ngay</button>
+	          	</div>
+         	</div>
+
+          	<div class="content row col-md-11">
+	            <div class="tab col-md-8">
+	                <ul class="nav nav-tabs" role="tablist">
+	                    <li class="nav-item">
+	                      <a class="nav-link active" href="#profile" role="tab" data-toggle="tab">
+	                        <img src="./img/index/information.png">
+	                        <span>Tóm Tắt</span>
+	                      </a>
+	                    </li>
+	                    <li class="nav-item">
+	                      <a class="nav-link" href="#available" role="tab" data-toggle="tab">
+	                        <img src="./img/index/tien-nghi.png" />
+	                        <span>Tiện Nghi</span>
+	                      </a>
+	                    </li>
+	                    <li class="nav-item">
+	                      <a class="nav-link" href="#booking" role="tab" data-toggle="tab">
+	                        <img src="./img/index/booking.png" style="opacity: 0.8;"/>
+	                        <span>Giá & Đặt Lịch</span>
+	                      </a>
+	                    </li>
+	                    <li class="nav-item">
+	                        <a class="nav-link" href="#rating" role="tab" data-toggle="tab">
+	                          <img src="./img/index/rate.png" style="opacity: 0.8;"/>
+	                          <span>Đánh Giá</span>
+	                        </a>
+	                      </li>
+	                </ul>
+	                  
+	                  
+	                <div class="tab-content">
+	                    <div role="tabpanel" class="tab-pane fade in active show" id="profile">
+							<p class="address">
+							  <img src="./img/index/location.svg" />
+							  <span>Ngũ Hành Sơn, Đà Nẵng, Việt Nam</span>
+							  <div class="mapouter">
+								<div class="gmap_canvas">
+								  <iframe width="600" height="500" id="gmap_canvas"
+									src="https://maps.google.com/maps?q=university%20of%20san%20francisco&t=&z=13&ie=UTF8&iwloc=&output=embed"
+									frameborder="0" scrolling="no" marginheight="0" marginwidth="0">
+								  </iframe>
+								  <a href="https://www.couponflat.com">couponflat.com</a>
+								</div>
+								<style>
+								  .mapouter {
+									position: relative;
+									text-align: right;
+									height: 500px;
+									width: 600px;
+								  }
+				
+								  .gmap_canvas {
+									overflow: hidden;
+									background: none !important;
+									height: 500px;
+									width: 600px;
+								  }
+								</style>
+							  </div>
+							</p>
+							<p class="infor">
+							  <img src="./img/index/home.png" />
+							  <span>Nhà riêng 65 m2</span>
+							</p>
+							<p class="type">Nguyên căn · 2 phòng tắm · 2 giường · 2 phòng ngủ · 6 khách (tối đa 6 khách)</p>
+							<div class="introduce">
+							  <h3>Giới thiệu tổng quan</h3>
+							  <p>
+								Được xây dựng theo tiêu chuẩn 5 sao Mường Thanh Luxury Đà Nẵng nằm bên bờ biển Mỹ Khê xinh đẹp,
+								sẽ mang đến cho du khách một không gian sang trọng, quý phái khi đển thăm thành phố Đà Nẵng.
+							  </p>
+							  <p class="wifi">Wifi Miễn phí</p>
+							  <p>Bãi Đổ xe</p>
+							  <div class="convenient">
+								  <p>Cơ sở vật chất</p>
+								  <div class="list">
+									<ul class="col-md-6">
+									  <li>
+										<img src="./img/index/wifi.png"/> 
+										Wifi
+									  </li>
+									  <li>Facility A</li>
+									  <li>Facility A</li>
+									</ul>
+									<ul class="col-md-6">
+									  <li>Facility A</li>
+									  <li>Facility A</li>
+									  <li>Facility A</li>
+									</ul>  
+								  </div>
+							  </div>
+							</div>
+						  </div>
+						  <div role="tabpanel" class="tab-pane fade" id="available">
+							<p class="title">
+								Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec accumsan bibendum tincidunt. Praesent quis
+								consectetur ipsum. Sed faucibus dolor et ante hendrerit condimentum.
+							  </p>
+							  <p class="tile_1">
+								Tiện Nghi Phòng
+							  </p>
+							  <div class="aaa">
+								<ul>
+								  <img src="img/check.png" />
+								  <li class="col-sm-4 col-md-4 col-lg-4 col-xl-4">Facility A</li>
+								  <img src="img/check.png" />
+								  <li class="col-sm-4 col-md-4 col-lg-4 col-xl-4">Facility B</li>
+								  <img src="img/check.png" />
+								  <li class="col-sm-4 col-md-4 col-lg-4 col-xl-4">Facility C</li>
+								</ul>
+								<ul>
+								  <img src="img/check.png" />
+								  <li class="col-sm-4 col-md-4 col-lg-4 col-xl-4">Facility A</li>
+								  <img src="img/check.png" />
+								  <li class="col-sm-4 col-md-4 col-lg-4 col-xl-4">Facility B</li>
+								  <img src="img/check.png" />
+								  <li class="col-sm-4 col-md-4 col-lg-4 col-xl-4">Facility C</li>
+								</ul>
+								<ul>
+								  <img src="img/check.png" />
+								  <li class="col-sm-4 col-md-4 col-lg-4 col-xl-4">Facility A</li>
+								  <img src="img/check.png" />
+								  <li class="col-sm-4 col-md-4 col-lg-4 col-xl-4">Facility B</li>
+								  <img src="img/check.png" />
+								  <li class="col-sm-4 col-md-4 col-lg-4 col-xl-4">Facility C</li>
+								</ul>
+							  </div>
+							  <hr />
+							  <div class="aaa">
+								<p class="tile_1">
+								  Tiện Nghi Giải Trí
+								</p>
+								<ul>
+								  <img src="img/check_1.png" />
+								  <li class="col-sm-4 col-md-4 col-lg-4 col-xl-4"> Giải Trí A</li>
+								  <img src="img/check_1.png" />
+								  <li class="col-sm-4 col-md-4 col-lg-4 col-xl-4">Giải Trí B</li>
+								  <img src="img/check_1.png" />
+								  <li class="col-sm-4 col-md-4 col-lg-4 col-xl-4">Giải Trí C</li>
+								</ul>
+								<ul>
+								  <img src="img/check_1.png" />
+								  <li class="col-sm-4 col-md-4 col-lg-4 col-xl-4">Giải Trí D</li>
+								  <img src="img/check_1.png" />
+								  <li class="col-sm-4 col-md-4 col-lg-4 col-xl-4">Giải Trí E</li>
+								  <img src="img/check_1.png" />
+								  <li class="col-sm-4 col-md-4 col-lg-4 col-xl-4">Giải Trí F</li>
+								</ul>
+							  </div>
+							  <hr />
+				  
+							  <div class="aaa">
+								<p class="tile_1">
+								  Tiện Nghi Khác
+								</p>
+				  
+							  </div>
+				
+						  </div>
+					   
+						
+						
+						
+						
+						<div role="tabpanel" class="tab-pane fade" id="booking">
+	                    	<div class="info-schedule">
+	                      		<p class="title">Giá Phòng</p>
+	                      		<p class="chu-thich">Giá có thể tăng vào cuối tuần hoặc ngày lễ</p>
+		                      	<table class="table table-inverse" id="scheduling">
+		                      		<tbody>
+		                      			<tr>
+		                      				<td>Thứ hai - Thứ năm</td>
+		                      				<td>1,669,784đ</td>
+		                      			</tr>
+		                      			<tr>
+		                      				<td>Thứ sáu - Chủ nhật</td>
+		                      				<td>1,720,784đ</td>
+		                      			</tr>
+		                      			<tr>
+		                      				<td>Phí khách tăng thêm</td>
+		                      				<td>119,270đ (sau 6 khách)</td>
+		                      			</tr>
+		                      			<tr>
+		                      				<td>Số đêm tối thiểu</td>
+		                      				<td>1 đêm</td>
+		                      			</tr>
+		                      		</tbody>
+		                      	</table>
+	                      	</div>
+	                      	<hr/>
+	                      	<div class="info-booking">
+	                      		<p class="title">Availability</p>
+		                      	<section class="dhx_sample-container">
+									<div class="dhx_sample-container__widget" id="calendar1"></div>
+									<div class="dhx_sample-container__widget" id="calendar2"></div>
+								</section>
+	                      	</div>
+	                    </div>
+	                    <div role="tabpanel" class="tab-pane fade" id="rating">
+	                    	<div class="info-rating">
+	                      		<p class="title">Đánh giá trung bình</p>
+	                      		<div class="blk-rating">
+	                      			<div class="prc-rating">
+	                      				<span>4.0 / 5</span>
+	                      			</div>
+	                      			<div class="cm-rating">
+	                      				<div class="progress-bar bg-success progress-bar-striped progress-bar-animated" style="width:80%">
+	                      					80% thu thập ý kiến từ khách hàng
+	                      				</div>
+	                      				<div class="progress-bar bg-success progress-bar-striped progress-bar-animated" style="width:100%">
+	                      					100% Đánh giá dựa trên 5 bản Review
+	                      				</div>
+	                      			</div>
+	                      		</div>
+	                      	</div>
+	                      	<hr>
+	                      	<div class="info-service">
+	                      		<p class="title">Đánh giá dịch vụ</p>
+	                      		<div class="blk-service">
+	                      			<div class="detail-service">
+	                      				<img src="./img/rate.png">
+	                      				<span>Dịch vụ 1</span>
+	                      				<!-- <span class="number-rate">4.0</span> -->
+	                      			</div>
+	                      			<div class="detail-service">
+	                      				<img src="./img/rate.png">
+	                      				<span>Dịch vụ 2</span>
+	                      				<!-- <span class="number-rate">3.8</span> -->
+	                      			</div>
+	                      			<div class="detail-service">
+	                      				<img src="./img/rate.png">
+	                      				<span>Dịch vụ 3</span>
+	                      				<!-- <span class="number-rate">3.0</span> -->
+	                      			</div>
+	                      			<div class="detail-service">
+	                      				<img src="./img/rate.png">
+	                      				<span>Dịch vụ 4</span>
+	                      				<!-- <span class="number-rate">4.0</span> -->
+	                      			</div>
+	                      			<div class="detail-service">
+	                      				<img src="./img/rate.png">
+	                      				<span>Dịch vụ 5</span>
+	                      				<!-- <span class="number-rate">3.5</span> -->
+	                      			</div>
+	                      			<div class="detail-service">
+	                      				<img src="./img/rate.png">
+	                      				<span>Dịch vụ 6</span>
+	                      				<!-- <span class="number-rate">5.0</span> -->
+	                      			</div>
+	                      		</div>
+	                      	</div>
+	                      	<hr>
+	                      	<div class="info-comment">
+	                      		<p class="title">Bình luận</p>
+	                      		<div class="search-bar">
+	                      			<input class="form-control mr-sm-2" type="text" placeholder="Search reviews" style="width: 40%; display: inline;">
+    								<button class="btn bg-primary" type="submit" style="color: white;">Search</button>
+	                      		</div>
+	                      		<div class="info" style="">
+	                      			<img src="./img/man.png" alt="">
+	                      			<div>
+	                      				<span class="name" style="font-weight: bold;">Natalie</span><br>
+	                      				<span class="time">October 2019</span>
+	                      			</div>
+	                      		</div>
+	                      		<div class="content-cm">
+	                      			Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec accumsan bibendum tincidunt. Praesent quis consectetur ipsum.
+	                      		</div>
+	                      		<hr>
+	                      		<div class="info" style="">
+	                      			<img src="./img/boy.png" alt="">
+	                      			<div>
+	                      				<span class="name" style="font-weight: bold;">Ashley</span><br>
+	                      				<span class="time">October 2019</span>
+	                      			</div>
+	                      		</div>
+	                      		<div class="content-cm">
+	                      			It doesn't get better than this. Book it
+	                      		</div>
+	                      		<hr>
+	                      		<div class="info" style="">
+	                      			<img src="./img/man.png" alt="">
+	                      			<div>
+	                      				<span class="name" style="font-weight: bold;">John Roman</span><br>
+	                      				<span class="time">October 2019</span>
+	                      			</div>
+	                      		</div>
+	                      		<div class="content-cm">
+	                      			There are a number of choices about flat to look for of Sydney. There’s a hop on hop off flat that takes you around to The City, next to The Harbour Bridge and a few other places as well.
+	                      		</div>
+	                      		<nav aria-label="Page navigation example" id="pageId">
+								  <ul class="pagination">
+								    <li class="page-item">
+								      <a class="page-link" href="#" aria-label="Previous">
+								        <span aria-hidden="true">&laquo;</span>
+								        <span class="sr-only">Previous</span>
+								      </a>
+								    </li>
+								    <li class="page-item"><a class="page-link" href="#">1</a></li>
+								    <li class="page-item"><a class="page-link" href="#">2</a></li>
+								    <li class="page-item"><a class="page-link" href="#">3</a></li>
+								    <li class="page-item">
+								      <a class="page-link" href="#" aria-label="Next">
+								        <span aria-hidden="true">&raquo;</span>
+								        <span class="sr-only">Next</span>
+								      </a>
+								    </li>
+								  </ul>
+								</nav>
+	                      	</div>
+	                    </div>
+	                </div>    
+				 </div>   
+				 
+				 <div class="tab col-md-4 tab_4_des">
+					<div class="abc1">
+					  <img src="img/listening_1.png" />
+					  <span class="abc1_tile">Cần Sự Giúp Đỡ</span>
+					  <p class="sub_title">
+						Đội ngũ của chúng tôi có mặt 24/7 để hỗ trợ bạn mọi vấn đề liên quan đến việc đặt phòng và đề ra các phản
+						hổi sớm nhất.
+					  </p>
+					  <p class="abc1_tile_size">
+						1800 - 17xx - 76xx
+					  </p>
+					</div>
+					<div class="abc2">
+					  <p class="abc1_tile">Chỗ Ở Tương Tự</p>
+			 
+					  <div class="add_hotel">
+						<div>
+							<img src="img/hotel_1.jpg" />
+						</div>
+						
+						<div class="hhh">
+							<p>Khách Sạn Ánh Trăng</p>
+							<p><span>500,000đ</span>/đêm</p>
+							<a href="#">
+							  <p class="sss">Xem Chi Tiết</p>
+							</a>
+						</div>
+			
+					  </div>
+					  <div class="add_hotel">
+						  <div>
+							  <img src="img/hotel_1.jpg" />
+						  </div>
+						  
+						  <div class="hhh">
+							  <p>Khách Sạn Ánh Trăng</p>
+							  <p><span>500,000đ</span>/đêm</p>
+							  <a href="#">
+								<p class="sss">Xem Chi Tiết</p>
+							  </a>
+						  </div>
+			  
+						</div>
+						<div class="add_hotel">
+							<div>
+								<img src="img/hotel_1.jpg" />
+							</div>
+							
+							<div class="hhh">
+								<p>Khách Sạn Ánh Trăng</p>
+								<p><span>500,000đ</span>/đêm</p>
+								<a href="#">
+								  <p class="sss">Xem Chi Tiết</p>
+								</a>
+							</div>
+				
+						  </div>
+			
+			
+					</div>
+			
+				  </div>
+      		</div>
+        </div>
     </body>
     <footer>
+    		<!-- For Bootstrap 4.0 -->
             <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
             <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
             <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+			<!-- For DateTimePicker -->
+            <script type="text/javascript" src="./css/codebase/calendar.js?v=6.2.3"></script>
+            <script src="./js/index.js"></script>
     </footer>
 </html>
