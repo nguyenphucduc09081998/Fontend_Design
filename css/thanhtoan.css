@@ -2,13 +2,148 @@ hr{
     margin: 0px;
     width: 80%;
 }
-/* body{
+.container{
 background: rgba(205, 205, 205, 0.41);
-} */
-/* .contai_row_8, .contai_row_4{
-    background: #FFFFFF;
-    padding: 0px 0px;
-} */
+}
+.contai_row_8, .contai_row_4{
+   margin-top:20px;
+}
+.contai_row_4 .row_1{
+    margin-bottom: 10px;
+}
+.row_1_name_hotel .name_hotel{
+font-family: Times New Roman;
+font-style: normal;
+font-weight: bold;
+font-size: 20px;
+line-height: 30px;
+/* identical to box height, or 115% */
+
+letter-spacing: -0.015em;
+
+color: #000000;
+}
+.row_1_name_hotel .address{
+font-family: Lora;
+font-style: normal;
+font-weight: normal;
+font-size: 19px;
+
+/* or 229% */
+
+letter-spacing: -0.015em;
+
+color: #686262;
+}
+.crow_5 .title{
+font-family: Lora;
+font-style: normal;
+font-weight: normal;
+font-size: 20px;
+line-height: 43px;
+/* or 189% */
+letter-spacing: -0.015em;
+margin-bottom: 3px;
+color: #000000;
+}
+.crow_3 span{
+    font-family: Lora;
+font-style: normal;
+font-weight: normal;
+font-size: 18px;
+line-height: 30px;
+/* or 189% */
+
+
+letter-spacing: -0.015em;
+
+color: #000000;
+
+}
+.crow_3, .crow_5{
+    padding-left: 15px;
+}
+.crow_3 p{
+    font-family: Lora;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 30px;
+    /* or 189% */
+    margin-bottom: 0px;
+    letter-spacing: -0.015em;
+    
+    color: #686262;
+
+}
+
+.crow_5 .des{
+    font-family: Lora;
+    font-style: normal;
+    
+    font-size: 18px;
+   
+    /* or 229% */
+    
+    letter-spacing: -0.015em;
+    
+    color: #686262;
+    
+    }
+    
+.fsdfsdf{
+    padding: 0px;
+}
+
+.crow_2 .float_right p{
+    font-family: Lora;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+ margin-bottom: 3px;
+    /* or 217% */
+    letter-spacing: -0.015em;
+    color: #20CD04;
+}
+.crow_2 .float_right span{
+
+    color: #686262;
+}
+.crow_4 .float_right p, 
+.crow_2 .float_left p{
+font-family: Lora;
+font-style: normal;
+font-weight: normal;
+font-size: 18px;
+margin-bottom: 3px;
+/* or 189% */
+
+letter-spacing: -0.015em;
+
+color: #686262;
+}
+
+.crow_4 .float_left p{
+font-family: Lora;
+font-style: normal;
+font-weight: normal;
+font-size: 18px;
+margin-bottom: 3px;
+/* or 189% */
+
+letter-spacing: -0.015em;
+
+color: #000000;
+}
+.row_1_name_hotel p{
+    margin-bottom: 0px;
+    
+}
+
+.row_1_name_hotel {
+    margin-bottom: 5px;
+    
+}
 .row{
     margin-left: 0px;
 }
@@ -70,7 +205,7 @@ color: #000000;
     font-style: normal;
     font-weight: normal;
     font-size: 19px;
-    line-height: 43px;
+    line-height: 25px;
     /* or 229% */
     
     letter-spacing: -0.015em;
@@ -106,6 +241,9 @@ letter-spacing: -0.015em;
 color: #000000;
 
 }
+.required {
+    color: red;
+  }
 h6{
 font-family: Lora;
 font-style: normal;
@@ -119,12 +257,15 @@ text-decoration-line: underline;
 
 color: #797474;
 }
+.Muc_Dich{
+    padding-top: 10px;
+}
 .date_Day{
     font-family: Lora;
 font-style: normal;
 font-weight: normal;
 font-size: 17px;
-line-height: 43px;
+line-height: 25px;
 /* or 256% */
 
 letter-spacing: -0.015em;
@@ -136,7 +277,7 @@ color: #797474;
 font-style: normal;
 font-weight: normal;
 font-size: 26px;
-line-height: 43px;
+line-height: 25px;
 /* or 167% */
 
 letter-spacing: -0.015em;
@@ -208,18 +349,18 @@ margin-left: 20px;
 .date_form .date_form_from{
     padding-bottom: 10px;
     float: right;
-    width: 60%;
+    width: 100%;
     padding-top: 10px;
     border-radius:15px;
-    background: rgba(240, 240, 240, 0.48);
+    background: rgba(199, 143, 143, 0.48);
 
 }
 .date_form .date_form_to{
-    width: 60%;
+    width: 100%;
     padding-bottom: 10px;
     padding-top: 10px;
     border-radius:15px;
-    background: rgba(240, 240, 240, 0.48);
+    background: rgba(199, 143, 143, 0.48);
 
 }
 .ghgh p{
