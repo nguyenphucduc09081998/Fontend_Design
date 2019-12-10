@@ -1,0 +1,368 @@
+body, html{
+    background-color: #cdcdcd26;
+}
+
+/*.container {
+
+}*/
+
+
+.main{
+    /*background-color: #FFFFFF;*/
+    width: 100%;
+    /*border: 1px solid #c6c6c661;*/
+
+}
+
+.main .menu-left{
+    /*background-color: #FFFFFF;
+    border: 1px solid #c6c6c661;*/
+    padding: 0;
+
+}
+
+.main .menu-left .filter-box,
+.main .menu-left .price-box,
+.main .menu-left .service-box,
+.main .menu-left .duplicate-box,
+.main .menu-right .filter-box{
+    background-color: #FFFFFF;
+    border: 1px solid #c6c6c661;
+    margin-bottom: 17px;
+}
+
+.main .menu-right .filter-box{
+    padding-bottom: 20px;
+}
+
+.main .menu-left .price-box{
+    padding-bottom: 10px;
+}
+
+.filter-box>div,
+.price-box>div,
+.service-box>div,
+.duplicate-box>div{
+    overflow: hidden; 
+    margin-top: 17px;
+    font-family: Lora;
+    font-weight: bold;
+    color: #504d4d;
+    letter-spacing: -0.015em;
+}
+
+.service-box>.form-group{
+    font-weight: 300;
+}
+
+.price-box>div{
+    font-family: "Times New Roman", Times, serif !important;
+    font-weight: 500;
+    color: #504d4db8;
+    font-size: 18px;
+}
+
+.service-box .custom-control{
+    margin-bottom: 6px;
+}
+
+.service-box>div label{
+    color: #504d4deb;
+}
+
+.custom-checkbox .custom-control-input:checked~.custom-control-label::before {
+    background-color: #F0084E;
+}
+.custom-control-input:checked~.custom-control-label::before {
+    color: #fff;
+    background-color: #F0084E;
+}
+.filter-box>div .filter-title{
+    float: left;
+    font-size: 22px;  
+}
+
+.filter-box>div .reset{
+    float: right;
+    font-size: 17px;
+    line-height: 2;
+    color: #7b7878;
+}
+
+.filter-box .block-area{
+    padding: 0; 
+    margin: 0;
+}
+
+.filter-box .block-area>div{
+    padding-left: 0px;
+}
+
+.price-box .price-checkbox div{
+    margin-bottom: 6px;
+}
+
+.price-box .price-checkbox input{
+
+}
+
+.price-box .price-checkbox label{
+    margin-left: 15px;
+}
+
+.service-box .service-checkbox label{
+    margin-left: 8px;
+}
+
+.duplicate-right img{
+    width: 37%; 
+    float: left; 
+    margin-right: 20px; 
+    margin-top: 5px;
+}
+
+.duplicate-right .price{
+    color: #1BBB78;
+}
+
+.duplicate-right .detail{
+    color: #F65E39;
+    text-decoration: underline;
+}
+
+.gj-datepicker-bootstrap [role=right-icon] button .gj-icon, .gj-datepicker-bootstrap [role=right-icon] button .material-icons {
+    position: absolute;
+    font-size: 21px;
+    top: 4px;
+    left: 9px;
+}
+
+.btn-danger{
+    background-color: #dc3e74 !important;
+    margin-bottom: 20px;
+    margin-top: 10px;
+}
+
+
+
+/*Price*/
+.price-range-block {
+    width: 100%;
+}
+.sliderText{
+    margin-bottom:10px;
+    /*border-bottom: 1px solid red;*/
+    padding: 0px 0 10px 0px;
+    font-weight:bold;
+}
+.ui-slider-horizontal {
+    height: .6em;
+}
+.ui-slider-horizontal {
+    margin-bottom: 15px;
+}
+.ui-widget-header {
+    background: #4A90A4;
+}
+
+.price-range-field{
+    width:33%; 
+    min-width: 16%;
+    background-color:#f9f9f9; 
+    border: 1.5px solid #6e666642; 
+    color: #F7510A; 
+    font-family: myFont; 
+    font: normal 14px Arial, Helvetica, sans-serif; 
+    border-radius: 2px; 
+    height:29px; 
+    padding:5px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+#min_price{
+    float: left;
+}
+#max_price{
+    float: right;
+}
+.search-results-block{
+  position: relative;
+  display: block;
+  clear: both;
+}
+
+
+.custom-select{
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-radius: 0;
+    color: #EA0C41;
+    font-weight: bold;
+    border-color: #EA0C41;
+}
+
+
+.room-info{
+    float: left; 
+    width: 15%; 
+    height: 100%; 
+    border: 1.5px solid #6e66662b; 
+    cursor: pointer;
+}
+
+.clearfix{
+    padding: 0;
+    margin: 0;
+}
+
+.info-box .blk-info>div{
+    display: flex;
+}
+
+.info-box .blk-info .blk-img{
+  
+}
+
+.info-box .blk-info {
+    margin-bottom: 20px;
+}
+
+.info-box .blk-info .blk-info-detail{
+    background-color: #FFFFFF;
+    border: 1.5px solid #c6c6c661;
+    font-family: Lora;
+    letter-spacing: -0.015em;
+    padding-top: 15px;
+}
+
+.info-box .blk-info .blk-info-detail label{
+    color: #1B51DA;
+    font-size: 23px;
+    font-weight: bold;
+   
+}
+
+.info-box .blk-info .blk-info-detail span{
+    font-size: 17px;
+    color: #6A6767;
+}
+
+.info-box .blk-info .blk-info-detail p{
+    font-size: 21px;
+    color: #6A6767;
+    margin-top: 13px;
+}
+
+.info-box .blk-info .blk-info-detail .blk-info-footer{
+    background-color: #c6c6c661;
+    border: 1.5px solid #c6c6c661;
+    margin-bottom: 0;
+}
+
+.info-box .blk-info .blk-info-detail .blk-info-footer>div{
+    display: inline;
+    border-right: 1px solid #c6c6c6;
+    border-left: none;
+}
+
+.info-box .blk-info .blk-info-detail .blk-info-footer>div img{
+    width: 9%;
+    opacity: 0.5;
+    margin-left: 10px;
+    margin-right: 15px;
+    margin-bottom: 9px;
+    margin-top: 6px;
+}
+
+.info-box .blk-info .blk-info-detail .blk-info-footer>div span{
+    margin-right: 15px;
+}
+
+.blk-info .hot-tag,
+.blk-info .voucher-tag,
+.blk-info .rent-tag{
+    font-family: Lora;
+    letter-spacing: -0.015em;
+    font-size: 20px;
+    background-color: #ea0c41b3;
+    color: white;
+    position: absolute;
+    
+}
+
+.blk-info .hot-tag {
+    width: 54px;
+    height: 32px;
+    top: 8px;
+    right: 20px;
+}
+
+.blk-info .hot-tag h5{
+    font-size: 20px;
+    padding-top: 4px;
+    padding-left: 10px;
+}
+
+.blk-info .voucher-tag h5{
+    font-size: 17px;
+    padding-top: 2px;
+    padding-left: 8px;
+}
+
+.blk-info .rent-tag{
+    width: 55px;
+    height: 27px;
+    bottom: 3px;
+    right: 12px;
+    background-color: #1c63b8ba;
+}
+
+.blk-info .rent-tag h5{
+    font-size: 20px;
+    padding-top: 1px;
+    padding-left: 10px;
+}
+
+.blk-info .arrow-left {
+    position: absolute;
+    bottom: 4px;
+    right: 67px;
+    width: 0;
+    height: 0;
+    border-top: 16px solid transparent;
+    border-bottom: 10px solid transparent;
+    border-right:12px solid #1c63b8ba;
+}
+
+
+.blk-info .voucher-tag{
+    position:absolute;
+    height:24px;
+    width: 116px;
+    top: 3px;
+    left: -8px;
+    background-color: #19B0C5;
+    color: white;
+}
+ 
+.blk-info .voucher-tag:before,.blk-info .voucher-tag:after{
+    content:"";
+    position:absolute;
+    z-index:-1;
+    width:0;
+    height:0;
+    bottom:-6px;
+    left:3px;
+    border:6px solid transparent;
+    border-bottom:6px solid #023a7f;
+    transform:rotate(45deg);
+}
+
+
+#pageId{
+    padding-left: 550px;
+    padding-top: 30px;
+    padding-bottom: 5px;
+}
