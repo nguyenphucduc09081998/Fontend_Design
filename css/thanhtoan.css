@@ -389,12 +389,26 @@ color: rgba(0, 0, 0, 0.73);
 .div_credit{
     margin-top: 10px;
 }
+
+
+/* .robot{
+    background: #f9f9f9;
+} */
+
+
 .robot span{
     margin-left: 20px;
 }
 .robot input{
     margin-left: 0px;
 }
+
+
+
+
+
+
+
 .input_contry{
     display: flex;
     background: #fff;
