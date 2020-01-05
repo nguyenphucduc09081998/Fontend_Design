@@ -1,10 +1,8 @@
 import RoomDetails from './RoomDetails/index';
-import ContentMore from './RoomDetails/content';
-import CalendarsScreen from './RoomDetails/calendar';
+import FilterRoom from './FilterRoom/filtering';
 export {
+  FilterRoom,
   RoomDetails,
-  ContentMore,
-  CalendarsScreen
 };
 
 
