@@ -1,0 +1,1049 @@
+@import url('https://fonts.googleapis.com/css?family=Josefin+Sans:700&display=swap');
+body,
+html {
+    background-color: #cdcdcd26;
+}
+
+
+/*.container {
+
+}*/
+
+.main {
+    background-color: #FFFFFF;
+    width: 100%;
+    border: 1px solid #c6c6c661;
+}
+
+.menu-left {}
+
+img {
+    vertical-align: unset;
+}
+
+
+/*menu right*/
+
+.menu-right {
+    padding-top: 20px;
+    margin-left: 0px;
+    padding: 0 auto;
+}
+
+.menu-right>h4 {
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 19px;
+    color: #000000;
+    letter-spacing: -0.015em;
+}
+
+.menu-right .btn {
+    background: linear-gradient(90deg, #f65e38 0, #f68a39 51%, #f65e38);
+    width: 204px;
+    height: 39px;
+    margin: 0 auto;
+    display: block;
+    color: #ffffff;
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    ;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    margin-bottom: 0px;
+    margin-top: 0px;
+}
+
+.menu-right .rate-blk {
+    display: flex;
+}
+
+.menu-right .rate-blk .star-rate {
+    color: gray;
+    font-size: 14px;
+    margin-left: 20px;
+}
+
+.menu-right .rate-blk .rate {
+    display: flex;
+    justify-content: space-around;
+    max-width: 30%;
+    margin-bottom: 0;
+}
+
+.menu-right .price {
+    display: flex;
+    justify-content: flex-start;
+    margin-top: 5px;
+}
+
+.menu-right .price>span {
+    font-style: normal;
+    font-size: 15px;
+    display: flex;
+    align-items: center;
+    color: gray;
+}
+
+.menu-right .price .old-price {
+    font-weight: bold;
+    color: gray;
+    font-size: 18px;
+    margin-left: 16px;
+    text-decoration: line-through;
+}
+
+.menu-right .price>span:first-child {
+    font-weight: bold;
+    color: #000000;
+    font-size: 27px;
+    margin-right: 6px;
+}
+
+.menu-right .discount {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 15px;
+    color: #545151;
+}
+
+.menu-right .discount span {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+
+/*end menu right*/
+
+.check-in .time,
+.check-in .text,
+.people .text,
+.people .number {
+    display: flex;
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 17px;
+    color: #797474;
+}
+
+.check-in .time {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.check-in .text>p,
+.people .text>p {
+    margin-bottom: unset;
+    padding: 0;
+}
+
+.check-in .time p,
+.people .number p {
+    padding: unset;
+    height: 50px;
+    border-top: 1px solid #C6C6C6;
+    border-bottom: 1px solid #C6C6C6;
+    box-shadow: 1px 2px #8888885e;
+}
+
+.check-in .time p>span {
+    margin-top: 10px !important;
+}
+
+.people .number p {
+    height: 43px;
+}
+
+.people .number p {
+    font-size: 22px;
+}
+
+.check-in .time p:first-child,
+.people .number p:first-child {
+    border-left: 1px solid #C6C6C6;
+}
+
+.check-in .time p:last-child,
+.people .number p:last-child {
+    border-right: 1px solid #C6C6C6;
+}
+
+.check-in .time p>span,
+.people .number p>span {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 9px;
+    margin-bottom: 5px;
+    border-left: 1px solid #C6C6C6;
+    height: 60%;
+    color: #464646 !important;
+}
+
+.check-in .time .first-p>span:first-child,
+.people .number .first-p>span:first-child {
+    border-left: unset;
+}
+
+.vc ul li {
+    width: 50%;
+}
+
+
+/*For multiple Image*/
+
+.img-hotel-res {
+    display: flex;
+    width: 100%;
+    padding-left: 0px;
+}
+
+.block-arrow {
+    background-color: #FFFFFF;
+    flex: 0.25;
+    border: 1px solid #c6c6c661;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    filter: grayscale(100%) sepia(100%) contrast(0) sepia(100%) hue-rotate(119deg) brightness(1.0) saturate(0.28);
+}
+
+.block-img {
+    flex: 1;
+}
+
+.blk-change {
+    background-color: #EAEAEA;
+}
+
+.block-img div img {
+    padding: 12px 12px 11px 12px;
+    border-right: 1px solid #c6c6c661;
+    border-bottom: 1px solid #c6c6c661;
+}
+
+
+/*End Multiple Image*/
+
+
+/*For Tabs*/
+
+.tab {
+    padding: 0;
+    margin-top: 30px;
+}
+
+
+/* tab color */
+
+.nav-tabs>li>a {
+    background-color: #333333;
+    border-color: #777777;
+    color: #fff;
+}
+
+
+/* active tab color */
+
+.nav-tabs>li.active>a,
+.nav-tabs>li.active>a:hover,
+.nav-tabs>li.active>a:focus {
+    color: #fff;
+    background-color: #666;
+    border: 1px solid #888888;
+}
+
+
+/* hover tab color */
+
+.nav-tabs>li>a:hover {
+    border-color: #000000;
+    background-color: #111111;
+}
+
+.nav-tabs .nav-link.active,
+.nav-tabs .nav-link {
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    font-style: normal;
+    font-size: 18px;
+    color: #fff;
+    text-align: center;
+    font-weight: 700;
+    border-right: 1px solid #c6c6c661;
+    padding-left: 0;
+    padding-top: 10px;
+    background-color: white !important;
+    border-color: white;
+    color: #A19F9F;
+}
+
+.nav-tabs .nav-link.active {
+    border-bottom-color: #217ED5;
+    border-bottom-width: 2px;
+    color: #464646;
+}
+
+.nav-tabs .nav-link img {
+    width: 22px;
+    height: 22px;
+}
+
+.nav-tabs .nav-link span {
+    margin-left: 10px;
+    padding-top: 10px;
+}
+
+.nav-tabs .nav-item:nth-child(2),
+.nav-tabs .nav-item:nth-child(3) {
+    width: 29.1%;
+}
+
+.nav-tabs .nav-item:nth-child(1),
+.nav-tabs .nav-item:nth-child(4) {
+    width: 20.9%;
+}
+
+.nav-tabs .nav-link.active {
+    background-color: #1F6EB7;
+}
+
+.nav-tabs .nav-link {
+    background-color: #099EDE;
+}
+
+.tab-content .tab-pane {
+    background-color: #fff;
+}
+
+.info-schedule {
+    padding-left: 42px;
+    padding-top: 31px;
+}
+
+.info-schedule .title,
+.info-booking .title,
+.info-schedule .chu-thich,
+.info-rating .title,
+.info-service .title,
+.info-comment .title {
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    font-style: normal;
+    font-size: 20px;
+    color: black;
+    font-weight: bold;
+}
+
+.info-schedule .chu-thich {
+    color: #6A6767;
+    font-size: 18px;
+    font-weight: 200;
+}
+
+.info-booking .title,
+.info-rating .title,
+.info-service .title,
+.info-comment .title {
+    padding-left: 42px;
+    padding-top: 31px;
+}
+
+#scheduling {
+    font-family: Lora;
+    color: #6A6767;
+    font-size: 18px;
+    display: block;
+    margin: 0 0 0 0;
+}
+
+#scheduling td {
+    border-top: 0.5px solid #dddddd1a;
+    padding: 8px;
+}
+
+#scheduling tr:nth-child(odd) {
+    background-color: #f2f2f2;
+}
+
+#scheduling tr td:nth-child(1) {
+    width: 60%;
+}
+
+#scheduling tr:hover {
+    background-color: #ddd;
+}
+
+#scheduling th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: #4CAF50;
+    color: white;
+}
+
+
+/*End For Tabs*/
+
+
+/*For DateTimePicker*/
+
+.dhx_sample-container {
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    min-height: 350px !important;
+}
+
+.calendar1 {
+    margin-right: 20px;
+    justify-content: flex-end;
+}
+
+.calendar2 {
+    margin-right: 20px;
+    justify-content: flex-start;
+}
+
+.convenient .list {
+    display: flex;
+}
+
+.convenient .list li {
+    list-style: none;
+}
+
+.blk-rating {
+    display: flex;
+}
+
+.blk-service {
+    width: 100%;
+}
+
+.blk-rating .prc-rating {
+    flex: 0.4;
+}
+
+.blk-rating .prc-rating>span {
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    color: #6A6767;
+    font-size: 37px;
+    font-weight: bold;
+    padding-left: 73px;
+}
+
+.blk-rating .cm-rating {
+    flex: 0.5;
+    
+}
+.cm-rating-responsive{
+    width: 80%;
+}
+.blk-rating .cm-rating div {
+    margin-bottom: 13px;
+    text-align: left;
+}
+
+.blk-service {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.blk-service .detail-service {
+    padding-left: 45px;
+    width: 30%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.blk-service .detail-service>span {
+    margin-left: 20px;
+    font-family: Lora;
+    color: #6A6767;
+    font-size: 17px;
+    padding-left: 0;
+    font-weight: 600;
+    margin-top: 10px;
+}
+
+.info-comment .search-bar,
+.info-comment .info,
+.info-comment .content-cm {
+    padding-left: 42px;
+    padding-top: 20px;
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    color: #6A6767;
+    font-size: 18px;
+}
+
+.info-comment .content-cm {
+    width: 94%;
+}
+
+.info-comment .info {
+    display: flex;
+}
+
+.info-comment .info img {
+    width: 45px;
+    height: 45px;
+    margin-right: 20px;
+}
+
+#pageId {
+    padding-left: 230px;
+    padding-top: 30px;
+    padding-bottom: 5px;
+}
+
+.aaa ul {
+    display: flex;
+    margin-bottom: 0px;
+}
+
+.aaa ul li {
+    list-style-type: none;
+    padding-left: 5px;
+    font-family: Times New Roman;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 43px;
+}
+
+.aaa ul img {
+    height: 16px;
+    margin-top: 13px;
+}
+
+.title {
+    font-family: Lora;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 43px;
+}
+
+.tile_1 {
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    font-style: normal;
+    font-size: 20px;
+    color: black;
+    font-weight: bold;
+}
+
+.content {
+    display: flex;
+}
+
+.abc1,
+.abc2 {
+    background: #ffff;
+}
+
+.abc1_tile {
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    margin-top: 5px;
+    padding-top: 10px;
+    color: #464646;
+    text-align: center;
+}
+
+.abc1 img {
+    margin: 8px;
+    padding-left: 10px;
+}
+
+.abc1 .sub_title {
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    font-style: normal;
+    font-size: 15px;
+    color: black;
+    margin-bottom: 0px;
+    padding-left: 15px;
+}
+
+.abc1 .abc1_tile_size {
+    font-family: Lora;
+    font-style: normal;
+    text-align: center;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 43px;
+    color: #1382B1;
+}
+
+.hhh {
+    float: right;
+    padding-left: 10px;
+}
+
+.add_hotel img {
+    padding-left: 20px;
+}
+
+.add_hotel {
+    display: flex;
+}
+
+.hhh p {
+    font-family: Lora;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 17px;
+    margin-bottom: 0px;
+}
+
+.hhh span {
+    color: #1BBB78;
+    font-family: Lora;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.hhh .sss {
+    color: #F65E39;
+    font-family: Times New Roman;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+}
+
+.tab_4_des {
+    left: 30px;
+}
+.introduce{
+    margin-left: 19px;
+}
+@media screen and (max-width:320px) and (min-width:241px){
+    .btn-danger{
+        background-color:#f3db00 !important; 
+    }
+    .prc-rating>span{
+        padding-left: 10px !important; 
+    }
+        .info-booking .title{
+      
+            padding-top: 15px;
+            padding-left: 10px;
+        }
+        .info-rating .title,.info-service .title,.info-comment .title{
+            padding-left: 5px;
+            padding-top: 15px;
+        }
+        .info-comment .search-bar,.info-comment .info,.info-comment .content-cm,.info-comment .info
+        ,.info-comment .content-cm
+        {
+            padding-left: 10px;
+            padding-top: 5px;
+        }
+#pageId{
+    padding-left: 60px;
+}
+.blk-service .detail-service {
+    padding-left: 15px;
+
+}
+
+.blk-service .detail-service span{
+   
+margin-top: 2px;
+margin-left: 5px;
+}
+
+
+
+.info-schedule .chu-thich{
+        font-size: 15px;
+    }
+    .content-responsive{
+    padding-right: 0px;
+    padding-left: 0px;
+    margin-left: 0px;
+    margin-right: 0px;
+    }
+    .tab_4_des {
+        left: 0px;
+    }
+.info-schedule{
+    padding-left: 10px;
+}
+.aaa ul{
+    padding-left:10px ;
+}
+.aaa ul li{
+    padding-right: 5px;
+font-size: 14px;
+}
+.menu-left{
+    padding-right: 0px;
+    padding-left: 3px;
+}
+.main{
+    padding-right: 0px;
+}
+
+}
+@media screen and (max-width:480px) and (min-width:321px){
+    .btn-danger{
+        background-color:#00b7ff !important; 
+    }
+    .content-responsive{
+        
+        padding-right: 0px;
+        padding-left: 0px;
+        margin-left: 0px;
+        margin-right: 0px;
+        }
+        .tab_4_des {
+            left: 0px;
+        }
+        .menu-left{
+            padding-right: 0px;
+            padding-left: 3px;
+        }
+        .main{
+            padding-right: 0px;
+        }
+        .description-responsive{
+            padding-right: 5px;
+        }
+        .abc1 .sub_title {
+            padding-right: 15px;
+          
+        }
+        .info-schedule{
+            padding-left: 10px;
+            padding-top: 20px;
+        }
+
+        .aaa ul{
+            padding-left:10px ;
+        }
+        .aaa ul li{
+            padding-right: 5px;
+        font-size: 14px;
+        }
+
+        .prc-rating>span{
+            padding-left: 10px !important; 
+        }
+            .info-booking .title{
+          
+                padding-top: 15px;
+                padding-left: 10px;
+            }
+            .info-rating .title,.info-service .title,.info-comment .title{
+                padding-left: 5px;
+                padding-top: 15px;
+            }
+            .info-comment .search-bar,.info-comment .info,.info-comment .content-cm,.info-comment .info
+            ,.info-comment .content-cm
+            {
+                padding-left: 10px;
+                padding-top: 5px;
+            }
+    #pageId{
+        padding-left: 80px;
+    }
+    .blk-service .detail-service {
+        padding-left: 15px;
+    
+    }
+    
+    .blk-service .detail-service span{
+       
+    margin-top: 2px;
+    margin-left: 5px;
+    }
+    
+    
+    
+    .info-schedule .chu-thich{
+            font-size: 15px;
+        }
+        .content-responsive{
+        padding-right: 0px;
+        padding-left: 0px;
+        margin-left: 0px;
+        margin-right: 0px;
+        }
+        .tab_4_des {
+            left: 0px;
+        }
+    .info-schedule{
+        padding-left: 10px;
+    }
+    .aaa ul{
+        padding-left:10px ;
+    }
+    .aaa ul li{
+        padding-right: 5px;
+    font-size: 14px;
+    }
+    .menu-left{
+        padding-right: 0px;
+        padding-left: 3px;
+    }
+    .main{
+        padding-right: 0px;
+    }
+}
+@media screen and (max-width:768px) and (min-width:481px){
+    .menu-right .btn{
+        background-color:#1707ff !important; 
+        width: 176px;
+    }
+    .blk-service .detail-service {
+        padding-left: 15px;
+    
+    }
+    .menu-right .price .old-price{       
+        font-size: 10px;
+    margin-left: 0px;
+    }
+    .blk-service .detail-service span{
+       
+    margin-top: 2px;
+    margin-left: 5px;
+    }
+    .aaa ul{
+        padding-left:10px ;
+    }
+    .aaa ul li{
+        padding-right: 5px;
+    font-size: 14px;
+    }
+    .content-responsive{
+        
+        padding-right: 0px;
+        padding-left: 0px;
+        margin-left: 0px;
+        margin-right: 0px;
+        }
+        .tab_4_des {
+            left: 0px;
+        }
+        .menu-left{
+            padding-right: 0px;
+            padding-left: 3px;
+        }
+        .main{
+            padding-right: 0px;
+        }
+        .description-responsive{
+            padding-right: 5px;
+        }
+        .abc1 .sub_title {
+            padding-right: 15px;
+          
+        }
+        .info-schedule{
+            padding-left: 10px;
+            padding-top: 20px;
+        }
+
+        .aaa ul{
+            padding-left:10px ;
+        }
+        .aaa ul li{
+            padding-right: 5px;
+        font-size: 14px;
+        }
+
+        .prc-rating>span{
+            padding-left: 10px !important; 
+        }
+            .info-booking .title{
+          
+                padding-top: 15px;
+                padding-left: 10px;
+            }
+            .info-rating .title,.info-service .title,.info-comment .title{
+                padding-left: 5px;
+                padding-top: 15px;
+            }
+            .info-comment .search-bar,.info-comment .info,.info-comment .content-cm,.info-comment .info
+            ,.info-comment .content-cm
+            {
+                padding-left: 10px;
+                padding-top: 5px;
+            }
+    #pageId{
+        padding-left: 120px;
+    }
+    .blk-service .detail-service {
+        padding-left: 15px;
+    
+    }
+    
+    .blk-service .detail-service span{
+       
+    margin-top: 2px;
+    margin-left: 5px;
+    }
+    
+    
+    
+    .info-schedule .chu-thich{
+            font-size: 15px;
+        }
+        .content-responsive{
+        padding-right: 0px;
+        padding-left: 0px;
+        margin-left: 0px;
+        margin-right: 0px;
+        }
+        .tab_4_des {
+            padding-left: 10px;
+
+        }
+    .info-schedule{
+        padding-left: 10px;
+    }
+    .aaa ul{
+        padding-left:10px ;
+    }
+    .aaa ul li{
+        padding-right: 5px;
+    font-size: 14px;
+    }
+    .menu-left{
+        padding-right: 0px;
+        padding-left: 3px;
+    }
+    .main{
+        padding-right: 0px;
+    }
+}
+@media screen and (max-width:1024px) and (min-width:769px){
+    .btn-danger{
+        background-color:#000000 !important; 
+    }
+    .aaa ul{
+        padding-left:10px ;
+    }
+    .aaa ul li{
+        padding-right: 5px;
+    font-size: 14px;
+    }
+
+    .blk-service .detail-service {
+        padding-left: 15px;
+    
+    }
+    
+    .blk-service .detail-service span{
+       
+    margin-top: 2px;
+    margin-left: 5px;
+    }
+
+    .content-responsive{
+        
+        padding-right: 0px;
+        padding-left: 0px;
+        margin-left: 0px;
+        margin-right: 0px;
+        }
+        .tab_4_des {
+            padding-left: 10px;
+
+        }
+        .menu-left{
+            padding-right: 0px;
+            padding-left: 3px;
+        }
+        .main{
+            padding-right: 0px;
+        }
+        .description-responsive{
+            padding-right: 5px;
+        }
+        .abc1 .sub_title {
+            padding-right: 15px;
+          
+        }
+        .info-schedule{
+            padding-left: 10px;
+            padding-top: 20px;
+        }
+
+        .aaa ul{
+            padding-left:10px ;
+        }
+        .aaa ul li{
+            padding-right: 5px;
+        font-size: 14px;
+        }
+
+        .prc-rating>span{
+            padding-left: 10px !important; 
+        }
+            .info-booking .title{
+          
+                padding-top: 15px;
+                padding-left: 10px;
+            }
+            .info-rating .title,.info-service .title,.info-comment .title{
+                padding-left: 5px;
+                padding-top: 15px;
+            }
+            .info-comment .search-bar,.info-comment .info,.info-comment .content-cm,.info-comment .info
+            ,.info-comment .content-cm
+            {
+                padding-left: 10px;
+                padding-top: 5px;
+            }
+    #pageId{
+        padding-left: 200px;
+    }
+    .blk-service .detail-service {
+        padding-left: 15px;
+    
+    }
+    
+    .blk-service .detail-service span{
+       
+    margin-top: 2px;
+    margin-left: 5px;
+    }
+    
+    
+    
+    .info-schedule .chu-thich{
+            font-size: 15px;
+        }
+        .content-responsive{
+        padding-right: 0px;
+        padding-left: 0px;
+        margin-left: 0px;
+        margin-right: 0px;
+        }
+        .tab_4_des {
+            left: 0px;
+        }
+    .info-schedule{
+        padding-left: 10px;
+    }
+    .aaa ul{
+        padding-left:10px ;
+    }
+    .aaa ul li{
+        padding-right: 5px;
+    font-size: 14px;
+    }
+    .menu-left{
+        padding-right: 0px;
+        padding-left: 3px;
+    }
+    .main{
+        padding-right: 0px;
+    }
+}
