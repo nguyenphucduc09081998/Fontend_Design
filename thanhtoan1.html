@@ -10,8 +10,8 @@
 <body>
     <div class="container">
             <br />
-        <div class="row sdfsdfsfdfsf">
-                <div class="col-sm-8 col-md-8 col-lg-8 col-xl-8 contai_row_8">
+        <div class="row">
+                <div class="col-sm-8">
                     <div class="row title">
                         <h3>Thông Tin Đặt Chỗ</h3>
                     </div>
@@ -20,16 +20,16 @@
                         <p class="thongtin_kh">Thông Tin Chi Tiết Khách Hàng</p> <br />
                     </div>
                     <div class="row so_khach_hotel">
-                        <p><span>Số Khách:</span>2 khách</p>
+                        <p class="sample_font-size"><span>Số Khách:</span>2 khách</p>
                     </div>
                     <div class="row form_input_1">
                         <!-- <div class="col-sm-2 col-md-2 col-lg-2 col-xl-2 ">
                     </div> -->
-                        <div class="col-sm-4 col-md-4 col-lg-4 col-xl-4 name_kh">
-                            <p>Tên Khách Hàng:<span class="required">*</span></p>
+                        <div class="col-md-4 name_kh float_left">
+                            <p class="sample_font_size">Tên Khách Hàng:<span class="required">*</span></p>
                         </div>
-                        <div class="col-sm-8 col-md-8 col-lg-8 col-xl-8 type_input">
-                            <p>Họ tên trên CMND/Thẻ căn cước</p>
+                        <div class="col-md-8 type_input float_left">
+                            <p class="">Họ tên trên CMND/Thẻ căn cước</p>
                             <input type="text" style="width:50%;padding-left: 5px;"
                                 class="form-control input_type_text">
                         </div>
@@ -37,10 +37,10 @@
                     <div class="row form_input_1">
                         <!-- <div class="col-sm-2 col-md-2 col-lg-2 col-xl-2 ">
                     </div> -->
-                        <div class="col-sm-4 col-md-4 col-lg-4 col-xl-4 name_kh">
-                            <p>Số Điện Thoại:<span class="required">*</span></p>
+                        <div class="col-md-4 name_kh float_left">
+                            <p class="sample_font_sizen float_left">Số Điện Thoại:<span class="required">*</span></p>
                         </div>
-                        <div class="col-sm-8 col-md-8 col-lg-8 col-xl-8 type_input">
+                        <div class="col-md-8 type_input">
                             <p>Mã điện thoại quốc gia</p>
                             <div class="input_contry">
                                     <div>
@@ -57,20 +57,20 @@
                     <div class="row form_input_1">
                         <!-- <div class="col-sm-8 col-md-8 col-lg-8 col-xl-8 ">
                     </div> -->
-                        <div class="col-sm-4 col-md-4 col-lg-4 col-xl-4 name_kh">
-                            <p>Email:<span class="required">*</span></p>
+                        <div class="col-md-4 name_kh">
+                            <p class="sample_font_size float_left">Email:<span class="required">*</span></p>
                         </div>
-                        <div class="col-sm-8 col-md-8 col-lg-8 col-xl-8 type_input">
+                        <div class="col-md-8 type_input">
                             <p>VD: email@example.com</p>
                             <input type="text" style="width:50%;padding-left: 5px;"
                                 class="form-control input_type_text">
                         </div>
                     </div>
-                    <div class="row sdfsdfsd">
+                    <div class="row">
                         <p>1 đêm tại khách sạn Vin phòng 15</p> <br />
                     </div>
                     <div class="row date_form">
-                        <div class="col-sm-4 col-md-4 col-lg-4 col-xl-4 ">
+                        <div class="col-md-4">
                             <div class="date_form_from">
                                 <hr style="width:30%; margin-left: 20px; height:2px;background: #20CD04;" />
                                 <p class="Nhan_phong">Nhận Phòng</p>
@@ -78,7 +78,7 @@
                                 <p class="date_Day">thứ 3</p>
                             </div>
                         </div>
-                        <div class="col-sm-4 col-md-4 col-lg-4 col-xl-4 ">
+                        <div class="col-md-4">
                             <div class="date_form_to">
                                 <hr style="width:30%; margin-left: 20px;background: #CD1C04; height:2px;" />
                                 <p class="Nhan_phong">Trả Phòng</p>
@@ -86,7 +86,7 @@
                                 <p class="date_Day">thứ 6</p>
                             </div>
                         </div>
-                        <div class="col-sm-4 col-md-4 col-lg-4 col-xl-4 ">
+                        <div class="col-md-4">
                         </div>
                     </div>
                     <h4>Thông Tin Thanh Toán</h4>
@@ -95,13 +95,13 @@
                     <div class="content row col-md-11">
                         <div class="tab col-md-8">
                             <ul class="nav nav-tabs" role="tablist">
-                                <li class="nav-item">
+                                <li class="nav-item col-lg-8 col-sm-12">
                                     <a class="nav-link active" href="#credit" role="tab" data-toggle="tab">
                                         <!-- <img src="./img/index/information.png"> -->
                                         <span class="tab_credit">Credit/Debit card:</span>
                                     </a>
                                 </li>
-                                <li class="nav-item">
+                                <li class="nav-item col-lg-4 col-sm-12">
                                     <a class="nav-link" href="#paypal" role="tab" data-toggle="tab">
                                         <!-- <img src="./img/index/tien-nghi.png" /> -->
                                         <span class="tab_credit">Paypal</span>
@@ -111,20 +111,20 @@
                             <div class="tab-content">
                                 <div role="tabpanel" class="tab-pane fade in active show" id="credit">
                                     <div class="row div_credit">
-                                        <div class="col-sm-6 col-md-6 col-lg-6 col-xl-6 ghgh">
-                                            <p>Mã Thẻ Credit/Debit:<span class="required">*</span></p>
+                                        <div class="col-md-6 ghgh">
+                                            <p class="float-left">Mã Thẻ Credit/Debit:<span class="required">*</span></p>
                                         </div>
-                                        <div class="col-sm-6 col-md-6 col-lg-6 col-xl-6 fsdfsdf">
+                                        <div class="col-md-6 ">
                                             <input type="text" style="width:100%;padding: 0px 5px 0px 5px;"
                                                 class="form-control input_type_text" />
 
                                         </div>
                                     </div>
                                     <div class="row">
-                                        <div class="col-sm-6 col-md-6 col-lg-6 col-xl-6 ghgh">
-                                            <p>Loại Thẻ:<span class="required">*</span></p>
+                                        <div class="col-md-6">
+                                            <p class="float-left">Loại Thẻ:<span class="required">*</span></p>
                                         </div>
-                                        <div class="col-sm-6 col-md-6 col-lg-6 col-xl-6 fsdfsdf">
+                                        <div class="col-md-6">
                                             <input type="number" style="width:100%;padding: 0px 5px 0px 5px;"
                                                 class="form-control input_type_text" />
 
@@ -140,10 +140,10 @@
                     <h4>Thông Tin Thêm</h4>
                     <hr />
                     <div class="row Muc_Dich">
-                        <div class="col-sm-5 col-md-5 col-lg-5 col-xl-5 ghgh">
+                        <div class="col-md-5">
                             <p>Mục đích của chuyến đi này?:<span class="required">*</span> </p>
                         </div>
-                        <div class="col-sm-7 col-md-7 col-lg-7 col-xl-7 sdfsdfsdf">
+                        <div class="col-md-7">
                             <input type="number" style="padding: 0px 5px 0px 5px;"
                                 class="form-control input_type_text" />
                         </div>
@@ -165,14 +165,14 @@
                     </div>
                 </div>
           
-                <div class="col-sm-4 col-md-4 col-lg-4 col-xl-4 contai_row_4">
+                <div class="col-md-4 contai_row_4">
                     <div class="row row_1">
-                        <div class="col-sm-4 col-md-4 col-lg-4 col-xl-4">
-                            <img src="img/hotel_1.jpg" />
+                        <div class="col-lg-6 col-md-12">
+                            <img style="width: 100%" src="img/hotel_1.jpg" />
                         </div>
-                        <div class="col-sm-8 col-md-8 col-lg-8 col-xl-8 row_1_name_hotel">
-                            <p class="name_hotel">Khách Sạn Vin phòng 15</p>
-                            <p class="address">Tam Đảo, Vĩnh Phúc</p>
+                        <div class="col-lg-6 row_1_name_hotel">
+                            <p class="info name_hotel">Khách Sạn Vin phòng 15</p>
+                            <p class="info">Tam Đảo, Vĩnh Phúc</p>
                             <div class="rate">
                                     <span><img src="./img/star.png" alt="rate"></span>
                                     <span><img src="./img/star.png" alt="rate"></span>
@@ -184,11 +184,11 @@
                     </div>
                     <hr />
                     <div class="row crow_2">
-                        <div class="col-sm-8 col-md-8 col-lg-8 col-xl-8 float_left">
+                        <div class="col-md-8 float_left">
                             <p>Khách Hàng Đề Cử</p>
                             <p>Khách Hàng Đánh Giá</p>
                         </div>
-                        <div class="col-sm-4 col-md-4 col-lg-4 col-xl-4 float_right">
+                        <div class="col-md-4 float_right">
                             <p>100%</p>
                             <p>4,5/<span>5</span></p>
                         </div>
@@ -206,17 +206,17 @@
                     </div>
                     <hr />
                     <div class="row crow_4">
-                        <div class="col-sm-8 col-md-8 col-lg-8 col-xl-8 float_left">
-                            <p>Giá Thuê 1 đêm</p>
+                        <div class="col-lg-8 col-md-6 float_left">
+                            <p>Giá/Đêm</p>
                             <p>Phí dọn dẹp</p>
-                            <p>Thuế và thụ phí</p>
+                            <p>VAT</p>
                             <p><b>Tổng tiền</b></p>
                         </div>
-                        <div class="col-sm-4 col-md-4 col-lg-4 col-xl-4 float_right">
-                            <p>1,083,394đ</p>
+                        <div class="col-md-4 float_right">
+                            <p>1,000,000đ</p>
                             <p>20,000đ</p>
                             <p>10,000đ</p>
-                            <p><b>1,113,394đ</b></p>
+                            <p><b>1,030,000đ</b></p>
                         </div>
                     </div>
                     <hr />
