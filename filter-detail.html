@@ -1,509 +1,630 @@
 <!DOCTYPE html>
 <html>
-    <head>
-    	<!-- For Bootstrap 4.0 -->
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.css" type="text/css" media="all" />
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootswatch/4.0.0/flatly/bootstrap.min.css">
-        <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
-        <link rel="stylesheet" href="./css/filter-detail.css">
-    </head>
-    <body>
-        <div class="container-fluid">
-          	<div class="main row col-md-12 justify-content-md-center" style="padding: 0; margin: 0;">
-	            <div class="col-md-2 menu-left">
-					<div class="filter-box col-md-12">
-						<div>
-							<span class="filter-title">FILTERS</span>
-							<span class="reset">Reset</span>
-						</div>
-						<hr>
-						<div class="form-group" style="padding-left: 0px;">
-							<label for="location" class="control-label">Địa Điểm</label>
-					    	<input type="text" class="form-control form-control-sm" id="location" placeholder="Thành Phố Hồ Chí Minh" name="location">
-					    </div>
-						<div class="row col-md-12 block-area">
-							<div class="col-md-6 form-group">
-								<label for="location" class="control-label">Check In</label>
-						    	<input type="text" id="datepicker1" placeholder="dd/mm/yyyy" style="width: 97%; position: relative;">
-						    	<span class="input-group-text" id="icon1" 
-						    	style="position: absolute;
-									    top: 30px;
-									    right: 19px;
-									    width: 26%;
-									    height: 48%;
-									    border-radius: 0;">
+
+<head>
+	<!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<!-- For Bootstrap 4.0 -->
+	<!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous"> -->
+	
+	<link rel="stylesheet" href="./lib/bootstrapcdn.bootstrap.min.css" >
+
+	<!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.css" type="text/css" media="all" /> -->
+	<link rel="stylesheet" href="./lib/jquery-ui.css" type="text/css" media="all" />
+
+	<!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootswatch/4.0.0/flatly/bootstrap.min.css"> -->
+	<link rel="stylesheet" href="./lib/bootstrap.min.css">
+	<!-- <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous"> -->
+	<link href="./lib/font-awesome.min.css" rel="stylesheet">
+	<link rel="stylesheet" href="./css/filter-detail.css">
+</head>
+
+<body>
+	<div class="container-fluid">
+		<div class="main row col-md-12 justify-content-md-center" style="padding: 0; margin: 0;">
+			<div class="col-lg-3 col-md-2 menu-left">
+				<div class="filter-box col-md-12">
+					<div>
+						<span class="filter-title">FILTERS</span>
+						<span class="reset">Reset</span>
+					</div> 
+					<hr>
+					<div class="form-group" style="padding-left: 0px;">
+						<label for="location" class="control-label">Địa Điểm</label>
+						<input type="text" class="form-control form-control-sm" id="location"
+							placeholder="Thành Phố Hồ Chí Minh" name="location">
+					</div>
+					<div class="row col-md-12 block-area ">
+						<div class="col-md-6 form-group">
+							<label for="location" class="control-label time_in">Check In</label>
+							<label for="location" class="control-label time_in_responsive">In</label>
+							<input type="text" id="datepicker1" placeholder="dd/mm/yyyy"
+								style="">
+							<span class="input-group-text" id="icon1" style="">
 								<i class="fa fa-calendar" aria-hidden="true"></i></span>
-						    </div>
-						    <div class="col-md-6 form-group" style="padding-right: 0px;">
-						    	<label for="location" class="control-label">Check Out</label>
-								<input type="text" id="datepicker2" placeholder="dd/mm/yyyy" style="width: 90%;">
-								<span class="input-group-text" id="icon1" 
-						    	style="position: absolute;
-									    top: 30px;
-									    right: 14px;
-									    width: 26%;
-									    height: 48%;
-									    border-radius: 0;">
-								<i class="fa fa-calendar" aria-hidden="true"></i></span>
-						    </div>
 						</div>
-						<div class="row col-md-12 block-area">
-							<div class="col-md-5 form-group">
-								<label for="location" class="control-label">Phòng</label>
-						    	<select class="form-control form-control-sm" id="room-type">
-								    <option>Loại Phòng</option>
-								    <option>1</option>
-								    <option>2</option>
-								</select>
-						    </div>
-						    <div class="col-md-4 form-group">
-						    	<label for="location" class="control-label">Người Lớn</label>
-						    	<select class="form-control form-control-sm" id="adult">
-								    <option>--</option>
-								    <option>1</option>
-								    <option>2</option>
-								</select>
-						    </div>
-						    <div class="col-md-3 form-group" style="padding-right: 0px;">
-						    	<label for="location" class="control-label">Trẻ Em</label>
-						    	<select class="form-control form-control-sm" id="child">
-								    <option>--</option>
-								    <option>1</option>
-								    <option>2</option>
-								</select>
-						    </div>
-						    <button type="button" class="btn btn-danger">Tìm Kiếm</button>
+						<div class="col-md-6 form-group  div-datepicker2" style="">
+							<label for="location" class="control-label time_in">Check Out</label>
+							<label for="location" class="control-label time_in_responsive">Out</label>
+							<input type="text" id="datepicker2" placeholder="dd/mm/yyyy" style="">
+							<span class="input-group-text" id="icon2" style="">
+								<i class="fa fa-calendar" aria-hidden="true"></i></span>
 						</div>
 					</div>
-
-					<div class="price-box col-md-12">
-						<div>
-							<span class="price-title" style="font-size: 22px; font-weight: bold; color: #504d4d;">Khoảng giá</span>
+					
+					<div class="row col-md-12 block-area block-area-type-people">
+						<div class="col-md-5 form-group">
+							<label for="location" class="control-label">Phòng</label>
+							<select class="form-control form-control-sm" id="room-type">
+								<option>Loại Phòng</option>
+								<option>1</option>
+								<option>2</option>
+							</select>
 						</div>
-						<hr>
-						<div class="row col-md-12 block-area">
-							<div class="price-range-block">
-								<p class="sliderText" style="color: #F608C2; font-size: 12px;">CLEAR</p>
-								<div id="slider-range" class="price-filter-range" name="rangeInput"></div>
-								<div style="margin-bottom:10px; width: 100%;">
-								  <input type="text" min=0 max="9900" oninput="validity.valid||(value='0');" id="min_price" class="price-range-field" />	  
-								  <input type="text" min=0 max="10000" oninput="validity.valid||(value='10000');" id="max_price" class="price-range-field" />
-								</div>
+						<div class="col-md-4 form-group">
+							<label for="location" class="control-label">Người Lớn</label>
+							<select class="form-control form-control-sm" id="adult">
+								<option>--</option>
+								<option>1</option>
+								<option>2</option>
+							</select>
+						</div>
+						<div class="col-md-3 form-group" style="">
+							<label for="location" class="control-label">Trẻ Em</label>
+							<select class="form-control form-control-sm" id="child">
+								<option>--</option>
+								<option>1</option>
+								<option>2</option>
+							</select>
+						</div>
+						<button type="button" class="btn btn-danger">Tìm Kiếm</button>
+					</div>
+
+					<div class="row col-md-12 block-area block-area-type-people-responsive">
+						<div class="col-md-12 form-group">
+							<label for="location" class="control-label">Phòng</label>
+							<select class="form-control form-control-sm" id="room-type">
+								<option>Loại Phòng</option>
+								<option>1</option>
+								<option>2</option>
+							</select>
+						</div>
+						<div class="col-md-12 form-group">
+							<label for="location" class="control-label">Người Lớn</label>
+							<select class="form-control form-control-sm" id="adult">
+								<option>--</option>
+								<option>1</option>
+								<option>2</option>
+							</select>
+						</div>
+						<div class="col-md-12 form-group block-area-type-people-responsive-child" >
+							<label for="location" class="control-label">Trẻ Em</label>
+							<select class="form-control form-control-sm" id="child">
+								<option>--</option>
+								<option>1</option>
+								<option>2</option>
+							</select>
+						</div>
+						<button type="button" class="btn btn-danger">Tìm Kiếm</button>
+					</div>
+
+				</div>
+
+				<div class="price-box col-md-12">
+					<div>
+						<span class="price-title" style="font-size: 22px; font-weight: bold; color: #504d4d;">Khoảng
+							giá</span>
+					</div>
+					<hr>
+					<div class="row col-md-12 block-area">
+						<div class="price-range-block">
+							<p class="sliderText" style="color: #F608C2; font-size: 12px;">CLEAR</p>
+							<div id="slider-range" class="price-filter-range" name="rangeInput"></div>
+							<div style="margin-bottom:10px; width: 100%;" class="price-range-block-responsive">
+								<input type="text" min=0 max="9900" oninput="validity.valid||(value='0');"
+									id="min_price" class="price-range-field" />
+								<input type="text" min=0 max="10000" oninput="validity.valid||(value='10000');"
+									id="max_price" class="price-range-field" />
 							</div>
 						</div>
-						<div class="col-md-12 price-checkbox" style="padding-left: 35px;">
-							<div class="custom-control custom-checkbox">
-						      <input type="checkbox" class="custom-control-input" id="customCheck" name="example1" checked="checked">
-						      <label class="custom-control-label" for="customCheck" style="color: #F0084E; font-weight: bold;">Giá Tiết Kiệm</label>
-						    </div>
-						    <div class="custom-control custom-checkbox">
-						      <input type="checkbox" class="custom-control-input" id="customCheck1" name="example1">
-						      <label class="custom-control-label" for="customCheck1">Giá Ngân Sách</label>
-						    </div>
-						    <div class="custom-control custom-checkbox">
-						      <input type="checkbox" class="custom-control-input" id="customCheck2" name="example2">
-						      <label class="custom-control-label" for="customCheck2">Giá Cao Cấp</label>
-						    </div>
-						    <div class="custom-control custom-checkbox">
-						      <input type="checkbox" class="custom-control-input" id="customCheck3" name="example3">
-						      <label class="custom-control-label" for="customCheck3">Giá Đặc Biệt</label>
-						    </div>
+					</div>
+					<div class="col-md-12 price-checkbox" >
+						<div class="custom-control custom-checkbox">
+							<input type="checkbox" class="custom-control-input" id="customCheck" name="example1"
+								checked="checked">
+							<label class="custom-control-label" for="customCheck"
+								style="color: #F0084E; ">Giá Tiết Kiệm</label>
+						</div>
+						<div class="custom-control custom-checkbox">
+							<input type="checkbox" class="custom-control-input" id="customCheck1" name="example1">
+							<label class="custom-control-label" for="customCheck1">Giá Ngân Sách</label>
+						</div>
+						<div class="custom-control custom-checkbox">
+							<input type="checkbox" class="custom-control-input" id="customCheck2" name="example2">
+							<label class="custom-control-label" for="customCheck2">Giá Cao Cấp</label>
+						</div>
+						<div class="custom-control custom-checkbox">
+							<input type="checkbox" class="custom-control-input" id="customCheck3" name="example3">
+							<label class="custom-control-label" for="customCheck3">Giá Đặc Biệt</label>
 						</div>
 					</div>
+				</div>
 
-					<div class="service-box col-md-12">
-						<div>
-							<span class="service-title" style="padding-left: 0; font-size: 22px; ">Chỗ ở và Dịch vụ</span>
+				<div class="service-box col-md-12">
+					<div>
+						<span class="service-title" style="padding-left: 0; font-size: 22px; ">Chỗ ở và Dịch vụ</span>
+					</div>
+					<hr>
+
+
+					<div class="form-group service-checkbox" style="padding-left: 0px;">
+						<p for="location" class="control-label" style="font-weight: bold;">Loại chỗ ở</p>
+						<div class="row col-md-12">
+							<div class="col-md-6 custom-control custom-checkbox">
+								<input type="checkbox" class="custom-control-input" id="customChecka" name="example1"
+									checked="checked">
+								<label class="custom-control-label" for="customChecka">Chung cư (820)</label>
+							</div>
+							<div class="col-md-6 custom-control custom-checkbox">
+								<input type="checkbox" class="custom-control-input" id="customCheckb" name="example1">
+								<label class="custom-control-label" for="customCheckb">Khách sạn (250)</label>
+							</div>
 						</div>
-						<hr>
-						<div class="form-group service-checkbox" style="padding-left: 0px;">
+						<div class="row col-md-12">
+							<div class="col-md-6 custom-control custom-checkbox">
+								<input type="checkbox" class="custom-control-input" id="customCheckc" name="example1">
+								<label class="custom-control-label" for="customCheckc">Biệt thự (150)</label>
+							</div>
+							<div class="col-md-6 custom-control custom-checkbox">
+								<input type="checkbox" class="custom-control-input" id="customCheckd" name="example1">
+								<label class="custom-control-label" for="customCheckd">Nhà riêng (120)</label>
+							</div>
+						</div>
+						<div class="col-md-6 custom-control custom-checkbox">
+							<input type="checkbox" class="custom-control-input" id="customChecke" name="example1">
+							<label class="custom-control-label" for="customChecke">Tất cả (820)</label>
+						</div>
+					</div>
+					<div class="form-group service-checkbox-responsive" style="padding-left: 0px;">
 							<p for="location" class="control-label" style="font-weight: bold;">Loại chỗ ở</p>
 							<div class="row col-md-12">
-								<div class="col-md-6 custom-control custom-checkbox">
-							      <input type="checkbox" class="custom-control-input" id="customChecka" name="example1" checked="checked">
-							      <label class="custom-control-label" for="customChecka">Chung cư (820)</label>
-							    </div>
-							    <div class="col-md-6 custom-control custom-checkbox">
-							      <input type="checkbox" class="custom-control-input" id="customCheckb" name="example1">
-							      <label class="custom-control-label" for="customCheckb">Khách sạn (250)</label>
-							    </div>
+								<div class="col-md-12 custom-control custom-checkbox">
+									<input type="checkbox" class="custom-control-input" id="customChecka" name="example1"
+										checked="checked">
+									<label class="custom-control-label" for="customChecka">Chung cư (820)</label>
+								</div>
+								<div class="col-md-12 custom-control custom-checkbox">
+									<input type="checkbox" class="custom-control-input" id="customCheckb" name="example1">
+									<label class="custom-control-label" for="customCheckb">Khách sạn (250)</label>
+								</div>
 							</div>
 							<div class="row col-md-12">
-								<div class="col-md-6 custom-control custom-checkbox">
-							      <input type="checkbox" class="custom-control-input" id="customCheckc" name="example1">
-							      <label class="custom-control-label" for="customCheckc">Biệt thự (150)</label>
-							    </div>
-							    <div class="col-md-6 custom-control custom-checkbox">
-							      <input type="checkbox" class="custom-control-input" id="customCheckd" name="example1">
-							      <label class="custom-control-label" for="customCheckd">Nhà riêng (120)</label>
-							    </div>
+								<div class="col-md-12 custom-control custom-checkbox">
+									<input type="checkbox" class="custom-control-input" id="customCheckc" name="example1">
+									<label class="custom-control-label" for="customCheckc">Biệt thự (150)</label>
+								</div>
+								<div class="col-md-12 custom-control custom-checkbox">
+									<input type="checkbox" class="custom-control-input" id="customCheckd" name="example1">
+									<label class="custom-control-label" for="customCheckd">Nhà riêng (120)</label>
+								</div>
 							</div>
-							 <div class="col-md-6 custom-control custom-checkbox">
-						      <input type="checkbox" class="custom-control-input" id="customChecke" name="example1">
-						      <label class="custom-control-label" for="customChecke">Tất cả (820)</label>
-						    </div>
-					    </div>
-					    <hr style="width: 70%;">
-					    <div class="form-group">
-							<label for="location" class="control-label" style="font-weight: bold;">Tiện nghi chỗ ở</label>
-					    	<select class="form-control form-control-sm" id="room-type">
-							    <option>Tất cả tiện nghi</option>
-							    <option>Tiện nghi A</option>
-							    <option>Tiện nghi B</option>
-							</select>
-					    </div>
-					    <div class="form-group" style="margin-bottom: 40px;">
-							<label for="location" class="control-label" style="font-weight: bold;">Dịch vụ</label>
-					    	<select class="form-control form-control-sm" id="room-type">
-							    <option>Tất cả dịch vụ</option>
-							    <option>Dịch vụ A</option>
-							    <option>Dịch vụ B</option>
-							</select>
-					    </div>
-					</div>
+							<div class="col-md-12 custom-control custom-checkbox">
+								<input type="checkbox" class="custom-control-input" id="customChecke" name="example1">
+								<label class="custom-control-label" for="customChecke">Tất cả (820)</label>
+							</div>
+						</div>
 
-					<div class="duplicate-box col-md-12">
+
+
+
+
+					<hr style="width: 70%;">
+					<div class="form-group">
+						<label for="location" class="control-label" style="font-weight: bold;">Tiện nghi chỗ ở</label>
+						<select class="form-control form-control-sm" id="room-type">
+							<option>Tất cả tiện nghi</option>
+							<option>Tiện nghi A</option>
+							<option>Tiện nghi B</option>
+						</select>
+					</div>
+					<div class="form-group" style="margin-bottom: 40px;">
+						<label for="location" class="control-label" style="font-weight: bold;">Dịch vụ</label>
+						<select class="form-control form-control-sm" id="room-type">
+							<option>Tất cả dịch vụ</option>
+							<option>Dịch vụ A</option>
+							<option>Dịch vụ B</option>
+						</select>
+					</div>
+				</div>
+
+				<div class="duplicate-box col-md-12">
+					<div>
+						<span class="duplicate-title" style="padding-left: 0; font-size: 22px; ">Chỗ ở tương tự</span>
+					</div>
+					<div class="duplicate-right" style="margin-top: 30px;">
+						<img src="./img/room4.jpg" alt="">
 						<div>
-							<span class="duplicate-title" style="padding-left: 0; font-size: 22px; ">Chỗ ở tương tự</span>
-						</div>
-						<div class="duplicate-right" style="margin-top: 30px;">
-							<img src="./img/room4.jpg" alt="">
-							<div>
-								<label>Khách sạn Ánh Trăng</label><br>
-								<span class="price">700,000đ</span><span>/đêm</span><br>
-								<span class="detail">Xem chi tiết</span>
-							</div>
-						</div>
-						<div class="duplicate-right" style="margin-top: 30px;">
-							<img src="./img/room3.jpg" alt="">
-							<div>
-								<label>Khách sạn Sophia</label><br>
-								<span class="price">900,000đ</span><span>/đêm</span><br>
-								<span class="detail">Xem chi tiết</span>
-							</div>
-						</div>
-						<div class="duplicate-right" style="margin-top: 30px; margin-bottom: 30px;">
-							<img src="./img/room2.jpg" alt="">
-							<div>
-								<label>Khách sạn Diamon</label><br>
-								<span class="price">850,000đ</span><span>/đêm</span><br>
-								<span class="detail">Xem chi tiết</span>
-							</div>
-						</div>   
-					</div>
-	            </div>
-	            <div class="col-md-8 menu-right">
-	            	<div class="filter-box col-md-12">
-						<div style="display: flex;">
-							<span class="filter-title col-md-2" style="margin-left: 20px; margin-top: 7px; margin-right: 35px;">Lọc Theo</span>
-					    	<select class="custom-select col-md-3" style="margin-right: 85px;" id="room-type">
-							    <option>Tất cả điều kiện lọc</option>
-							    <option>Điều kiện A</option>
-							    <option>Điều kiện B</option>
-							</select>
-							<select class="custom-select col-md-3" id="room-type" style="margin-right: 85px;">
-							    <option>Thứ tự lọc</option>
-							    <option>Thứ tự A</option>
-							    <option>Thứ tự B</option>
-							</select>
-							<div class="col-md-3">
-								<div class="room-info" style="margin-right: 10px;">
-									<img src="./img/menu.png" alt="" style="width: 73%; padding-left: 11px; padding-top: 9px;">
-								</div>
-									
-								<div class="room-info">
-									<img src="./img/list.png" alt="" style="width: 75%; padding-left: 9px; padding-top: 7px; ">
-								</div>
-							</div>
+							<label>Khách sạn Ánh Trăng</label><br>
+							<span class="price">700,000đ</span><span>/đêm</span><br>
+							<span class="detail">Xem chi tiết</span>
 						</div>
 					</div>
-					<div class="info-box col-md-12 clearfix">
-						<div class="blk-info">
-							<div>
-								<div class="blk-img clearfix col-md-3">
-									<img src="./img/room2.jpg" alt="" style="width: 96%; height: 99%; position: relative;">
-									<div class="hot-tag">
-										<h5>TOP</h5>
-									</div>
-									<div class="voucher-tag">
-										<h5>50% Cashback</h5>
-									</div>
-									<div class="rent-tag">
-										<h5>Rent</h5>
-									</div>
-									<div class="arrow-left"></div>
-								</div>
-								<div class="blk-info-detail col-md-9" style="position: relative;">
-									<div class="row" style="padding-left: 30px;">
-										<label>Mường Thanh Luxury Apartment_35a18</label>
-										<div style="border-bottom: 1px solid #c6c6c6; padding-bottom: 10px;">
-											<img src="./img/location.png" alt="" style="width: 3%; margin-right: 15px; margin-top: -7px;"><span>Ngũ Hành Sơn, Đà Nẵng, Việt Nam</span>
-										</div>
-
-										<p>
-											Vivamus quis elementum magna. Morbi maximus orci nisi, eget fermentum nisi lobortis id. Phasellus eros leo, tempus et augue .…
-										</p>
-									</div>
-									
-									<div class="blk-info-footer row">
-										<div class="col-md-3">
-											<img src="./img/information-button.png" alt="">
-											<span>Biệt Thự</span>
-										</div>
-										<div class="col-md-3">
-											<img src="./img/dollar-symbol.png" alt="">
-											<span>2,500,000đ</span>
-										</div>
-										<div class="col-md-3">
-											<img src="./img/shape.png" alt="">
-											<span>200 sqft</span>
-										</div>
-										<div class="col-md-3">
-											<span style="margin-left: 15px;">3162 Reviews</span>
-										</div>
-									</div>
-									<img src="./img/anh_tam.png" alt="" style="position: absolute; top: 10px; right: 11px; width: 10%;">
-								</div>
-							</div>
+					<div class="duplicate-right" style="margin-top: 30px;">
+						<img src="./img/room3.jpg" alt="">
+						<div>
+							<label>Khách sạn Sophia</label><br>
+							<span class="price">900,000đ</span><span>/đêm</span><br>
+							<span class="detail">Xem chi tiết</span>
 						</div>
-
-						<div class="blk-info">
-							<div>
-								<div class="blk-img clearfix col-md-3">
-									<img src="./img/room1.jpg" alt="" style="width: 96%; height: 99%; position: relative;">
-									<div class="hot-tag">
-										<h5>TOP</h5>
-									</div>
-									<div class="voucher-tag">
-										<h5>50% Cashback</h5>
-									</div>
-									<div class="rent-tag">
-										<h5>Rent</h5>
-									</div>
-									<div class="arrow-left"></div>
-								</div>
-								<div class="blk-info-detail col-md-9" style="position: relative;">
-									<div class="row" style="padding-left: 30px;">
-										<label>Noble Apartment Studio 1</label>
-										<div style="border-bottom: 1px solid #c6c6c6; padding-bottom: 10px;">
-											<img src="./img/location.png" alt="" style="width: 3%; margin-right: 15px; margin-top: -7px;"><span>Cầu Giấy, Hà Nội, Việt Nam</span>
-										</div>
-
-										<p>
-											Vivamus quis elementum magna. Morbi maximus orci nisi, eget fermentum nisi lobortis id. Phasellus eros leo, tempus et augue .…
-										</p>
-									</div>
-									
-									<div class="blk-info-footer row">
-										<div class="col-md-3">
-											<img src="./img/information-button.png" alt="">
-											<span>Chung Cư</span>
-										</div>
-										<div class="col-md-3">
-											<img src="./img/dollar-symbol.png" alt="">
-											<span>1,500,000đ</span>
-										</div>
-										<div class="col-md-3">
-											<img src="./img/shape.png" alt="">
-											<span>120 sqft</span>
-										</div>
-										<div class="col-md-3">
-											<span style="margin-left: 15px;">2002 Reviews</span>
-										</div>
-									</div>
-									<img src="./img/anh_tam.png" alt="" style="position: absolute; top: 10px; right: 11px; width: 10%;">
-								</div>
-							</div>
-						</div>
-
-						<div class="blk-info">
-							<div>
-								<div class="blk-img clearfix col-md-3">
-									<img src="./img/room3.jpg" alt="" style="width: 96%; height: 99%; position: relative;">
-									<div class="hot-tag">
-										<h5>TOP</h5>
-									</div>
-									<div class="voucher-tag">
-										<h5>50% Cashback</h5>
-									</div>
-									<div class="rent-tag">
-										<h5>Rent</h5>
-									</div>
-									<div class="arrow-left"></div>
-								</div>
-								<div class="blk-info-detail col-md-9" style="position: relative;">
-									<div class="row" style="padding-left: 30px;">
-										<label>Luxury Apartment 3BR - The Golden Palm</label>
-										<div style="border-bottom: 1px solid #c6c6c6; padding-bottom: 10px;">
-											<img src="./img/location.png" alt="" style="width: 3%; margin-right: 15px; margin-top: -7px;"><span>Hoàn Kiếm, Hà Nội, Việt Nam</span>
-										</div>
-
-										<p>
-											Vivamus quis elementum magna. Morbi maximus orci nisi, eget fermentum nisi lobortis id. Phasellus eros leo, tempus et augue .…
-										</p>
-									</div>
-									
-									<div class="blk-info-footer row">
-										<div class="col-md-3">
-											<img src="./img/information-button.png" alt="">
-											<span>Biệt Thự</span>
-										</div>
-										<div class="col-md-3">
-											<img src="./img/dollar-symbol.png" alt="">
-											<span>3,500,000đ</span>
-										</div>
-										<div class="col-md-3">
-											<img src="./img/shape.png" alt="">
-											<span>240 sqft</span>
-										</div>
-										<div class="col-md-3">
-											<span style="margin-left: 15px;">3452 Reviews</span>
-										</div>
-									</div>
-									<img src="./img/anh_tam.png" alt="" style="position: absolute; top: 10px; right: 11px; width: 10%;">
-								</div>
-							</div>
-						</div>
-
-						<div class="blk-info">
-							<div>
-								<div class="blk-img clearfix col-md-3">
-									<img src="./img/room4.jpg" alt="" style="width: 96%; height: 99%; position: relative;">
-									<div class="hot-tag">
-										<h5>TOP</h5>
-									</div>
-									<div class="voucher-tag">
-										<h5>50% Cashback</h5>
-									</div>
-									<div class="rent-tag">
-										<h5>Rent</h5>
-									</div>
-									<div class="arrow-left"></div>
-								</div>
-								<div class="blk-info-detail col-md-9" style="position: relative;">
-									<div class="row" style="padding-left: 30px;">
-										<label>An Apartment 3F - Spacious 2 Br in West Lake</label>
-										<div style="border-bottom: 1px solid #c6c6c6; padding-bottom: 10px;">
-											<img src="./img/location.png" alt="" style="width: 3%; margin-right: 15px; margin-top: -7px;"><span>Thanh Xuân, Hà Nội, Việt Nam</span>
-										</div>
-
-										<p>
-											Vivamus quis elementum magna. Morbi maximus orci nisi, eget fermentum nisi lobortis id. Phasellus eros leo, tempus et augue .…
-										</p>
-									</div>
-									
-									<div class="blk-info-footer row">
-										<div class="col-md-3">
-											<img src="./img/information-button.png" alt="">
-											<span>Biệt Thự</span>
-										</div>
-										<div class="col-md-3">
-											<img src="./img/dollar-symbol.png" alt="">
-											<span>2,500,000đ</span>
-										</div>
-										<div class="col-md-3">
-											<img src="./img/shape.png" alt="">
-											<span>220 sqft</span>
-										</div>
-										<div class="col-md-3">
-											<span style="margin-left: 15px;">1232 Reviews</span>
-										</div>
-									</div>
-									<img src="./img/anh_tam.png" alt="" style="position: absolute; top: 10px; right: 11px; width: 10%;">
-								</div>
-							</div>
-						</div>
-
-						<div class="blk-info">
-							<div>
-								<div class="blk-img clearfix col-md-3">
-									<img src="./img/room5.jpg" alt="" style="width: 96%; height: 99%; position: relative;">
-									<div class="hot-tag">
-										<h5>TOP</h5>
-									</div>
-									<div class="voucher-tag">
-										<h5>50% Cashback</h5>
-									</div>
-									<div class="rent-tag">
-										<h5>Rent</h5>
-									</div>
-									<div class="arrow-left"></div>
-								</div>
-								<div class="blk-info-detail col-md-9" style="position: relative;">
-									<div class="row" style="padding-left: 30px;">
-										<label>The 90’s Hàng Bún</label>
-										<div style="border-bottom: 1px solid #c6c6c6; padding-bottom: 10px;">
-											<img src="./img/location.png" alt="" style="width: 3%; margin-right: 15px; margin-top: -7px;"><span>Ba Đình, Hà Nội, Việt Nam</span>
-										</div>
-
-										<p>
-											Vivamus quis elementum magna. Morbi maximus orci nisi, eget fermentum nisi lobortis id. Phasellus eros leo, tempus et augue .…
-										</p>
-									</div>
-									
-									<div class="blk-info-footer row">
-										<div class="col-md-3">
-											<img src="./img/information-button.png" alt="">
-											<span>Nhà Riêng</span>
-										</div>
-										<div class="col-md-3">
-											<img src="./img/dollar-symbol.png" alt="">
-											<span>1,100,000đ</span>
-										</div>
-										<div class="col-md-3">
-											<img src="./img/shape.png" alt="">
-											<span>140 sqft</span>
-										</div>
-										<div class="col-md-3">
-											<span style="margin-left: 15px;">962 Reviews</span>
-										</div>
-									</div>
-									<img src="./img/anh_tam.png" alt="" style="position: absolute; top: 10px; right: 11px; width: 10%;">
-								</div>
-							</div>
-						</div>
-
-						<nav aria-label="Page navigation example" id="pageId">
-								  <ul class="pagination">
-								    <li class="page-item">
-								      <a class="page-link" href="#" aria-label="Previous">
-								        <span aria-hidden="true">&laquo;</span>
-								        <span class="sr-only">Previous</span>
-								      </a>
-								    </li>
-								    <li class="page-item"><a class="page-link" href="#">1</a></li>
-								    <li class="page-item"><a class="page-link" href="#">2</a></li>
-								    <li class="page-item"><a class="page-link" href="#">3</a></li>
-								    <li class="page-item">
-								      <a class="page-link" href="#" aria-label="Next">
-								        <span aria-hidden="true">&raquo;</span>
-								        <span class="sr-only">Next</span>
-								      </a>
-								    </li>
-								  </ul>
-								</nav>
 					</div>
-	            </div>
-      		</div>
-        </div>
-    </body>
-    <footer>
-    		<!-- For Bootstrap 4.0 -->
-            <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-            <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-            <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js" type="text/javascript"></script>
-			<script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js" type="text/javascript"></script>
-			<script src="./js/filter-detail.js"></script>
+					<div class="duplicate-right" style="margin-top: 30px; margin-bottom: 30px;">
+						<img src="./img/room2.jpg" alt="">
+						<div>
+							<label>Khách sạn Diamon</label><br>
+							<span class="price">850,000đ</span><span>/đêm</span><br>
+							<span class="detail">Xem chi tiết</span>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-8 menu-right">
+				<div class="filter-box col-md-12">
+					<div style="display: flex;" class="filter-box-title">
+						<span class="filter-title col-md-2 filter-title-sub"
+							style="">Lọc Theo</span>
+						<span class="filter-title col-md-3 filter-title-sub-responsive"
+							style="">Lọc Theo</span>
+						<select class="custom-select col-md-3 " style="margin-right: 85px;" id="room-type">
+							<option>Tất cả điều kiện lọc</option>
+							<option>Điều kiện A</option>
+							<option>Điều kiện B</option>
+						</select>
+						<select class="custom-select col-md-3 " id="room-type" style="margin-right: 85px;">
+							<option>Thứ tự lọc</option>
+							<option>Thứ tự A</option>
+							<option>Thứ tự B</option>
+						</select>
 
-            
-			<!-- For DateTimePicker -->
-            
-            <script>
-		        $( "#datepicker1" ).datepicker();
-	          	$( "#datepicker2" ).datepicker();
-				
-				
-		    </script>
-    </footer>
+
+						<select class="custom-select col-md-5 custom-select-responsive" style="" id="room-type">
+								<option>Tất cả điều kiện lọc</option>
+								<option>Điều kiện A</option>
+								<option>Điều kiện B</option>
+						</select>
+						<select class="custom-select col-md-5 custom-select-responsive" id="room-type" style="">
+								<option>Thứ tự lọc</option>
+								<option>Thứ tự A</option>
+								<option>Thứ tự B</option>
+						</select>
+
+
+
+						<div class="col-md-3">
+							<div class="room-info room-info-responsive" style="margin-right: 10px;">
+								<img src="./img/menu.png" alt=""
+									style="width: 73%; padding-left: 11px; padding-top: 9px;">
+							</div>
+
+							<div class="room-info room-info-responsive">
+								<img src="./img/list.png" alt=""
+									style="width: 75%; padding-left: 9px; padding-top: 7px; ">
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="info-box col-md-12 clearfix">
+					<div class="blk-info">
+						<div>
+							<div class="blk-img clearfix col-md-3">
+								<img src="./img/room2.jpg" alt="" style="width: 96%; height: 99%; position: relative;">
+								<div class="hot-tag">
+									<h5>TOP</h5>
+								</div>
+								<div class="voucher-tag">
+									<h5>50% Cashback</h5>
+								</div>
+								<div class="rent-tag">
+									<h5>Rent</h5>
+								</div>
+								<div class="arrow-left"></div>
+							</div>
+							<div class="blk-info-detail col-md-9" style="position: relative;">
+								<div class="row title-booking-item-responsive" style="">
+									<label>Mường Thanh Luxury Apartment_35a18</label>
+									<div style="border-bottom: 1px solid #c6c6c6; padding-bottom: 10px;">
+										<img src="./img/location.png" alt=""
+											style="width: 3%; margin-right: 15px; margin-top: -7px;"><span>Ngũ Hành Sơn,
+											Đà Nẵng, Việt Nam</span>
+									</div>
+
+									<p>
+										Vivamus quis elementum magna. Morbi maximus orci nisi, eget fermentum nisi
+										lobortis id. Phasellus eros leo, tempus et augue .…
+									</p>
+								</div>
+
+								<div class="blk-info-footer row">
+									<div class="col-md-3">
+										<img src="./img/information-button.png" alt="">
+										<span>Biệt Thự</span>
+									</div>
+									<div class="col-md-3">
+										<img src="./img/dollar-symbol.png" alt="">
+										<span>2,500,000đ</span>
+									</div>
+									<div class="col-md-3">
+										<img src="./img/shape.png" alt="">
+										<span>200 sqft</span>
+									</div>
+									<div class="col-md-3">
+										<span style="">3162 Reviews</span>
+									</div>
+								</div>
+								<img src="./img/anh_tam.png" alt=""
+									style="position: absolute; top: 10px; right: 11px; width: 10%;">
+							</div>
+						</div>
+					</div>
+
+					<div class="blk-info">
+						<div>
+							<div class="blk-img clearfix col-md-3">
+								<img src="./img/room1.jpg" alt="" style="width: 96%; height: 99%; position: relative;">
+								<div class="hot-tag">
+									<h5>TOP</h5>
+								</div>
+								<div class="voucher-tag">
+									<h5>50% Cashback</h5>
+								</div>
+								<div class="rent-tag">
+									<h5>Rent</h5>
+								</div>
+								<div class="arrow-left"></div>
+							</div>
+							<div class="blk-info-detail col-md-9" style="position: relative;">
+								<div class="row title-booking-item-responsive" style="">
+									<label>Noble Apartment Studio 1</label>
+									<div style="border-bottom: 1px solid #c6c6c6; padding-bottom: 10px;">
+										<img src="./img/location.png" alt=""
+											style="width: 3%; margin-right: 15px; margin-top: -7px;"><span>Cầu Giấy, Hà
+											Nội, Việt Nam</span>
+									</div>
+
+									<p>
+										Vivamus quis elementum magna. Morbi maximus orci nisi, eget fermentum nisi
+										lobortis id. Phasellus eros leo, tempus et augue .…
+									</p>
+								</div>
+
+								<div class="blk-info-footer row">
+									<div class="col-md-3">
+										<img src="./img/information-button.png" alt="">
+										<span>Chung Cư</span>
+									</div>
+									<div class="col-md-3">
+										<img src="./img/dollar-symbol.png" alt="">
+										<span>1,500,000đ</span>
+									</div>
+									<div class="col-md-3">
+										<img src="./img/shape.png" alt="">
+										<span>120 sqft</span>
+									</div>
+									<div class="col-md-3">
+										<span style="">2002 Reviews</span>
+									</div>
+								</div>
+								<img src="./img/anh_tam.png" alt=""
+									style="position: absolute; top: 10px; right: 11px; width: 10%;">
+							</div>
+						</div>
+					</div>
+
+					<div class="blk-info">
+						<div>
+							<div class="blk-img clearfix col-md-3">
+								<img src="./img/room3.jpg" alt="" style="width: 96%; height: 99%; position: relative;">
+								<div class="hot-tag">
+									<h5>TOP</h5>
+								</div>
+								<div class="voucher-tag">
+									<h5>50% Cashback</h5>
+								</div>
+								<div class="rent-tag">
+									<h5>Rent</h5>
+								</div>
+								<div class="arrow-left"></div>
+							</div>
+							<div class="blk-info-detail col-md-9" style="position: relative;">
+								<div class="row title-booking-item-responsive" style="">
+									<label>Luxury Apartment 3BR - The Golden Palm</label>
+									<div style="border-bottom: 1px solid #c6c6c6; padding-bottom: 10px;">
+										<img src="./img/location.png" alt=""
+											style="width: 3%; margin-right: 15px; margin-top: -7px;"><span>Hoàn Kiếm, Hà
+											Nội, Việt Nam</span>
+									</div>
+
+									<p>
+										Vivamus quis elementum magna. Morbi maximus orci nisi, eget fermentum nisi
+										lobortis id. Phasellus eros leo, tempus et augue .…
+									</p>
+								</div>
+
+								<div class="blk-info-footer row">
+									<div class="col-md-3">
+										<img src="./img/information-button.png" alt="">
+										<span>Biệt Thự</span>
+									</div>
+									<div class="col-md-3">
+										<img src="./img/dollar-symbol.png" alt="">
+										<span>3,500,000đ</span>
+									</div>
+									<div class="col-md-3">
+										<img src="./img/shape.png" alt="">
+										<span>240 sqft</span>
+									</div>
+									<div class="col-md-3">
+										<span style="">3452 Reviews</span>
+									</div>
+								</div>
+								<img src="./img/anh_tam.png" alt=""
+									style="position: absolute; top: 10px; right: 11px; width: 10%;">
+							</div>
+						</div>
+					</div>
+
+					<div class="blk-info">
+						<div>
+							<div class="blk-img clearfix col-md-3">
+								<img src="./img/room4.jpg" alt="" style="width: 96%; height: 99%; position: relative;">
+								<div class="hot-tag">
+									<h5>TOP</h5>
+								</div>
+								<div class="voucher-tag">
+									<h5>50% Cashback</h5>
+								</div>
+								<div class="rent-tag">
+									<h5>Rent</h5>
+								</div>
+								<div class="arrow-left"></div>
+							</div>
+							<div class="blk-info-detail col-md-9" style="position: relative;">
+								<div class="row title-booking-item-responsive" style="">
+									<label>An Apartment 3F - Spacious 2 Br in West Lake</label>
+									<div style="border-bottom: 1px solid #c6c6c6; padding-bottom: 10px;">
+										<img src="./img/location.png" alt=""
+											style="width: 3%; margin-right: 15px; margin-top: -7px;"><span>Thanh Xuân,
+											Hà Nội, Việt Nam</span>
+									</div>
+
+									<p>
+										Vivamus quis elementum magna. Morbi maximus orci nisi, eget fermentum nisi
+										lobortis id. Phasellus eros leo, tempus et augue .…
+									</p>
+								</div>
+
+								<div class="blk-info-footer row">
+									<div class="col-md-3">
+										<img src="./img/information-button.png" alt="">
+										<span>Biệt Thự</span>
+									</div>
+									<div class="col-md-3">
+										<img src="./img/dollar-symbol.png" alt="">
+										<span>2,500,000đ</span>
+									</div>
+									<div class="col-md-3">
+										<img src="./img/shape.png" alt="">
+										<span>220 sqft</span>
+									</div>
+									<div class="col-md-3">
+										<span style="">1232 Reviews</span>
+									</div>
+								</div>
+								<img src="./img/anh_tam.png" alt=""
+									style="position: absolute; top: 10px; right: 11px; width: 10%;">
+							</div>
+						</div>
+					</div>
+
+					<div class="blk-info">
+						<div>
+							<div class="blk-img clearfix col-md-3">
+								<img src="./img/room5.jpg" alt="" style="width: 96%; height: 99%; position: relative;">
+								<div class="hot-tag">
+									<h5>TOP</h5>
+								</div>
+								<div class="voucher-tag">
+									<h5>50% Cashback</h5>
+								</div>
+								<div class="rent-tag">
+									<h5>Rent</h5>
+								</div>
+								<div class="arrow-left"></div>
+							</div>
+							<div class="blk-info-detail col-md-9" style="position: relative;">
+								<div class="row title-booking-item-responsive" style="">
+									<label>The 90’s Hàng Bún</label>
+									<div style="border-bottom: 1px solid #c6c6c6; padding-bottom: 10px;">
+										<img src="./img/location.png" alt=""
+											style="width: 3%; margin-right: 15px; margin-top: -7px;"><span>Ba Đình, Hà
+											Nội, Việt Nam</span>
+									</div>
+
+									<p>
+										Vivamus quis elementum magna. Morbi maximus orci nisi, eget fermentum nisi
+										lobortis id. Phasellus eros leo, tempus et augue .…
+									</p>
+								</div>
+
+								<div class="blk-info-footer row">
+									<div class="col-md-3">
+										<img src="./img/information-button.png" alt="">
+										<span>Nhà Riêng</span>
+									</div>
+									<div class="col-md-3">
+										<img src="./img/dollar-symbol.png" alt="">
+										<span>1,100,000đ</span>
+									</div>
+									<div class="col-md-3">
+										<img src="./img/shape.png" alt="">
+										<span>140 sqft</span>
+									</div>
+									<div class="col-md-3">
+										<span style="">962 Reviews</span>
+									</div>
+								</div>
+								<img src="./img/anh_tam.png" alt=""
+									style="position: absolute; top: 10px; right: 11px; width: 10%;">
+							</div>
+						</div>
+					</div>
+
+					<nav aria-label="Page navigation example" id="pageId">
+						<ul class="pagination">
+							<li class="page-item">
+								<a class="page-link" href="#" aria-label="Previous">
+									<span aria-hidden="true">&laquo;</span>
+									<span class="sr-only">Previous</span>
+								</a>
+							</li>
+							<li class="page-item"><a class="page-link" href="#">1</a></li>
+							<li class="page-item"><a class="page-link" href="#">2</a></li>
+							<li class="page-item"><a class="page-link" href="#">3</a></li>
+							<li class="page-item">
+								<a class="page-link" href="#" aria-label="Next">
+									<span aria-hidden="true">&raquo;</span>
+									<span class="sr-only">Next</span>
+								</a>
+							</li>
+						</ul>
+					</nav>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+<footer>
+	<!-- For Bootstrap 4.0 -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+		integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+		crossorigin="anonymous"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+		integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+		crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js" type="text/javascript"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"
+		type="text/javascript"></script>
+	<script src="./js/filter-detail.js"></script>
+
+
+	<!-- For DateTimePicker -->
+
+	<script>
+		$("#datepicker1").datepicker();
+		$("#datepicker2").datepicker();
+
+
+	</script>
+</footer>
+
 </html>
