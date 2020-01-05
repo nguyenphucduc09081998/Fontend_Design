@@ -1,0 +1,946 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Trang chủ</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="js/perfect-scrollbar/perfect-scrollbar.css">
+    <link rel="stylesheet" href="css/trangchu.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/icomoon.css">
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+	<script src="js/perfect-scrollbar/perfect-scrollbar.min.js"></script>
+    <script src="https://jonthornton.github.io/jquery-timepicker/jquery.timepicker.js"></script>
+    <link rel="stylesheet" type="text/css" href="https://jonthornton.github.io/jquery-timepicker/jquery.timepicker.css" />
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.5.0/js/bootstrap-datepicker.js"></script>
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.5.0/css/bootstrap-datepicker.standalone.css" />
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+</head>
+
+<body>
+    <div class=" trangchu">
+    	<div class="trangchu_blk" style="background-image: url('./img/trangchu/home_slider.jpg'); width: 100%; height: 834px; position: relative;">
+    		<!-- Navigation -->
+			<nav class="navbar navbar-expand-lg navbar-light" style="padding-top: 30px;">
+			  <div class="container">
+			    <a class="navbar-brand" href="#" style="color: rgba(255,255,255,1); padding-left: 10px;">Booking Airbnb</a>
+			    <div class="collapse navbar-collapse col-sm-9" id="navbarResponsive" style="font-size: 25px;">
+			      <ul class="navbar-nav">
+			        <li class="nav-item active" style="margin-right: 32px;">
+			          <a class="nav-link" href="#" style="font-size: 20px; color: rgba(255,255,255,1);">Home</a>
+			        </li>
+			        <li class="nav-item" style="margin-right: 32px;">
+			          <a class="nav-link" href="#" style="font-size: 20px; color: rgba(255,255,255,1);">About</a>
+			        </li>
+			        <li class="nav-item" style="margin-right: 32px;">
+			          <a class="nav-link" href="#" style="font-size: 20px; color: rgba(255,255,255,1);">Services</a>
+			        </li>
+			        <li class="nav-item" style="margin-right: 32px;">
+			          <a class="nav-link" href="#" style="font-size: 20px; color: rgba(255,255,255,1);">News</a>
+			        </li>
+			        <li class="nav-item" style="margin-right: 32px;">
+			          <a class="nav-link" href="#" style="font-size: 20px; color: rgba(255,255,255,1);">Contact</a>
+			        </li>
+			      </ul>
+			      <ul class="navbar-nav">
+			        <li class="nav-item" style="margin-right: 32px; margin-left: 53px;">
+			          <a href="#" style="font-size: 22px; color: rgba(255,255,255,1);">
+			          	<i class="fa fa-pinterest" aria-hidden="true"></i>
+			          </a>
+			        </li>
+			        <li class="nav-item" style="margin-right: 32px;">
+			          <a href="#" style="font-size: 22px; color: rgba(255,255,255,1);">
+			          	<i class="fa fa-facebook" aria-hidden="true"></i>
+			          </a>
+			        </li>
+			        <li class="nav-item" style="margin-right: 32px;">
+			          <a href="#" style="font-size: 22px; color: rgba(255,255,255,1);">
+			          	<i class="fa fa-twitter" aria-hidden="true"></i>
+			          </a>
+			        </li>
+			        <li class="nav-item" style="margin-right: 32px;">
+			          <a href="#" style="font-size: 22px; color: rgba(255,255,255,1);">
+			          	<i class="fa fa-dribbble" aria-hidden="true"></i>
+			          </a>
+			        </li>
+			        <li class="nav-item" style="margin-right: 32px;">
+			          <a href="#" style="font-size: 22px; color: rgba(255,255,255,1);">
+			          	<i class="fa fa-behance" aria-hidden="true"></i>
+			          </a>
+			        </li>
+			      </ul>
+			
+			    </div>
+			  </div>
+			</nav>
+    		<div class="trangchu_intro">
+    			<h6>Where do you want to go?</h6>
+    		</div>
+    		
+			<div class="trangchu_search">
+				<div class="trangchu_search_1">
+					Thông tin chuyến đi
+				</div>
+				<div class="trangchu_search_2">
+					<div class="input-group " id="anchorExample">
+						<div class="col-md-4">
+							<h6>Địa điểm</h6>
+							<input type="text" class="form-control" placeholder="Nhập địa điểm đến" >
+						</div>
+						
+						<div class="col-md-5" style="width: 100%; display: flex; justify-content: space-between;">
+							<div style="width: 54%; padding-right: 25px;">
+								<h6>Nhận phòng</h6>
+								<div class="input-group">
+									<div class="input-group-prepend" >
+							    	<span class="input-group-text"><i class="fa fa-calendar" aria-hidden="true"></i></span>
+								</div>
+							  	<input type="text" class="form-control date start" placeholder="03/01/2019" aria-describedby="basic-addon1" >
+								</div>
+							</div>
+							<div style="width: 46%; padding-right: 0px;">
+								<h6>Trả phòng</h6>
+								<div class="input-group">
+									<div class="input-group-prepend" >
+									    <span class="input-group-text"><i class="fa fa-calendar" aria-hidden="true"></i></span>
+									</div>
+								  	<input type="text" class="form-control date end" placeholder="04/01/2019" aria-describedby="basic-addon2">
+							  	</div>
+							</div>	
+						</div>
+						<div class="col-md-2">
+							<h6>Số khách</h6>
+							<select class="custom-select col-md-12" style="margin-right: 15px;" id="room-type">
+							    <option>Số khách</option>
+							    <option>1 khách - 2 khách</option>
+							    <option>2 khách - 4 khách</option>
+							    <option>4 khách trở lên</option>
+							</select>
+						</div>
+					  	<div class="col-md-1"> 
+					  		<button class="btn btn-warning">Tìm Kiếm</button>
+					  	</div>
+					  	
+					   <script>
+		                $('#anchorExample .time').timepicker({
+		                    'showDuration': true,
+		                    'timeFormat': 'g:ia'
+		                });
+
+		                $('#anchorExample .date').datepicker({
+		                    'format': 'd/m/yyyy',
+		                    'autoclose': true
+		                });
+
+		            	</script>
+          
+       
+
+            
+					</div>	
+				</div>
+			</div>
+    	</div>
+
+    	<div class="intro_place">
+        	<div class="intro_blk row">
+        		<div class="col-sm-5 row" style="background: #00bbf0;">
+        			<div class="col-sm-7"></div>
+        			<div class="services col-sm-5">
+						<span class="icon">
+						<i class="flaticon-around">
+							<img src="./img/trangchu/flight.png" alt="">
+						</i>
+						</span>
+						<h3>Lựa chọn đa dạng</h3>
+						<p>Cung cấp hơn 10,000 loại phòng khác nhau với sự đa dạng về màu sắc, kích thước. Cập nhật thông tin mới nhất từ chủ nhà</p>
+					</div>
+        		</div>
+        		<div class="col-sm-2">
+        			<div class="services">
+						<span class="icon">
+						<i class="flaticon-around">
+							<img src="./img/trangchu/booking.png" alt="">
+						</i>
+						</span>
+						<h3>Thanh toán linh hoạt</h3>
+						<p>Chấp nhận mọi hình thức thanh toán, không cần thẻ tín dụng. Bảo mật tuyệt đối thông tin cá nhân.</p>
+					</div>
+        		</div>
+        		<div class="col-sm-2">
+        			<div class="services">
+						<span class="icon">
+						<i class="flaticon-car">
+							<img src="./img/trangchu/payment.png" alt="">
+						</i>
+						</span>
+						<h3>Ngại gì không đặt</h3>
+						<p>Ở đâu giá rẻ hơn, Thông báo ngay với Booking Airbnb để được đặt phòng giá rẻ hơn rẻ nhất</p>
+					</div>
+        		</div>
+        		<div class="col-sm-2">
+        			<div class="services">
+						<span class="icon">
+						<i class="flaticon-postcard">
+							<img src="./img/trangchu/support.png" alt="">
+						</i>
+						</span>
+						<h3>Hỗ trợ 24/7</h3>
+						<p>Đội ngũ của chúng tôi có mặt 24/7 để hỗ trợ bạn mọi vấn đề liên quan đến việc đặt phòng và đề ra các phản hổi sớm nhất.</p>
+					</div>
+        		</div>
+        	</div>
+        </div>
+		
+		<div style="background-color: #f3f6f9;">
+			<div class="popular_place">
+	        	<div class="popular_title">
+	        		<h5 style="position: relative; padding-bottom: 8px; margin-bottom: 10px;">Điểm đến phổ biến</h5>
+	        		<span>Cùng Luxstay bắt đầu chuyến hành trình chinh phục thế giới của bạn</span>
+	        	</div>
+	        	<div class="popular_blk">
+	        		<div class="popular_info">
+	        			<img src="./img/trangchu/hochiminh.webp" alt="">
+	        			<h5>TP Hồ Chí Minh</h5>
+	        			<h5>
+	        				<span class="badge badge-primary badge-pill text-white" style="background-color: #f66;">1200 địa điểm</span>
+	        			</h5>
+	        			
+	        			<hr>
+	        			<p>Lorem ipsum dolor sit amet, consecter adipiscing elit. Done accumsan bibendum tincidunt. Praesent quis consectetur ipsum.</p>
+	        			<button type="button" class="btn">Xem thêm</button>
+	        		</div>
+	        		<div class="popular_info">
+	        			<img src="./img/trangchu/hochiminh.webp" alt="">
+	        			<h5>Thủ đô Hà Nội</h5>
+	        			<h5>
+	        				<span class="badge badge-warning badge-pill text-white" style="background-color: #f66;">1000 địa điểm</span>
+	        			</h5>
+	        			<hr>
+	        			<p>Lorem ipsum dolor sit amet, consecter adipiscing elit. Done accumsan bibendum tincidunt. Praesent quis consectetur ipsum.</p>
+	        			<button type="button" class="btn">Xem thêm</button>
+	        		</div>
+	        		<div class="popular_info">
+	        			<img src="./img/trangchu/hochiminh.webp" alt="">
+	        			<h5>Hội An</h5>
+	        			<h5>
+	        				<span class="badge badge-warning badge-pill text-white" style="background-color: #f66;">900 địa điểm</span>
+	        			</h5>
+	        			<hr>
+	        			<p>Lorem ipsum dolor sit amet, consecter adipiscing elit. Done accumsan bibendum tincidunt. Praesent quis consectetur ipsum.</p>
+	        			<button type="button" class="btn">Xem thêm</button>
+	        		</div>
+	        		<div class="popular_info">
+	        			<img src="./img/trangchu/hochiminh.webp" alt="">
+	        			<h5>Nha Trang</h5>
+	        			<h5>
+	        				<span class="badge badge-primary badge-pill text-white" style="background-color: #f66;">1200 địa điểm</span>
+	        			</h5>
+	        			
+	        			<hr>
+	        			<p>Lorem ipsum dolor sit amet, consecter adipiscing elit. Done accumsan bibendum tincidunt. Praesent quis consectetur ipsum.</p>
+	        			<button type="button" class="btn">Xem thêm</button>
+	        		</div>
+	        	</div>
+	        </div>
+	    </div>
+		
+
+	    <div class="chosen" style="background-image: url('img/trangchu/cover-img-1.webp'); background-position: 50% -16px; position: relative; background-repeat: no-repeat; background-size: cover; background-position: top center; width: 100%; height: 451px;">
+			<div class="overlay"></div>
+			<div class="row" style="width: 65%; margin: 0 auto;">
+				<div class="col-sm-6 row">
+					<div class="col-sm-4">
+						<div class="left-blk">
+							<div class="sale-box">
+								<h2 class="value">45</h2>
+								<span class="sub-1">%</span>
+								<span class="sub-2">Giá</span>
+							</div>
+							<h2 class="sale">Giảm</h2>
+						</div>
+					</div>
+					<div class="col-sm-8">
+						<div class="right-blk">
+							<h3 class="title">Ưu đãi giá tết, đón lộc đầu năm</h3>
+							<p>Thay vì nghĩ đến những gánh nặng lo toan ngày Tết, năm nay, hãy thảnh thơi lên kế hoạch đón Tết nhiệm màu cùng Booking Airbnb.</p>
+							<p><a href="#" class="btn btn-outline-warning text-white" style="margin-right: 10px;">Đặt Ngay</a> <a href="#" class="btn btn-outline-warning text-white">Xem Thêm</a></p>
+						</div>
+					</div>
+				</div>
+				<div class="col-sm-6">
+					<div class="image_overlay" style="background-image: url(img/trangchu/img_bg_2.webp); margin-left: 62px; margin-top: 142px;">
+				</div>
+			</div>
+	        
+			</div>
+	    </div>
+
+	    <div style="background-color: #f3f6f9;">
+	        <div class="chosen_place">
+	        	<div class="chosen_title">
+	        		<h5 style="position: relative; padding-bottom: 8px; margin-bottom: 10px;">Lựa chọn nổi bật</h5>
+	        		<span>Cùng Luxstay bắt đầu chuyến hành trình chinh phục thế giới của bạn</span>
+	        	</div>
+	        	<div class="chosen_blk">
+	        		<div class="chosen_info">
+	        			<img src="./img/trangchu/hochiminh.webp" alt="">
+	        			<h5>
+	        				<span class="badge badge-primary badge-pill text-white">KHÔNG GIAN ĐƠN GIẢN</span>
+	        			</h5>
+	        			
+	        			<hr>
+	        			<p>Mang hơi thở của hiện đại cho bạn một trải nghiệm đơn giản đến tuyệt vời</p>
+	        		
+	        		</div>
+	        		<div class="chosen_info">
+	        			<img src="./img/trangchu/hochiminh.webp" alt="">
+	        			<h5>
+	        				<span class="badge badge-primary badge-pill text-white">BỒN TẮM TIỆN NGHI</span>
+	        			</h5>
+	        			<hr>
+	        			<p>Nghỉ ngơi và đắm mình tận hưởng chỗ ở trang bị bồn tắm đầy tiện nghi và độc quyền</p>
+	        			
+	        		</div>
+	        		<div class="chosen_info">
+	        			<img src="./img/trangchu/hochiminh.webp" alt="">
+	        			<h5>
+	        				<span class="badge badge-primary badge-pill text-white">CHILL CÙNG THÚ CƯNG</span>
+	        			</h5>
+	        			<hr>
+	        			<p>Đắm mình trong "Vương quốc" trong mơ, thế giới dành riêng cho “Sen và Boss”</p>
+	        		</div>
+	        	</div>
+	        	<a href="#">Xem thêm ưu đãi nổi bật ></a>
+	        </div>
+	    </div>
+			
+		<div style="background-color: #fff;">
+	        <div class="suggest_place">
+	        	<div class="suggest_title">
+	        		<h5 style="position: relative; padding-bottom: 8px; margin-bottom: 10px;">Đề xuất cho bạn</h5>
+	        		<span>Tận hưởng không gian sống tuyệt vời tại thương hiệu đô thị hàng đầu Việt Nam</span>
+	        	</div>
+	        	<div class="suggest_blk row justify-content-start">
+	        		<div class="suggest_info col-sm-3">
+	        			<div class="suggest_details">
+	        				<img src="./img/trangchu/hochiminh.webp" alt="">
+	        				<h5>Villa Anne Fleur - Luxury stay Pool & BBQ Cottage</h5>
+	        				<p>Đem lại một trải nghiệm đơn giản đến tuyệt vời, toạ lạc ngay vị trí rất thuận lợi cho việc di chuyển về thành phố và cả biển</p>
+		        			<div class="suggest_price">
+		        				<div style="width: 51%">
+		        					<img src="./img/trangchu/wifi.png" alt="">
+		        					<img src="./img/trangchu/no-smoking.png" alt="">
+		        					<img src="./img/trangchu/no-pets.png" alt="">
+		        				</div>
+		        				<div style="width: 49%">
+		        					<span class="price_title">2,500,000đ</span><span class="price_sub">/đêm</span>
+		        				</div>
+							</div>
+							<button type="button" class="btn btn-danger">XEM NGAY</button>
+	        			</div>
+	        		</div>
+	        		<div class="suggest_info col-sm-3">
+	        			<div class="suggest_details">
+	        				<img src="./img/trangchu/hochiminh.webp" alt="">
+	        				<h5>Villa Anne Fleur - Luxury stay Pool & BBQ Cottage</h5>
+	        				<p>Đem lại một trải nghiệm đơn giản đến tuyệt vời, toạ lạc ngay vị trí rất thuận lợi cho việc di chuyển về thành phố và cả biển</p>
+		        			<div class="suggest_price">
+		        				<div style="width: 51%">
+		        					<img src="./img/trangchu/wifi.png" alt="">
+		        					<img src="./img/trangchu/no-smoking.png" alt="">
+		        					<img src="./img/trangchu/no-pets.png" alt="">
+		        				</div>
+		        				<div style="width: 49%">
+		        					<span class="price_title">2,500,000đ</span><span class="price_sub">/đêm</span>
+		        				</div>
+							</div>
+							<button type="button" class="btn btn-danger">XEM NGAY</button>
+	        			</div>
+	        		</div>
+	        		<div class="suggest_info col-sm-3">
+	        			<div class="suggest_details">
+	        				<img src="./img/trangchu/hochiminh.webp" alt="">
+	        				<h5>Villa Anne Fleur - Luxury stay Pool & BBQ Cottage</h5>
+	        				<p>Đem lại một trải nghiệm đơn giản đến tuyệt vời, toạ lạc ngay vị trí rất thuận lợi cho việc di chuyển về thành phố và cả biển</p>
+		        			<div class="suggest_price">
+		        				<div style="width: 51%">
+		        					<img src="./img/trangchu/wifi.png" alt="">
+		        					<img src="./img/trangchu/no-smoking.png" alt="">
+		        					<img src="./img/trangchu/no-pets.png" alt="">
+		        				</div>
+		        				<div style="width: 49%">
+		        					<span class="price_title">2,500,000đ</span><span class="price_sub">/đêm</span>
+		        				</div>
+							</div>
+							<button type="button" class="btn btn-danger">XEM NGAY</button>
+	        			</div>
+	        		</div>
+	        		<div class="suggest_info col-sm-3">
+	        			<div class="suggest_details">
+	        				<img src="./img/trangchu/hochiminh.webp" alt="">
+	        				<h5>Villa Anne Fleur - Luxury stay Pool & BBQ Cottage</h5>
+	        				<p>Đem lại một trải nghiệm đơn giản đến tuyệt vời, toạ lạc ngay vị trí rất thuận lợi cho việc di chuyển về thành phố và cả biển</p>
+		        			<div class="suggest_price">
+		        				<div style="width: 51%">
+		        					<img src="./img/trangchu/wifi.png" alt="">
+		        					<img src="./img/trangchu/no-smoking.png" alt="">
+		        					<img src="./img/trangchu/no-pets.png" alt="">
+		        				</div>
+		        				<div style="width: 49%">
+		        					<span class="price_title">2,500,000đ</span><span class="price_sub">/đêm</span>
+		        				</div>
+							</div>
+							<button type="button" class="btn btn-danger">XEM NGAY</button>
+	        			</div>
+	        		</div>
+	        		<div class="suggest_info col-sm-3">
+	        			<div class="suggest_details">
+	        				<img src="./img/trangchu/hochiminh.webp" alt="">
+	        				<h5>Villa Anne Fleur - Luxury stay Pool & BBQ Cottage</h5>
+	        				<p>Đem lại một trải nghiệm đơn giản đến tuyệt vời, toạ lạc ngay vị trí rất thuận lợi cho việc di chuyển về thành phố và cả biển</p>
+		        			<div class="suggest_price">
+		        				<div style="width: 51%">
+		        					<img src="./img/trangchu/wifi.png" alt="">
+		        					<img src="./img/trangchu/no-smoking.png" alt="">
+		        					<img src="./img/trangchu/no-pets.png" alt="">
+		        				</div>
+		        				<div style="width: 49%">
+		        					<span class="price_title">2,500,000đ</span><span class="price_sub">/đêm</span>
+		        				</div>
+							</div>
+							<button type="button" class="btn btn-danger">XEM NGAY</button>
+	        			</div>
+	        		</div>
+	        		<div class="suggest_info col-sm-3">
+	        			<div class="suggest_details">
+	        				<img src="./img/trangchu/hochiminh.webp" alt="">
+	        				<h5>Villa Anne Fleur - Luxury stay Pool & BBQ Cottage</h5>
+	        				<p>Đem lại một trải nghiệm đơn giản đến tuyệt vời, toạ lạc ngay vị trí rất thuận lợi cho việc di chuyển về thành phố và cả biển</p>
+		        			<div class="suggest_price">
+		        				<div style="width: 51%">
+		        					<img src="./img/trangchu/wifi.png" alt="">
+		        					<img src="./img/trangchu/no-smoking.png" alt="">
+		        					<img src="./img/trangchu/no-pets.png" alt="">
+		        				</div>
+		        				<div style="width: 49%">
+		        					<span class="price_title">2,500,000đ</span><span class="price_sub">/đêm</span>
+		        				</div>
+							</div>
+							<button type="button" class="btn btn-danger">XEM NGAY</button>
+	        			</div>
+	        		</div>
+	        		<div class="suggest_info col-sm-3">
+	        			<div class="suggest_details">
+	        				<img src="./img/trangchu/hochiminh.webp" alt="">
+	        				<h5>Villa Anne Fleur - Luxury stay Pool & BBQ Cottage</h5>
+	        				<p>Đem lại một trải nghiệm đơn giản đến tuyệt vời, toạ lạc ngay vị trí rất thuận lợi cho việc di chuyển về thành phố và cả biển</p>
+		        			<div class="suggest_price">
+		        				<div style="width: 51%">
+		        					<img src="./img/trangchu/wifi.png" alt="">
+		        					<img src="./img/trangchu/no-smoking.png" alt="">
+		        					<img src="./img/trangchu/no-pets.png" alt="">
+		        				</div>
+		        				<div style="width: 49%">
+		        					<span class="price_title">2,500,000đ</span><span class="price_sub">/đêm</span>
+		        				</div>
+							</div>
+							<button type="button" class="btn btn-danger">XEM NGAY</button>
+	        			</div>
+	        		</div>
+	        		<div class="suggest_info col-sm-3">
+	        			<div class="suggest_details">
+	        				<img src="./img/trangchu/hochiminh.webp" alt="">
+	        				<h5>Villa Anne Fleur - Luxury stay Pool & BBQ Cottage</h5>
+	        				<p>Đem lại một trải nghiệm đơn giản đến tuyệt vời, toạ lạc ngay vị trí rất thuận lợi cho việc di chuyển về thành phố và cả biển</p>
+		        			<div class="suggest_price">
+		        				<div style="width: 51%">
+		        					<img src="./img/trangchu/wifi.png" alt="">
+		        					<img src="./img/trangchu/no-smoking.png" alt="">
+		        					<img src="./img/trangchu/no-pets.png" alt="">
+		        				</div>
+		        				<div style="width: 49%">
+		        					<span class="price_title">2,500,000đ</span><span class="price_sub">/đêm</span>
+		        				</div>
+							</div>
+							<button type="button" class="btn btn-danger">XEM NGAY</button>
+	        			</div>
+	        		</div>
+	        	</div>
+	        </div>
+		</div>
+
+		<div style="background-color: #f3f6f9;">
+	        <div class="hot_place">
+	        	<div class="hot_title">
+	        		<h5 style="position: relative; padding-bottom: 8px; margin-bottom: 10px;">Địa điểm hot nhất</h5>
+	        		<span>Tận hưởng không gian sống tuyệt vời tại thương hiệu đô thị hàng đầu Việt Nam</span>
+	        	</div>
+	        	<div class="hot_blk">
+	        		<div class="hot_info row">
+	        			<div class="col-sm-6 img-blk">
+	        				<img src="./img/trangchu/beauty.webp" alt="">
+	        				<div class="offer_name"><a href="#">Villa Anne Fleur</a></div>
+	        			</div>
+	        			<div class="hot_details col-sm-6">
+	        				<div class="price">
+	        					<span class="price_title">2,500,000đ</span><span class="price_sub">/đêm</span>
+	        				</div>
+	        				<h5>
+	        					<span class="badge badge-primary badge-pill text-white" style="background: #fa9e1b;">4.5 Star</span>
+		        			</h5>
+		        			<p>Đem lại một trải nghiệm đơn giản đến tuyệt vời, toạ lạc ngay vị trí rất thuận lợi cho việc di chuyển về thành phố và cả biển</p>
+		        		
+							<div class="hot_max_customer">
+								<span>10 khách · 2 phòng ngủ · 2 phòng tắm</span>
+							</div>
+		        			<div class="hot_price">
+		        				<div style="width: 70%">
+		        					<img src="./img/trangchu/wifi.png" alt="">
+		        					<img src="./img/trangchu/no-smoking.png" alt="">
+		        					<img src="./img/trangchu/no-pets.png" alt="">
+		        				</div>
+							</div>
+							<div class="hot_view_details">
+								<a href="#">Xem Chi Tiết</a>
+							</div>
+		        			
+	        			</div>
+	        		</div>
+	        		<div class="hot_info row">
+	        			<div class="col-sm-6 img-blk">
+	        				<img src="./img/trangchu/beauty.webp" alt="">
+	        				<div class="offer_name"><a href="#">Villa Anne Fleur</a></div>
+	        			</div>
+	        			<div class="hot_details col-sm-6">
+	        				<div class="price">
+	        					<span class="price_title">2,500,000đ</span><span class="price_sub">/đêm</span>
+	        				</div>
+	        				<h5>
+	        					<span class="badge badge-primary badge-pill text-white" style="background: #fa9e1b;">4.5 Star</span>
+		        			</h5>
+		        			<p>Đem lại một trải nghiệm đơn giản đến tuyệt vời, toạ lạc ngay vị trí rất thuận lợi cho việc di chuyển về thành phố và cả biển</p>
+		        		
+							<div class="hot_max_customer">
+								<span>10 khách · 2 phòng ngủ · 2 phòng tắm</span>
+							</div>
+		        			<div class="hot_price">
+		        				<div style="width: 70%">
+		        					<img src="./img/trangchu/wifi.png" alt="">
+		        					<img src="./img/trangchu/no-smoking.png" alt="">
+		        					<img src="./img/trangchu/no-pets.png" alt="">
+		        				</div>
+							</div>
+							<div class="hot_view_details">
+								<a href="#">Xem Chi Tiết</a>
+							</div>
+		        			
+	        			</div>
+	        		</div>
+	        		<div class="hot_info row">
+	        			<div class="col-sm-6 img-blk">
+	        				<img src="./img/trangchu/beauty.webp" alt="">
+	        				<div class="offer_name"><a href="#">Villa Anne Fleur</a></div>
+	        			</div>
+	        			<div class="hot_details col-sm-6">
+	        				<div class="price">
+	        					<span class="price_title">2,500,000đ</span><span class="price_sub">/đêm</span>
+	        				</div>
+	        				<h5>
+	        					<span class="badge badge-primary badge-pill text-white" style="background: #fa9e1b;">4.5 Star</span>
+		        			</h5>
+		        			<p>Đem lại một trải nghiệm đơn giản đến tuyệt vời, toạ lạc ngay vị trí rất thuận lợi cho việc di chuyển về thành phố và cả biển</p>
+		        		
+							<div class="hot_max_customer">
+								<span>10 khách · 2 phòng ngủ · 2 phòng tắm</span>
+							</div>
+		        			<div class="hot_price">
+		        				<div style="width: 70%">
+		        					<img src="./img/trangchu/wifi.png" alt="">
+		        					<img src="./img/trangchu/no-smoking.png" alt="">
+		        					<img src="./img/trangchu/no-pets.png" alt="">
+		        				</div>
+							</div>
+							<div class="hot_view_details">
+								<a href="#">Xem Chi Tiết</a>
+							</div>
+		        			
+	        			</div>
+	        		</div>
+	        		<div class="hot_info row">
+	        			<div class="col-sm-6 img-blk">
+	        				<img src="./img/trangchu/beauty.webp" alt="">
+	        				<div class="offer_name"><a href="#">Villa Anne Fleur</a></div>
+	        			</div>
+	        			<div class="hot_details col-sm-6">
+	        				<div class="price">
+	        					<span class="price_title">2,500,000đ</span><span class="price_sub">/đêm</span>
+	        				</div>
+	        				<h5>
+	        					<span class="badge badge-primary badge-pill text-white" style="background: #fa9e1b;">4.5 Star</span>
+		        			</h5>
+		        			<p>Đem lại một trải nghiệm đơn giản đến tuyệt vời, toạ lạc ngay vị trí rất thuận lợi cho việc di chuyển về thành phố và cả biển</p>
+		        		
+							<div class="hot_max_customer">
+								<span>10 khách · 2 phòng ngủ · 2 phòng tắm</span>
+							</div>
+		        			<div class="hot_price">
+		        				<div style="width: 70%">
+		        					<img src="./img/trangchu/wifi.png" alt="">
+		        					<img src="./img/trangchu/no-smoking.png" alt="">
+		        					<img src="./img/trangchu/no-pets.png" alt="">
+		        				</div>
+							</div>
+							<div class="hot_view_details">
+								<a href="#">Xem Chi Tiết</a>
+							</div>
+		        			
+	        			</div>
+	        		</div>
+	        	</div>
+	        </div>
+
+		</div>
+        
+		<div class="country_place">
+        	<div class="country_title">
+        		<h5 style="position: relative; padding-bottom: 8px; margin-bottom: 10px;">Địa điểm phổ biên</h5>
+        		<span>Tận hưởng không gian sống tuyệt vời tại thương hiệu đô thị hàng đầu Việt Nam</span>
+        	</div>
+        	<div class="country_blk">
+        		<div class="country_info row">
+        			<div class="col-sm-6 row">
+        				<div class="col-sm-6">
+        					<div class="offer_name">
+        						<img src="./img/trangchu/tour-1.webp" alt="">
+        						<h5>SÀI GÒN</h5>
+        					</div>
+        				</div>
+        				<div class="col-sm-6">
+        					<div class="offer_name">
+        						<img src="./img/trangchu/tour-1.webp" alt="">
+        						<h5>BẠC LIÊU</h5>
+        					</div>
+        				</div>
+        				<div class="col-sm-6">
+        					<div class="offer_name">
+        						<img src="./img/trangchu/tour-1.webp" alt="">
+        						<h5>TIỀN GIANG</h5>
+        					</div>
+        				</div>
+        				<div class="col-sm-6">
+        					<div class="offer_name">
+        						<img src="./img/trangchu/tour-1.webp" alt="">
+        						<h5>CẦN THƠ</h5>
+        					</div>
+        				</div>
+        			</div>
+        			<div class="country_details col-sm-6">
+        				<div class="country_title" style="text-transform: uppercase;">
+        					<h5>Miền Tây, Việt Nam</h5>
+        				</div>
+        				<div class="country_intro">
+        					<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean. A small river named Duden flows by their place and supplies it with the necessary regelialia.</p>
+        				</div>
+	        			
+	        			
+						<div class="row tour">
+							<div class="limiter">
+								<div class="wrap-table100">
+									<div class="country_tour" style="text-transform: uppercase;">
+			        					<h5>Chương Trình Tour</h5>
+			        				</div>
+									<div class="table100 ver1">
+										<div class="table100-firstcol">
+											<table>
+												<thead>
+													<tr class="row100 head">
+														<th class="cell100 column1">Tour</th>
+													</tr>
+												</thead>
+												<tbody>
+													<tr class="row100 body">
+														<td class="cell100 column1">Du Lịch Sài Gòn - Đại Nam</td>
+													</tr>
+
+													<tr class="row100 body">
+														<td class="cell100 column1">Du Lịch Miền Tây</td>
+													</tr>
+
+													<tr class="row100 body">
+														<td class="cell100 column1">Cà Mau- Đất Mũi - Bạc Liêu</td>
+													</tr>
+
+													<tr class="row100 body">
+														<td class="cell100 column1">Bạc Liêu - Hồ Chí Minh</td>
+													</tr>
+												</tbody>
+											</table>
+										</div>
+											
+										<div class="wrap-table100-nextcols js-pscroll">
+											<div class="table100-nextcols">
+												<table>
+													<thead>
+														<tr class="row100 head">
+															<th class="cell100 column2">Khởi hành</th>
+															<th class="cell100 column3">Ngày bắt đầu</th>
+															<th class="cell100 column4">Phương tiện</th>
+															<th class="cell100 column5">Hành trình</th>
+															<th class="cell100 column6">Số ngày</th>
+															<th class="cell100 column7">Tổng tiền</th>
+														</tr>
+													</thead>
+													<tbody>
+														<tr class="row100 body">
+															<td class="cell100 column2">
+																<span>Mekong Rest Stop (Tiền Giang)</span>
+															</td>
+															<td class="cell100 column3">10-04-2020</td>
+															<td class="cell100 column4">Xe du lịch</td>
+															<td class="cell100 column5">Đại Nam, Củ Chi</td>
+															<td class="cell100 column6">3 ngày 2 đêm</td>
+															<td class="cell100 column7">2,400,000đ</td>
+														</tr>
+
+														<tr class="row100 body">
+															<td class="cell100 column2">
+																<span>Mekong Rest Stop (Tiền Giang)</span>
+															</td>
+															<td class="cell100 column3">10-04-2020</td>
+															<td class="cell100 column4">Xe du lịch</td>
+															<td class="cell100 column5">Đại Nam, Củ Chi</td>
+															<td class="cell100 column6">3 ngày 2 đêm</td>
+															<td class="cell100 column7">2,400,000đ</td>
+														</tr>
+
+														<tr class="row100 body">
+															<td class="cell100 column2">
+																<span>Mekong Rest Stop (Tiền Giang)</span>
+															</td>
+															<td class="cell100 column3">10-04-2020</td>
+															<td class="cell100 column4">Xe du lịch</td>
+															<td class="cell100 column5">Đại Nam, Củ Chi</td>
+															<td class="cell100 column6">3 ngày 2 đêm</td>
+															<td class="cell100 column7">2,400,000đ</td>
+														</tr>
+														
+														<tr class="row100 body">
+															<td class="cell100 column2">
+																<span>Mekong Rest Stop (Tiền Giang)</span>
+															</td>
+															<td class="cell100 column3">10-04-2020</td>
+															<td class="cell100 column4">Xe du lịch</td>
+															<td class="cell100 column5">Đại Nam, Củ Chi</td>
+															<td class="cell100 column6">3 ngày 2 đêm</td>
+															<td class="cell100 column7">2,400,000đ</td>
+														</tr>
+													</tbody>
+												</table>
+											</div>
+										</div>
+									</div>
+								</div>
+								
+							</div>
+						</div>
+	        			
+        			</div>
+        		</div>
+        	</div>
+        </div>
+        
+
+        <div class="tutorial_place" style="margin-bottom: 100px;">
+        	<div class="tutorial_title">
+        		<h5 style="position: relative; padding-bottom: 8px; margin-bottom: 10px;">Hướng dẫn sử dụng</h5>
+        		<span>Đặt chỗ nhanh, thanh toán đơn giản, sử dụng dễ dàng</span>
+        	</div>
+        	<div class="tutorial_blk row">
+        		<div class="tutorial_info col-sm-3">
+        			<img src="./img/trangchu/hd_1.png" alt="">
+        			<h5>Chuyển Khoản Ngân Hàng</h5>
+        		</div>
+        		<div class="tutorial_info col-sm-3">
+        			<img src="./img/trangchu/hd_2.png" alt="">
+        			<h5>Hướng dẫn mời bạn bè</h5>
+        		</div>
+        		<div class="tutorial_info col-sm-3">
+        			<img src="./img/trangchu/hd_3.png" alt="">
+        			<h5>Cổng thanh toán trực tuyến</h5>
+        		</div>
+        		<div class="tutorial_info col-sm-3">
+        			<img src="./img/trangchu/hd_4.png" alt="">
+        			<h5>Cách đặt phòng Airbnb</h5>
+        		</div>
+        	</div>
+        </div>
+
+        <footer class="footer">
+	      <div class="container">
+	        <div class="row mb-5">
+	          <div class="col-md">
+	            <div class="footer-widget mb-5">
+	              <h2 class="heading logo">Booking<span> Airbnb</span></h2>
+	              <p>Hơn 10.000.000 đánh giá, bình chọn đã được xác thực từ du khách sẽ giúp bạn đưa ra lựa chọn đúng đắn.</p>
+	            </div>
+	            <div class="footer-widget">
+	            	<h2 class="heading">Thông tin liên hệ</h2>
+	            	<div class="block-23">
+		              <ul class="list-unstyled">
+		              	<li>
+		              		<a href="#" style="display: flex; flex-wrap: wrap; margin-bottom: 20px;">
+		              			<div style="width: 20%;">
+		              				<span class="icon icon-message"></span>
+		              			</div>
+			              		
+			              		<div style="width: 70%;">
+			              			<span>Messenger</span><br>
+									<span class="text">http://m.me/luxstay</span>
+			              		</div>
+			              		
+		              		</a>
+		              	</li>
+		              	<li>
+		              		<a href="#" style="display: flex; flex-wrap: wrap; margin-bottom: 20px;">
+		              			<div style="width: 20%;">
+		              				<span class="icon icon-phone"></span>
+		              			</div>
+			              		
+			              		<div style="width: 70%;">
+			              			<span>Call Center</span><br>
+									<span class="text">18006586 (Việt Nam)</span>
+			              		</div>
+		              		</a>
+		              	</li>
+		            	
+		            	<li>
+		              		<a href="#" style="display: flex; flex-wrap: wrap; margin-bottom: 20px;">
+		              			<div style="width: 20%;">
+		              				<span class="icon icon-envelope"></span>
+		              			</div>
+			              		
+			              		<div style="width: 70%;">
+			              			<span>Email</span><br>
+									<span class="text">info@yourdomain.com</span>
+			              		</div>
+		              		</a>
+		              	</li>
+		              </ul>
+		            </div>
+
+		            <ul class="footer-social list-unstyled mt-3">
+	                <li class="animate"><a href="#"><span class="icon-twitter"></span></a></li>
+	                <li class="animate"><a href="#"><span class="icon-facebook"></span></a></li>
+	                <li class="animate"><a href="#"><span class="icon-instagram"></span></a></li>
+	              </ul>
+	            </div>
+	          </div>
+	          <div class="col-md">
+	            <div class="footer-widget space_fav mb-5 ml-md-4">
+	              <h2 class="heading">Không gian ưu thích</h2>
+	              <ul class="list-unstyled">
+	                <li><a href="#"><span></span>Biệt Thự</a></li>
+	                <li><a href="#"><span></span>Chung Cư</a></li>
+	                <li><a href="#"><span></span>Nhà Riêng</a></li>
+	                <li><a href="#"><span></span>Studio</a></li>
+	              </ul>
+	            </div>
+	            <div class="footer-widget space_fav mb-5 ml-md-4">
+	              <h2 class="heading">Về chúng tôi</h2>
+	              <ul class="list-unstyled">
+	                <li><a href="#"><span></span>Liên hệ</a></li>
+	                <li><a href="#"><span></span>Điều khoản hoạt động</a></li>
+	                <li><a href="#"><span></span>Chính sách bảo mật</a></li>
+	                <li><a href="#"><span></span>Blog du lịch</a></li>
+	                <li><a href="#"><span></span>Tuyển dụng</a></li>
+	                <li><a href="#"><span></span>Hoàn tiền thành viên</a></li>
+	              </ul>
+	            </div>
+	          </div>
+	          <div class="col-md">
+	            <div class="footer-widget space_fav mb-5">
+	              <h2 class="heading">Blog gần đây</h2>
+	              <div class="block-21 mb-4 d-flex">
+	                <a class="blog-img mr-4" style="background-image: url(img/room3.jpg);"></a>
+	                <div class="text">
+	                  <h3 class="heading"><a href="#">Even the all-powerful Pointing has no control about</a></h3>
+	                  <div class="meta">
+	                    <div><a href="#"><span class="icon-calendar"></span> 10-01, 2020</a></div>
+	                    <div><a href="#"><span class="icon-person"></span> Natalie</a></div>
+	                    <div><a href="#"><span class="icon-chat"></span> 19</a></div>
+	                  </div>
+	                </div>
+	              </div>
+	              <div class="block-21 mb-5 d-flex" style="margin-bottom: 1.7rem!important;">
+	                <a class="blog-img mr-4" style="background-image: url(img/room4.jpg);"></a>
+	                <div class="text">
+	                  <h3 class="heading"><a href="#">Even the all-powerful Pointing has no control about</a></h3>
+	                  <div class="meta">
+	                    <div><a href="#"><span class="icon-calendar"></span> 11-01, 2020</a></div>
+	                    <div><a href="#"><span class="icon-person"></span> Natalie</a></div>
+	                    <div><a href="#"><span class="icon-chat"></span> 19</a></div>
+	                  </div>
+	                </div>
+	              </div>
+	              <div class="footer-widget space_fav mb-5">
+	              	<h2 class="heading" style="margin-bottom: 20px;">Tải ứng dụng Booking</h2>
+	              	<div class="">
+	              		<img src="./img/trangchu/google-play.svg" alt="" style="margin-bottom: 20px; width: 51%;">
+	              		<img src="./img/trangchu/apple-store.svg" alt="" style="margin-bottom: 20px; width: 51%;">
+	              	</div>
+	              </div>
+	              <div>
+	              	
+	              </div>
+	            </div>
+	          </div>
+	          <div class="col-md">
+	          	<div class="footer-widget mb-5">
+	            	<h2 class="heading">Giờ hoạt động</h2>
+	            	<h6 class="open-hours">
+	            		8:00 AM - 11:00 PM (Thứ hai - Thứ sáu)
+	            	</h6>
+	            	<h6 class="open-hours">
+	            		9:30 AM - 10:30 PM (Thứ bảy - Chủ nhật)
+	            	</h6>
+	            </div>
+	            <div class="footer-widget mb-5">
+	            	<h2 class="heading-2">Ủng hộ chúng tôi!</h2>
+	              <form action="#" class="subscribe-form">
+	                <div class="form-group">
+	                  <input type="text" class="form-control mb-2 text-center" placeholder="Nhập địa chỉ EMail">
+	                  <input type="submit" value="Xác Nhận" class="form-control submit">
+	                </div>
+	              </form>
+	            </div>
+	          </div>
+	        </div>
+	      </div>
+	    </footer>
+       
+    </div>
+
+    <script>
+		$('.js-pscroll').each(function(){
+			var ps = new PerfectScrollbar(this);
+
+			$(window).on('resize', function(){
+				ps.update();
+			})
+
+			$(this).on('ps-x-reach-start', function(){
+				$(this).parent().find('.table100-firstcol').removeClass('shadow-table100-firstcol');
+			});
+
+			$(this).on('ps-scroll-x', function(){
+				$(this).parent().find('.table100-firstcol').addClass('shadow-table100-firstcol');
+			});
+
+		});
+	</script>
+</body>
+
+</html>
