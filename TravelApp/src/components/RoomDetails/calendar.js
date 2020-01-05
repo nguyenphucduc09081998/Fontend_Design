@@ -40,10 +40,9 @@ const styles = StyleSheet.create({
     paddingTop: 5,
     borderBottomWidth: 1,
     borderColor: '#eee',
-    height: 350,
-    paddingLeft: 10,
-    paddingRight: 10,
-    marginTop: 20
+    height: 320,
+    marginTop: 20,
+    width: '95%',
   },
   text: {
     textAlign: 'center',

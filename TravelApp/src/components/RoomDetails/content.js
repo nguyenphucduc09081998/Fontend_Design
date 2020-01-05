@@ -49,16 +49,6 @@ export default class ContentMore extends React.Component {
           <Text style={{ textAlign: 'center', fontSize: 17, fontFamily: 'serif'}}>Giảm 35% cho đặt phòng có checkin từ 01/11 đến 30/11</Text>
         </View>
 
-        {/* <View style={{ flex: 1, flexDirection: 'row', justifyContent: 'center', marginBottom: 20}}>
-          <View style={{width:'27%'}}>
-            <Text style={{ fontSize: 14, fontFamily: 'serif'}}>Check In</Text>
-          </View>
-          <View style={{width:'50%'}}>
-            <Text style={{ fontSize: 14, fontFamily: 'serif'}}>Check Out</Text>
-          </View>
-        </View> */}
-
-
         <View style={styles.container}>
           <Table borderStyle={{borderWidth: 2, borderColor: '#c8e1ff'}}>
             <Row data={this.state.tableHead} style={styles.head} textStyle={styles.text}/>
@@ -73,8 +63,6 @@ export default class ContentMore extends React.Component {
           </Table>
         </View>
       </View>
-
-      
     );
   }
 }
@@ -87,7 +75,7 @@ const styles = StyleSheet.create({
     marginLeft: 5,
   },
   container: {paddingLeft: 44, paddingRight: 40, paddingTop: 20, backgroundColor: '#fff' },
-  head: { height: 40, backgroundColor: '#f1f8ff', fontFamily: 'serif' },
+  head: { height: 40, backgroundColor: '#f1f8ff' },
   text: { margin: 6, textAlign: 'center', fontFamily: 'serif' }
 });
  
