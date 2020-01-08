@@ -30,7 +30,7 @@
     left: 25px;
     color: #fff !important;
     font-weight: 700;
-    font-size: 23px !important;
+    /*font-size: 23px !important;*/
     padding-right: 121px;
 }
 
@@ -70,8 +70,8 @@
 .intro_place .intro_blk .services p{
     color: #5959599e;
     font-size: 14px;
-    padding-left: 34px;
-    padding-right: 39px;
+    padding-left: 15%;
+    padding-right: 16%;
 }
 
 .intro_place .intro_blk .services p:first-child{
@@ -154,7 +154,6 @@
     margin-top: 129px;
     color: #fff;
     font-weight: 400;
-    font-size: 
 }
 
 .chosen .right-blk .title{
@@ -173,8 +172,8 @@
 .chosen .left-blk .sub-1{
     font-size: 40px;
     position: absolute;
-    top: 146px;
-    left: 65%;
+    top: 42%;
+    left: 21%;
     display: block;
     line-height: 1;
     color: orange;
@@ -185,8 +184,8 @@
     font-size: 36px;
     text-transform: uppercase;
     position: absolute;
-    bottom: 88px;
-    left: 64%;
+    bottom: 36%;
+    left: 20%;
     display: block;
     line-height: 1;
     font-weight: 700;
@@ -228,7 +227,7 @@
 .country_place .country_title,
 .country_place .country_info .country_details .country_tour,
 .country_place .country_info .country_details p,
-.country_place .country_blk .country_info .offer_name h5,
+.country_place .country_blk .country_info .country_img h5,
 .tutorial_blk .tutorial_info h5,
 .tutorial_place .tutorial_title{
     font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
@@ -249,16 +248,12 @@
     margin-bottom: 0;
 }
 
-.country_place .country_blk .country_info .offer_name>img{
-    width: 100%; 
-    height: 215px; 
-    position: relative;
-}
 
-.country_place .country_blk .country_info .offer_name h5{
+
+.country_place .country_blk .country_info .country_img h5{
     position: absolute;
-    top: -8px;
-    left: 31px;
+    bottom: -4px;
+    right: 11px;
     margin-bottom: 10px;
     color: #ffffffd9;
     font-size: 20px;
@@ -396,7 +391,7 @@
 
 .popular_place .popular_blk .popular_info{
     width: 23%;
-    margin-right: 22px;
+    margin-right: 23px;
     box-shadow: 0px 2px 8px -4px rgba(8,47,204,1);
 
 }
@@ -531,7 +526,7 @@
 
 .suggest_place .suggest_blk .suggest_info .btn{
     background: white;
-    width: 237px;
+    width: 86%;
     height: 35px;
     color: #f66;
     font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
@@ -542,7 +537,7 @@
     border-radius: 50px;
     box-shadow: 1px 2px 20px -6px #f66;
     text-align: center;
-    margin-left: 20px;
+    margin-left: 7%;
 }
 
 .popular_place .popular_blk .popular_info h5{
@@ -645,9 +640,10 @@
 
 .trangchu_blk .trangchu_search {
     position: absolute;
-    top: 483px;
+    top: 72%;
     width: calc(52% + 122px);
-    left: 380px;
+    left: 50%;
+    transform: translate(-50%, -50%);
     padding-top: 47px;
     padding-left: 61px;
     padding-right: 61px;
@@ -677,8 +673,373 @@
     padding-top: 18px;
     padding-bottom: 18px;
     padding-left: 20px;
-    padding-right: 83px;
+    padding-right: 20px;
 }
+
+#anchorExample .form_place{
+    /*width: 100%; 
+    display: flex; 
+    justify-content: space-between;*/
+}
+
+#anchorExample .form_place .left{
+    width: 54%;
+    padding-right: 25px;
+}
+
+#anchorExample .form_place .right{
+
+    width: 46%;
+    padding-right: 0px;
+}
+
+
+
+/*responsive*/
+@media only screen 
+and (min-width: 1806px)
+and (max-width: 2000px){
+    #anchorExample{
+        width: 100%;
+    }
+    #anchorExample .place_blk{
+        width: 30%;
+        margin-right: 2%;
+    }
+    #anchorExample .place_blk input {
+        width: 100%;
+    }
+    #anchorExample .form_place{
+        width: 45%;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        margin-right: 2%;
+    }
+    #anchorExample .form_place .left{
+        width: 50%; 
+    }
+
+    #anchorExample .form_place .right{
+        width: 47%;
+    }
+    #anchorExample .amountCustomer{
+        width: 20%;
+    }
+
+    #anchorExample button{
+        width: 20%;
+        font-size: 17px;
+        margin-top: 30px;
+        margin-left: 42%;
+    }
+
+}
+
+@media only screen and (max-width: 1806px){
+    #anchorExample{
+        flex-direction: column;
+        margin-left: 8%;
+    }
+
+    #anchorExample .place_blk input {
+        width: 90%;
+        margin-bottom: 20px;
+    }
+
+    #anchorExample .form_place{
+        width: 90%;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        margin-bottom: 20px;
+    }
+
+    #anchorExample .form_place .left{
+        width: 50%;
+        
+    }
+
+    #anchorExample .form_place .right{
+        width: 50%;
+    }
+
+    #anchorExample .amountCustomer{
+        width: 90%;
+    }
+
+    #anchorExample button{
+        width: 90%;
+        font-size: 17px;
+        margin-top: 25px;
+        margin-right: 10%;
+    }
+
+    .trangchu_blk .trangchu_intro{
+        top: 20.5%;
+    }
+
+    .trangchu_blk .trangchu_search{
+        top: 64%;
+    }
+
+    .trangchu_blk .trangchu_intro h6{
+        font-size: 56px;
+    }
+}
+
+@media only screen 
+and (min-width: 1114px)
+and (max-width: 1460px){
+    .intro_place .intro_blk .services p{
+        padding-left: 0;
+        padding-right: 0;
+    }
+}
+
+@media only screen 
+and (max-width: 1114px){
+    .intro_place .intro_blk .services p{
+        padding-left: 0;
+        padding-right: 0;
+        font-size: 12px;
+    }
+}
+
+@media only screen 
+and (min-width: 1380px)
+and (max-width: 1770px){
+    .popular_place .popular_blk .popular_info{
+        width: 22.5%;
+        margin-right: 23px;
+    }
+    .popular_place .popular_blk .popular_info .btn{
+        margin-left: 4%;
+        width: 90%;
+    }
+}
+
+@media only screen 
+and (max-width: 1420px){
+    .popular_place .popular_blk .popular_info{
+        width: 21%;
+        margin-right: 23px;
+    }
+
+    .popular_place .popular_blk .popular_info p{
+        font-size: 11px;
+        margin-left: 4%;
+    }
+    .popular_place .popular_blk .popular_info .btn{
+        margin-left: 4%;
+        width: 90%;
+    }
+}
+
+@media only screen 
+and (min-width: 1530px)
+and (max-width: 1614px){
+    .chosen .left-blk .sale{
+        font-size: 63px;
+    }
+    .chosen .left-blk .value{
+        font-size: 70px;
+    }
+
+    .chosen .left-blk .sub-2{
+        bottom: 43%;
+    }
+    .chosen .left-blk .sub-1{
+        font-size: 32px;
+        top: 39%;
+    }
+
+    .chosen_place .chosen_blk .chosen_info{
+        width: 31%;
+    }
+}
+
+@media only screen 
+and (min-width: 1252px)
+and (max-width: 1530px){
+
+    .chosen .left-blk .sale{
+        font-size: 49px;
+    }
+
+    .chosen .left-blk .value{
+        font-size: 70px;
+    }
+
+    .chosen .left-blk .sub-2{
+        bottom: 44%;
+        left: 21%;
+    }
+    .chosen .left-blk .sub-1{
+        font-size: 32px;
+        top: 39%;
+    }
+    .chosen_place .chosen_blk .chosen_info{
+        width: 31%;
+    }
+}
+
+@media only screen 
+and (max-width: 1252px){
+
+    .chosen .left-blk .sale{
+        font-size: 44px;
+    }
+
+    .chosen_place .chosen_blk .chosen_info{
+        width: 30%;
+    }
+}
+
+.chosen .left{
+    width: 40%;
+}
+
+.chosen .right{
+    width: 60%;
+}
+
+@media only screen 
+and (min-width: 1434px)
+and (max-width: 2000px){
+    .suggest_place .suggest_blk .suggest_info .suggest_details .suggest_price .left{
+    width: 51%;
+    }
+
+    .suggest_place .suggest_blk .suggest_info .suggest_details .suggest_price .right{
+        width: 49%;
+    }
+
+
+}
+
+@media only screen 
+and (min-width: 1564px)
+and (max-width: 1832px){
+    .suggest_place .suggest_blk .suggest_info .suggest_details .suggest_price .price_title{
+        font-size: 15px;
+    }
+
+    
+}
+
+@media only screen 
+and (max-width: 1564px){
+    .suggest_place .suggest_blk .suggest_info .suggest_details p{
+        font-size: 12px;
+    }
+    
+    .suggest_place .suggest_blk .suggest_info .suggest_details h5{
+        font-size: 14px;
+    }
+    .suggest_place .suggest_blk .suggest_info .suggest_details .suggest_price{
+        flex-direction: column;
+    }
+
+    .suggest_place .suggest_blk .suggest_info .suggest_details .suggest_price .left{
+        display: none;
+    }
+
+    .suggest_place .suggest_blk .suggest_info .suggest_details .suggest_price .right{
+        width: 100%;
+    }
+}
+
+@media only screen 
+and (min-width: 1700px)
+and (max-width: 1880px){
+    .hot_place .hot_blk .hot_info{
+        width: 47%;
+    }
+
+    .hot_place .hot_blk .hot_info .hot_details{
+        height: 88.5%;
+    }
+
+    .hot_place .hot_blk .hot_details .hot_max_customer span {
+        font-size: 12.5px;
+    }
+    .hot_place .hot_blk .hot_details .hot_view_details {
+        margin-top: 17px;
+    }
+}
+
+@media only screen 
+and (min-width: 1200px)
+and (max-width: 1700px){
+    .hot_place .hot_blk .hot_info{
+        width: 46%;
+    }
+
+    .hot_place .hot_blk .hot_info .hot_details{
+        height: 80.5%;
+    }
+
+    .hot_place .hot_blk .hot_details .hot_max_customer span {
+        display: none;
+    }
+    .hot_place .hot_blk .hot_details .hot_view_details {
+        margin-top: 0px;
+    }
+
+    .hot_place .hot_blk .hot_info .hot_details p {
+        font-size: 13px;
+        margin-top: 12px;
+    }
+
+    .hot_place .hot_blk .hot_details .hot_price div {
+        width: 100% !important;
+    }
+
+    .hot_place .hot_blk .hot_info .hot_details .price_title{
+        font-size: 20px;
+    }
+}
+
+.country_blk .country_info .img_blk{
+    display: flex;
+    flex-wrap: wrap;
+    height: 50%;
+    margin-top: 2%;
+    width: 50%;
+}
+
+.country_blk .country_info .img_blk .country_img{
+    width: 45%;
+    margin-right: 5%;
+    position: relative;
+    margin-bottom: 10%;
+}
+
+.country_blk .country_info .img_blk .country_img > img{
+    width: 100%;
+    
+}
+
+.country_blk .country_info  .country_details {
+    width: 50%
+}
+
+.country_blk .country_info {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+@media only screen 
+and (min-width: 1114px)
+and (max-width: 1620px){
+    .tutorial_blk .tutorial_info h5{
+        
+    }
+}
+
+
+
 
 
 .footer 

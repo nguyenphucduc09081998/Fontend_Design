@@ -457,13 +457,14 @@ class DanhGia extends React.Component {
 
 const TabNavigator  = createMaterialTopTabNavigator(
   {
-  'Tóm Tắt': TomTat,
-  'Tiện Nghi': TienNghi,
-  'Giá & Đặt Lịch': GiaVaDatLich,
-  'Đánh Giá': DanhGia,
+    'Tóm Tắt': TomTat,
+    'Tiện Nghi': TienNghi,
+    'Giá & Đặt Lịch': GiaVaDatLich,
+    'Đánh Giá': DanhGia,
   },
   {
     tabBarOptions: {
+      showIcon: true,
       pressColor: Colors.dark,
       labelStyle: {
         fontSize: 11,
