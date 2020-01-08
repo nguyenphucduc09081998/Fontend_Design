@@ -69,13 +69,13 @@ export default class FilterRoom extends React.Component {
                       paddingBottom: 13
                       }}>
           <View style={{width: '25%'}}>
-          <Image source={require('./img/room2.jpg')}
+          <Image source={require('../../../img/room2.jpg')}
                   style={styles.imgInfo} />
           </View>
           <View style={{width: '75%', marginLeft: 65, marginTop: 10}}>
             <Text style={{fontFamily: 'serif', fontWeight: '700', fontSize: 11.5, color: '#1B51DA',}}>Mường Thanh Luxury Apartment</Text>
             <Text>
-              <Image source={require('./img/location.png')}
+              <Image source={require('../../../img/location.png')}
               style={styles.iconInfo} />   <Text style={styles.moreInfo}>Ngũ Hành Sơn, Đà Nẵng, Việt Nam</Text>
             </Text> 
             <Text style={{fontFamily: 'serif', fontWeight: '700', fontSize: 11, color: '#3E3C3C', marginTop: 5}}>1,800,000₫  <Text style={{fontSize: 8, color: '#696666'}}>(1 đêm)</Text></Text>
@@ -87,7 +87,7 @@ export default class FilterRoom extends React.Component {
             </View>
             <View style={{marginLeft: 110, marginTop: 2}}>
               <Text>
-                <Image source={require('./img/man.png')}
+                <Image source={require('../../../img/man.png')}
                 style={styles.avatarInfo} />   <Text style={styles.moreInfo}>Britian John</Text>
               </Text> 
             </View>
@@ -110,13 +110,13 @@ export default class FilterRoom extends React.Component {
                       paddingBottom: 13
                       }}>
           <View style={{width: '25%'}}>
-          <Image source={require('./img/room4.jpg')}
+          <Image source={require('../../../img/room4.jpg')}
                   style={styles.imgInfo} />
           </View>
           <View style={{width: '75%', marginLeft: 65, marginTop: 10}}>
             <Text style={{fontFamily: 'serif', fontWeight: '700', fontSize: 11.5, color: '#1B51DA'}}>Noble Apartment Studio 1</Text>
             <Text>
-              <Image source={require('./img/location.png')}
+              <Image source={require('../../../img/location.png')}
               style={styles.iconInfo} />   <Text style={styles.moreInfo}>Cầu Giấy, Hà Nội, Việt Nam</Text>
             </Text> 
             <Text style={{fontFamily: 'serif', fontWeight: '700', fontSize: 11, color: '#3E3C3C', marginTop: 5}}>1,000,000₫  <Text style={{fontSize: 8, color: '#696666'}}>(1 đêm)</Text></Text>
@@ -128,7 +128,7 @@ export default class FilterRoom extends React.Component {
             </View>
             <View style={{marginLeft: 110, marginTop: 2}}>
               <Text>
-                <Image source={require('./img/boy.png')}
+                <Image source={require('../../../img/boy.png')}
                 style={styles.avatarInfo} />   <Text style={styles.moreInfo}>Alice Tina</Text>
               </Text> 
             </View>
@@ -151,13 +151,13 @@ export default class FilterRoom extends React.Component {
                       paddingBottom: 13
                       }}>
           <View style={{width: '25%'}}>
-          <Image source={require('./img/room3.jpg')}
+          <Image source={require('../../../img/room3.jpg')}
                   style={styles.imgInfo} />
           </View>
           <View style={{width: '75%', marginLeft: 65, marginTop: 10}}>
             <Text style={{fontFamily: 'serif', fontWeight: '700', fontSize: 11.5, color: '#1B51DA'}}>Luxury Apartment - The Golden</Text>
             <Text>
-              <Image source={require('./img/location.png')}
+              <Image source={require('../../../img/location.png')}
               style={styles.iconInfo} />   <Text style={styles.moreInfo}>Hoàn Kiếm, Hà Nội, Việt Nam</Text>
             </Text> 
             <Text style={{fontFamily: 'serif', fontWeight: '700', fontSize: 11, color: '#3E3C3C', marginTop: 5}}>3,500,000₫  <Text style={{fontSize: 8, color: '#696666'}}>(1 đêm)</Text></Text>
@@ -169,7 +169,7 @@ export default class FilterRoom extends React.Component {
             </View>
             <View style={{marginLeft: 110, marginTop: 2}}>
               <Text>
-                <Image source={require('./img/boy.png')}
+                <Image source={require('../../../img/boy.png')}
                 style={styles.avatarInfo} />   <Text style={styles.moreInfo}>Alice Tina</Text>
               </Text> 
             </View>

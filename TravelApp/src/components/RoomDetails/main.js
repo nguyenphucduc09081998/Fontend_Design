@@ -32,11 +32,11 @@ class TomTat extends React.Component {
         <View style={styles.titleHotel}>
           <Text h4 style={{fontFamily: 'serif', fontWeight: '700'}}>Mường Thanh Luxury Apartment</Text> 
           <Text>
-              <Image source={require('./img/location.png')}
+              <Image source={require('../../../img/location.png')}
               style={styles.imgInfo} />   <Text style={styles.moreInfo}>Ngũ Hành Sơn, Đà Nẵng, Việt Nam</Text>
           </Text>
           <Text>
-              <Image source={require('./img/home.png')}
+              <Image source={require('../../../img/home.png')}
               style={styles.imgInfo} />   <Text style={styles.moreInfo}>Căn hộ chung cư · 65 m2</Text>
           </Text>
           <Text style={styles.descriptInfo} >Nguyên căn · 2 phòng tắm · 2 giường · 6 khách (tối đa 6 khách)</Text>
@@ -82,55 +82,55 @@ class TienNghi extends React.Component {
             <View style={{flex: 1, flexDirection: 'row', flexWrap: 'wrap'}}>
               <View style={{width:'30%'}}>
                 <Text>
-                  <Image source={require('./img/check.png')}
+                  <Image source={require('../../../img/check.png')}
                   style={styles.imgInfo} />   <Text style={styles.moreInfo}>Facility A</Text>
                 </Text>
               </View>
               <View  style={{width:'30%'}}>
                 <Text>
-                  <Image source={require('./img/check.png')}
+                  <Image source={require('../../../img/check.png')}
                   style={styles.imgInfo} />   <Text style={styles.moreInfo}>Facility B</Text>
                 </Text>
               </View>
               <View  style={{width:'30%'}}>
                 <Text>
-                  <Image source={require('./img/check.png')}
+                  <Image source={require('../../../img/check.png')}
                   style={styles.imgInfo} />   <Text style={styles.moreInfo}>Facility C</Text>
                 </Text>
               </View>
               <View  style={{width:'30%'}}>
                 <Text>
-                  <Image source={require('./img/check.png')}
+                  <Image source={require('../../../img/check.png')}
                   style={styles.imgInfo} />   <Text style={styles.moreInfo}>Facility D</Text>
                 </Text>
               </View>
               <View  style={{width:'30%'}}>
                 <Text>
-                  <Image source={require('./img/check.png')}
+                  <Image source={require('../../../img/check.png')}
                   style={styles.imgInfo} />   <Text style={styles.moreInfo}>Facility E</Text>
                 </Text>
               </View>
               <View  style={{width:'30%'}}>
                 <Text>
-                  <Image source={require('./img/check.png')}
+                  <Image source={require('../../../img/check.png')}
                   style={styles.imgInfo} />   <Text style={styles.moreInfo}>Facility F</Text>
                 </Text>
               </View>
               <View  style={{width:'30%'}}>
                 <Text>
-                  <Image source={require('./img/check.png')}
+                  <Image source={require('../../../img/check.png')}
                   style={styles.imgInfo} />   <Text style={styles.moreInfo}>Facility M</Text>
                 </Text>
               </View>
               <View  style={{width:'30%'}}>
                 <Text>
-                  <Image source={require('./img/check.png')}
+                  <Image source={require('../../../img/check.png')}
                   style={styles.imgInfo} />   <Text style={styles.moreInfo}>Facility N</Text>
                 </Text>
               </View>
               <View  style={{width:'30%'}}>
                 <Text>
-                  <Image source={require('./img/check.png')}
+                  <Image source={require('../../../img/check.png')}
                   style={styles.imgInfo} />   <Text style={styles.moreInfo}>Facility P</Text>
                 </Text>
               </View>
@@ -142,55 +142,55 @@ class TienNghi extends React.Component {
             <View style={{flex: 1, flexDirection: 'row', flexWrap: 'wrap'}}>
               <View style={{width:'30%'}}>
                 <Text>
-                  <Image source={require('./img/check_1.png')}
+                  <Image source={require('../../../img/check_1.png')}
                   style={styles.imgInfo} />   <Text style={styles.moreInfo}>Giải trí A</Text>
                 </Text>
               </View>
               <View  style={{width:'30%'}}>
                 <Text>
-                  <Image source={require('./img/check_1.png')}
+                  <Image source={require('../../../img/check_1.png')}
                   style={styles.imgInfo} />   <Text style={styles.moreInfo}>Giải trí B</Text>
                 </Text>
               </View>
               <View  style={{width:'30%'}}>
                 <Text>
-                  <Image source={require('./img/check_1.png')}
+                  <Image source={require('../../../img/check_1.png')}
                   style={styles.imgInfo} />   <Text style={styles.moreInfo}>Giải trí C</Text>
                 </Text>
               </View>
               <View  style={{width:'30%'}}>
                 <Text>
-                  <Image source={require('./img/check_1.png')}
+                  <Image source={require('../../../img/check_1.png')}
                   style={styles.imgInfo} />   <Text style={styles.moreInfo}>Giải trí D</Text>
                 </Text>
               </View>
               <View  style={{width:'30%'}}>
                 <Text>
-                  <Image source={require('./img/check_1.png')}
+                  <Image source={require('../../../img/check_1.png')}
                   style={styles.imgInfo} />   <Text style={styles.moreInfo}>Giải trí E</Text>
                 </Text>
               </View>
               <View  style={{width:'30%'}}>
                 <Text>
-                  <Image source={require('./img/check_1.png')}
+                  <Image source={require('../../../img/check_1.png')}
                   style={styles.imgInfo} />   <Text style={styles.moreInfo}>Giải trí F</Text>
                 </Text>
               </View>
               <View  style={{width:'30%'}}>
                 <Text>
-                  <Image source={require('./img/check_1.png')}
+                  <Image source={require('../../../img/check_1.png')}
                   style={styles.imgInfo} />   <Text style={styles.moreInfo}>Giải trí M</Text>
                 </Text>
               </View>
               <View  style={{width:'30%'}}>
                 <Text>
-                  <Image source={require('./img/check_1.png')}
+                  <Image source={require('../../../img/check_1.png')}
                   style={styles.imgInfo} />   <Text style={styles.moreInfo}>Giải trí N</Text>
                 </Text>
               </View>
               <View  style={{width:'30%'}}>
                 <Text>
-                  <Image source={require('./img/check_1.png')}
+                  <Image source={require('../../../img/check_1.png')}
                   style={styles.imgInfo} />   <Text style={styles.moreInfo}>Giải trí P</Text>
                 </Text>
               </View>
@@ -315,7 +315,7 @@ class DanhGia extends React.Component {
             <View style={{flex: 1, flexDirection: 'row', flexWrap: 'wrap'}}>
               <View style={{width:'30%'}}>
                 <Text style={{position: "relative"  }}>
-                  <Image source={require('./img/circle.png')}
+                  <Image source={require('../../../img/circle.png')}
                   style={styles.imgService} />   <Text style={styles.moreInfo}>Dịch vụ 1</Text>
                 </Text>
                 <View style={{position: "absolute",  zIndex: 1, top: 0, left: 0}}>
@@ -324,7 +324,7 @@ class DanhGia extends React.Component {
               </View>
               <View style={{width:'30%'}}>
                 <Text style={{position: "relative"  }}>
-                  <Image source={require('./img/circle.png')}
+                  <Image source={require('../../../img/circle.png')}
                   style={styles.imgService} />   <Text style={styles.moreInfo}>Dịch vụ 4</Text>
                 </Text>
                 <View style={{position: "absolute",  zIndex: 1, top: 0, left: 0}}>
@@ -333,7 +333,7 @@ class DanhGia extends React.Component {
               </View>
               <View style={{width:'30%'}}>
                 <Text style={{position: "relative"  }}>
-                  <Image source={require('./img/circle.png')}
+                  <Image source={require('../../../img/circle.png')}
                   style={styles.imgService} />   <Text style={styles.moreInfo}>Dịch vụ 7</Text>
                 </Text>
                 <View style={{position: "absolute",  zIndex: 1, top: 0, left: 0}}>
@@ -342,7 +342,7 @@ class DanhGia extends React.Component {
               </View>
               <View style={{width:'30%'}}>
                 <Text style={{position: "relative"  }}>
-                  <Image source={require('./img/circle.png')}
+                  <Image source={require('../../../img/circle.png')}
                   style={styles.imgService} />   <Text style={styles.moreInfo}>Dịch vụ 2</Text>
                 </Text>
                 <View style={{position: "absolute",  zIndex: 1, top: 0, left: 0}}>
@@ -351,7 +351,7 @@ class DanhGia extends React.Component {
               </View>
               <View style={{width:'30%'}}>
                 <Text style={{position: "relative"  }}>
-                  <Image source={require('./img/circle.png')}
+                  <Image source={require('../../../img/circle.png')}
                   style={styles.imgService} />   <Text style={styles.moreInfo}>Dịch vụ 5</Text>
                 </Text>
                 <View style={{position: "absolute",  zIndex: 1, top: 0, left: 0}}>
@@ -360,7 +360,7 @@ class DanhGia extends React.Component {
               </View>
               <View style={{width:'30%'}}>
                 <Text style={{position: "relative"  }}>
-                  <Image source={require('./img/circle.png')}
+                  <Image source={require('../../../img/circle.png')}
                   style={styles.imgService} />   <Text style={styles.moreInfo}>Dịch vụ 8</Text>
                 </Text>
                 <View style={{position: "absolute",  zIndex: 1, top: 0, left: 0}}>
@@ -369,7 +369,7 @@ class DanhGia extends React.Component {
               </View>
               <View style={{width:'30%'}}>
                 <Text style={{position: "relative"  }}>
-                  <Image source={require('./img/circle.png')}
+                  <Image source={require('../../../img/circle.png')}
                   style={styles.imgService} />   <Text style={styles.moreInfo}>Dịch vụ 3</Text>
                 </Text>
                 <View style={{position: "absolute",  zIndex: 1, top: 0, left: 0}}>
@@ -378,7 +378,7 @@ class DanhGia extends React.Component {
               </View>
               <View style={{width:'30%'}}>
                 <Text style={{position: "relative"  }}>
-                  <Image source={require('./img/circle.png')}
+                  <Image source={require('../../../img/circle.png')}
                   style={styles.imgService} />   <Text style={styles.moreInfo}>Dịch vụ 6</Text>
                 </Text>
                 <View style={{position: "absolute",  zIndex: 1, top: 0, left: 0}}>
@@ -387,7 +387,7 @@ class DanhGia extends React.Component {
               </View>
               <View style={{width:'30%'}}>
                 <Text style={{position: "relative"  }}>
-                  <Image source={require('./img/circle.png')}
+                  <Image source={require('../../../img/circle.png')}
                   style={styles.imgService} />   <Text style={styles.moreInfo}>Dịch vụ 9</Text>
                 </Text>
                 <View style={{position: "absolute",  zIndex: 1, top: 0, left: 0}}>
@@ -401,7 +401,7 @@ class DanhGia extends React.Component {
             <Text h4 style={{ color: 'black', fontWeight: '700', fontFamily: 'serif' }}>Bình luận</Text>
             <View style={styles.block}>
               <View style={{width:'10%'}}>
-                <Image source={require('./img/man.png')}
+                <Image source={require('../../../img/man.png')}
                   style={{width: 30, height: 30}} />
               </View>
               
@@ -417,7 +417,7 @@ class DanhGia extends React.Component {
 
             <View style={styles.block}>
               <View style={{width:'10%'}}>
-                <Image source={require('./img/boy.png')}
+                <Image source={require('../../../img/boy.png')}
                   style={{width: 30, height: 30}} />
               </View>
               
@@ -432,7 +432,7 @@ class DanhGia extends React.Component {
 
             <View style={styles.block}>
               <View style={{width:'10%'}}>
-                <Image source={require('./img/man.png')}
+                <Image source={require('../../../img/man.png')}
                   style={{width: 30, height: 30}} />
               </View>
               

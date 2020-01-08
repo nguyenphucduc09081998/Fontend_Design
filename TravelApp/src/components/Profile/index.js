@@ -34,7 +34,7 @@ export default class Profile extends React.Component {
                 <View style={[styles.container]}>
                     <View style={styles.avt_gr}>
                         <View style={[styles.col_md_4]}> 
-                            <Image source={require('./img/avatar.png')}/>
+                            <Image source={require('../../../img/avatar.png')}/>
                             <Text>Lê Minh Hiếu</Text>
                         </View>
                         <View style={styles.col_md_4}>

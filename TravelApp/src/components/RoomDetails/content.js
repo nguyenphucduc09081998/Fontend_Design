@@ -25,19 +25,19 @@ export default class ContentMore extends React.Component {
       <View style={{marginBottom: 6}}>
         <View style={{flex: 1, flexDirection: 'row', marginBottom: 40}}>
           <View style={{height: 20, marginTop: 20, marginLeft: 14, flex: 1, flexDirection: 'row', width: '66%'}}>
-            <Image source={require('./star.png')}
+            <Image source={require('../../../img/star.png')}
               style={styles.image}
             />
-            <Image source={require('./star.png')}
+            <Image source={require('../../../img/star.png')}
               style={styles.image}
             />
-            <Image source={require('./star.png')}
+            <Image source={require('../../../img/star.png')}
               style={styles.image}
             />
-            <Image source={require('./star.png')}
+            <Image source={require('../../../img/star.png')}
               style={styles.image}
             />
-            <Image source={require('./star.png')}
+            <Image source={require('../../../img/star.png')}
               style={styles.image}
             />
           </View>

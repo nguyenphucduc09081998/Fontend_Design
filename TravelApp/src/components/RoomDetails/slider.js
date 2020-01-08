@@ -43,7 +43,7 @@ class RoomDetailSlider extends React.Component {
                     onPress={() => {
                    this.props.navigation.navigate('Trang chủ');
                   }}>
-          <Image source={require('./img/back.png')}
+          <Image source={require('../../../img/back.png')}
                           style={{width: 20, height: 20}} />
         </TouchableOpacity>
       </View>
@@ -80,23 +80,23 @@ const styles = StyleSheet.create({
 const slides = [
   {
     key: 's1',
-    image: require('./img/room2.jpg'),
+    image: require('../../../img/room2.jpg'),
   },
   {
     key: 's2',
-    image: require('./img/room1.jpg'),
+    image: require('../../../img/room1.jpg'),
   },
   {
     key: 's3',
-    image: require('./img/room3.jpg'),
+    image: require('../../../img/room3.jpg'),
   },
   {
     key: 's4',
-    image: require('./img/room4.jpg'),
+    image: require('../../../img/room4.jpg'),
   },
   {
     key: 's5',
-    image: require('./img/room5.jpg'),
+    image: require('../../../img/room5.jpg'),
   },
 ];
 
