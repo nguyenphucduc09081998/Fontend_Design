@@ -68,7 +68,21 @@ $(document).ready(function(){
 
 	});
 
+	$( "#filtering-room").change(function() {
+		if(parseInt($(this).val()) === 1)
+		{
+			$(".info-box").css('display', 'flex');
+			$(".info-box").css('flex-wrap', 'wrap');
+			$(".info-box-2").css('display', 'none');
+		} 
+		else 
+		{
+			$(".info-box").css('display', 'none');
+			$(".info-box-2").css('display', 'flex');
+			$(".info-box-2").css('flex-wrap', 'wrap');
+		}
 
+	});
 	
 
 });

@@ -5,7 +5,8 @@
     <title>Hồ Sơ Cá Nhân</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
     <link rel="stylesheet" href="css/hosocanhan.css">
-
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
+    <script src="./js/hoso.js"></script>
 </head>
 
 <body>
@@ -16,34 +17,35 @@
                 <img class="hoso_user_icon" alt="user" src="image/user.png" />
                 <p class="user_canhan">Hồ Sơ Cá Nhân</p>
             </div>
-            <div class="col-sm-4 col-md-4 col-lg-4 col-xl-4 ho_so_change_image">
-                <div class="hoso_user_image">
+            <div class="col-sm-5 col-md-5 col-lg-5 col-xl-5 ho_so_change_image">
+                <div class="hoso_user_image" style="">
                     <img class="hoso_user_icon" alt="user" src="image/boy.png" />
                 </div>
                 <div class="hoso_user_text">
                     <span>Xin Chào:&nbsp;</span>
-                    <span class="hoso_name">Nguyễn Phúc Đức</span>
+                    <span class="hoso_name">Nguyễn Phúc Đức</span><br>
                     <a href="#"><span class="attch_file">Change Picture</span></a>
                 </div>
             </div>
-            <div class="col-sm-2 col-md-2 col-lg-2 col-xl-2">
-                <div class="hoso_chuyendi">
-                    <p class="hoso_chuyendi_so">2</p>
-                    <p class="hoso_chuyendi_text">Chuyến Đi</p>
-                </div>
-
-            </div>
-            <div class="col-sm-2 col-md-2 col-lg-2 col-xl-2">
-                <div class="hoso_diadiem">
-                    <p class="hoso_diadiem_so">5</p>
-                    <p class="hoso_diadiem_text">Địa Điểm</p>
-                </div>
-            </div>
-            <div class="col-sm-2 col-md-2 col-lg-2 col-xl-2">
-                <div class="hoso_songay">
-                    <p class="hoso_songay_so">15</p>
-                    <p class="hoso_songay_text">Ngày</p>
-                </div>
+            <div class="col-sm-5 col-md-5 col-lg-5 col-xl-5 right_area">
+            	<div class="col-sm-4 col-md-4 col-lg-4 col-xl-4">
+	                <div class="hoso_chuyendi">
+	                    <p class="hoso_chuyendi_so">2</p>
+	                    <p class="hoso_chuyendi_text">Chuyến Đi</p>
+	                </div>
+	            </div>
+	            <div class="col-sm-5 col-md-5 col-lg-5 col-xl-5">
+	                <div class="hoso_diadiem">
+	                    <p class="hoso_diadiem_so">5</p>
+	                    <p class="hoso_diadiem_text">Địa Điểm</p>
+	                </div>
+	            </div>
+	            <div class="col-sm-4 col-md-4 col-lg-4 col-xl-4">
+	                <div class="hoso_songay">
+	                    <p class="hoso_songay_so">15</p>
+	                    <p class="hoso_songay_text">Ngày</p>
+	                </div>
+	            </div>
             </div>
         </div>
         <!---end row --->
@@ -90,7 +92,7 @@
             </div>
             <div class="col-sm-10 col-md-10 col-lg-10 col-xl-10">
                 <div class="hoso_register">
-                    <p class="hoso_register_title">Thông Tin Cá Nhân</p>
+                    <p class="hoso_register_title">Thông tin cá nhân</p>
                     <p class="hoso_register_sub">Thông tin chi tiết khách hàng</p>
                 </div>
                 <hr />
@@ -105,11 +107,14 @@
                     <input type="text" class="form-control input_type_text">
                     <p>Ngày Sinh</p>
                     <div class="display_line">
-                        <input type="number" class="form-control input_type_number_1">
-                        <input type="number" class="form-control input_type_number_2">
-                        <input type="number" class="form-control input_type_number_3">
+                        <!-- <input type="number" min="1" max="31" class="form-control input_type_number_1">
+                        <input type="number" min="1" max="12" class="form-control input_type_number_2">
+                        <input type="number" min="1799" max="2019" class="form-control input_type_number_3"> -->            
+                        <select class="form-control input_type_number_1"></select>
+					    <select class="form-control input_type_number_2"></select>
+					    <select class="form-control input_type_number_3"></select>
                     </div>
-                    <p class="hoso_register_title">Thông Tin Địa Chỉ</p>
+                    <p class="hoso_register_title">Thông tin địa chỉ</p>
                 </div>
                 <hr />
                 <div class="hoso_register_address">
@@ -135,7 +140,7 @@
                         <option>Tp Hồ Chí Minh</option>
                         <option>Hà Nội</option>
                     </select>
-                    <button type="submit" class="btn btn-primary btn_dangki"><span>Đăng Kí</span></button>
+                    <button type="submit" class="btn btn-primary btn_dangki"><span>Đăng Ký</span></button>
 
 
                 </div>
@@ -143,20 +148,20 @@
                     <div class="hoso_footer_xemganday">
                         <p class="hoso_footer_xemganday_title">Xem Gần Đây</p>
                         <hr class="hoso_footer_hr" />
-                        <a>99 Bùi Viện (Boutique)</a> &nbsp; &nbsp;<span>from</span>&nbsp; <span class="price">$200</span>
-                        <p><a>Sora Studio (Ben Thanh)</a> &nbsp; &nbsp;<span>from</span>&nbsp; <span class="price">$50</span></p>
+                        <a style="color: #0382F8;">99 Bùi Viện (Boutique)</a> &nbsp; &nbsp;<span>from</span>&nbsp; <span class="price" style="color: #06ED47;">$200</span>
+                        <p><a style="color: #0382F8;">Sora Studio (Ben Thanh)</a> &nbsp; &nbsp;<span>from</span>&nbsp; <span class="price" style="color: #06ED47;">$50</span></p>
                     </div>
                     <div class="hoso_footer_xemganday">
                         <p class="hoso_footer_xemganday_title">Whish List</p>
                         <hr class="hoso_footer_hr" />
-                        <a>Incredible place</a> &nbsp; &nbsp;<span class="price">(1)</span>
-                        <p><a>Next place</a> &nbsp; &nbsp;<span class="price">(0)</span></p>
+                        <a style="color: #0382F8;">Incredible place</a> &nbsp; &nbsp;<span class="price">(1)</span>
+                        <p><a style="color: #0382F8;">Next place</a> &nbsp; &nbsp;<span class="price">(0)</span></p>
                     </div>
                     <div class="hoso_footer_xemganday">
                         <p class="hoso_footer_xemganday_title">Chuyến Đi Trước Đó</p>
                         <hr class="hoso_footer_hr" />
-                        <a>Sophia Hotel</a> &nbsp; &nbsp;<span>from</span>&nbsp; <span class="price">$250</span>
-                        <p><a>Diamon Hotel</a> &nbsp; &nbsp;<span>from</span>&nbsp; <span class="price">$200</span></p>
+                        <a style="color: #0382F8;">Sophia Hotel</a> &nbsp; &nbsp;<span>from</span>&nbsp; <span class="price" style="color: #06ED47;">$250</span>
+                        <p><a style="color: #0382F8;">Diamon Hotel</a> &nbsp; &nbsp;<span>from</span>&nbsp; <span class="price" style="color: #06ED47;">$200</span></p>
                     </div>
                 </div>
             </div>
