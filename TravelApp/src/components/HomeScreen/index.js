@@ -27,14 +27,14 @@ class HomeScreen extends React.Component {
         <View style={{marginBottom: 20}}>
             <View style={{flexDirection: 'row', flexWrap: 'wrap', width: '100%', marginLeft: 10, marginTop: 10}}>
                 <View style={{width: '80%'}}>
-                  <Image source={require('../../../img/travel.png')}
+                  <Image source={require('./img/travel.png')}
                             style={{width: 40, height: 40, borderRadius: 50, marginBottom: 14}} />
                 </View>
                 <View style={{width: '20%'}}>
                   <TouchableOpacity  onPress={() => {
                    this.props.navigation.navigate('FilterRoom');
                   }}>
-                      <Image source={require('../../../img/seo.png')}
+                      <Image source={require('./img/seo.png')}
                             style={{width: 40, height: 40, borderRadius: 50, marginBottom: 14}} />
                   </TouchableOpacity>
                 </View>
@@ -48,27 +48,27 @@ class HomeScreen extends React.Component {
                autoCapitalize = "none"/>
                <View style={{flexDirection: 'row', flexWrap: 'wrap', width: '100%', marginLeft: 10, marginTop: 20}}>
                   <View style={{width: '19%'}}>
-                    <Image source={require('../../../img/nearby.png')}
+                    <Image source={require('./img/nearby.png')}
                             style={{width: 40, height: 40, borderRadius: 50, marginLeft: 4}} />
                     <Text style={{fontSize: 11, fontWeight: '600', marginLeft: 4}}>Gần đây</Text>
                   </View>
                   <View style={{width: '19%'}}>
-                    <Image source={require('../../../img/hanoi.webp')}
+                    <Image source={require('./img/hanoi.webp')}
                             style={{width: 40, height: 40, borderRadius: 50, marginLeft: 4}} />
                     <Text style={{fontSize: 11, fontWeight: '600', marginLeft: 7}}>Hà Nội</Text>
                   </View>
                   <View style={{width: '19%'}}>
-                    <Image source={require('../../../img/phuquoc.png')}
+                    <Image source={require('./img/phuquoc.png')}
                             style={{width: 40, height: 40, borderRadius: 50, marginLeft: 4}} />
                     <Text style={{fontSize: 11, fontWeight: '600'}}>Phú Quốc</Text>
                   </View>
                   <View style={{width: '19%'}}>
-                    <Image source={require('../../../img/hoian.webp')}
+                    <Image source={require('./img/hoian.webp')}
                             style={{width: 40, height: 40, borderRadius: 50, marginLeft: 4}} />
                     <Text style={{fontSize: 11, fontWeight: '600', marginLeft: 7}}>Hội An</Text>
                   </View>
                   <View style={{width: '19%'}}>
-                    <Image source={require('../../../img/camau.jpg')}
+                    <Image source={require('./img/camau.jpg')}
                             style={{width: 40, height: 40, borderRadius: 50, marginLeft: 4}} />
                     <Text style={{fontSize: 11, fontWeight: '600', marginLeft: 6}}>Cà Mau</Text>
                   </View>
@@ -81,23 +81,23 @@ class HomeScreen extends React.Component {
                   <TouchableOpacity  onPress={() => {
                    this.props.navigation.navigate('RoomDetails');
                   }}>
-                  <Image source={require('../../../img/hochiminh.jpg')}
+                  <Image source={require('./img/hochiminh.jpg')}
                           style={styles.imgHot} />
                   <Text style={styles.imgText}>Hồ Chí Minh</Text>
                   </TouchableOpacity>
                 </View>
               <View style={{width: '46%', marginRight: 10}}>
-              <Image source={require('../../../img/hanoi.jpg')}
+              <Image source={require('./img/hanoi.jpg')}
                       style={styles.imgHot} />
                 <Text style={styles.imgText}>Hà Nội</Text>
               </View>
               <View style={{width: '46%', marginRight: 10}}>
-                <Image source={require('../../../img/hoianBackground.webp')}
+                <Image source={require('./img/hoianBackground.webp')}
                         style={styles.imgHot} />
                   <Text style={styles.imgText}>Hội An</Text>
               </View>
               <View style={{width: '46%', marginRight: 10}}>
-                <Image source={require('../../../img/phuquoc.jpg')}
+                <Image source={require('./img/phuquoc.jpg')}
                         style={styles.imgHot} />
                   <Text style={styles.imgText}>Phú Quốc</Text>
               </View>
@@ -116,7 +116,7 @@ class HomeScreen extends React.Component {
                           width: '47%'
                           }}>
               <View style={{}}>
-              <Image source={require('../../../img/room2.jpg')}
+              <Image source={require('./img/room2.jpg')}
                       style={styles.imgInfo} />
               </View>
               <View style={{ marginTop: 10}}>
@@ -144,7 +144,7 @@ class HomeScreen extends React.Component {
                           width: '47%'
                           }}>
               <View style={{}}>
-              <Image source={require('../../../img/room3.jpg')}
+              <Image source={require('./img/room3.jpg')}
                       style={styles.imgInfo} />
               </View>
               <View style={{ marginTop: 10}}>
@@ -172,7 +172,7 @@ class HomeScreen extends React.Component {
                           width: '47%'
                           }}>
               <View style={{}}>
-              <Image source={require('../../../img/room4.jpg')}
+              <Image source={require('./img/room4.jpg')}
                       style={styles.imgInfo} />
               </View>
               <View style={{ marginTop: 10}}>
@@ -200,7 +200,7 @@ class HomeScreen extends React.Component {
                           width: '47%'
                           }}>
               <View style={{}}>
-              <Image source={require('../../../img/room5.jpg')}
+              <Image source={require('./img/room5.jpg')}
                       style={styles.imgInfo} />
               </View>
               <View style={{ marginTop: 10}}>
@@ -243,13 +243,13 @@ class HomeScreen extends React.Component {
                 
                         }}>
             <View style={{width: '40%'}}>
-            <Image source={require('../../../img/room2.jpg')}
+            <Image source={require('./img/room2.jpg')}
                     style={styles.imgSuggest} />
             </View>
             <View style={{width: '60%', marginLeft: 15, marginTop: 10}}>
               <Text style={{fontFamily: 'serif', fontWeight: '700', fontSize: 11.5, color: '#1B51DA',}}>Mường Thanh Luxury Apartment</Text>
               <Text>
-                <Image source={require('../../../img/location.png')}
+                <Image source={require('./img/location.png')}
                 style={styles.iconInfo} />   <Text style={styles.moreInfo}>Ngũ Hành Sơn, Đà Nẵng, Việt Nam</Text>
               </Text> 
               <Text style={{fontFamily: 'serif', fontWeight: '700', fontSize: 11, color: '#3E3C3C', marginTop: 5}}>1,800,000₫  <Text style={{fontSize: 8, color: '#696666'}}>(1 đêm)</Text></Text>
@@ -267,13 +267,13 @@ class HomeScreen extends React.Component {
                         marginTop: 20,
                         }}>
             <View style={{width: '40%'}}>
-            <Image source={require('../../../img/room4.jpg')}
+            <Image source={require('./img/room4.jpg')}
                     style={styles.imgSuggest} />
             </View>
             <View style={{width: '60%', marginLeft: 15, marginTop: 10}}>
               <Text style={{fontFamily: 'serif', fontWeight: '700', fontSize: 11.5, color: '#1B51DA'}}>Noble Apartment Studio 1</Text>
               <Text>
-                <Image source={require('../../../img/location.png')}
+                <Image source={require('./img/location.png')}
                 style={styles.iconInfo} />   <Text style={styles.moreInfo}>Cầu Giấy, Hà Nội, Việt Nam</Text>
               </Text> 
               <Text style={{fontFamily: 'serif', fontWeight: '700', fontSize: 11, color: '#3E3C3C', marginTop: 5}}>1,000,000₫  <Text style={{fontSize: 8, color: '#696666'}}>(1 đêm)</Text></Text>
@@ -291,13 +291,13 @@ class HomeScreen extends React.Component {
                         marginTop: 20,
                         }}>
             <View style={{width: '40%'}}>
-            <Image source={require('../../../img/room3.jpg')}
+            <Image source={require('./img/room3.jpg')}
                     style={styles.imgInfo} />
             </View>
             <View style={{width: '60%', marginLeft: 15, marginTop: 10}}>
               <Text style={{fontFamily: 'serif', fontWeight: '700', fontSize: 11.5, color: '#1B51DA'}}>Luxury Apartment - The Golden</Text>
               <Text>
-                <Image source={require('../../../img/location.png')}
+                <Image source={require('./img/location.png')}
                 style={styles.iconInfo} />   <Text style={styles.moreInfo}>Hoàn Kiếm, Hà Nội, Việt Nam</Text>
               </Text> 
               <Text style={{fontFamily: 'serif', fontWeight: '700', fontSize: 11, color: '#3E3C3C', marginTop: 5}}>3,500,000₫  <Text style={{fontSize: 8, color: '#696666'}}>(1 đêm)</Text></Text>

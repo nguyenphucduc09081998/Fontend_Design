@@ -38,13 +38,13 @@ class YeuThich extends React.Component {
                 
                         }}>
             <View style={{width: '40%'}}>
-            <Image source={require('../../../img/room2.jpg')}
+            <Image source={require('./img/room2.jpg')}
                     style={styles.imgSuggest} />
             </View>
             <View style={{width: '60%', marginLeft: 15, marginTop: 10}}>
               <Text style={{fontFamily: 'serif', fontWeight: '700', fontSize: 11.5, color: '#1B51DA',}}>Mường Thanh Luxury Apartment</Text>
               <Text>
-                <Image source={require('../../../img/location.png')}
+                <Image source={require('./img/location.png')}
                 style={styles.iconInfo} />   <Text style={styles.moreInfo}>Ngũ Hành Sơn, Đà Nẵng, Việt Nam</Text>
               </Text> 
               <Text style={{fontFamily: 'serif', fontWeight: '700', fontSize: 11, color: '#3E3C3C', marginTop: 5}}>1,800,000₫  <Text style={{fontSize: 8, color: '#696666'}}>(1 đêm)</Text></Text>
@@ -62,13 +62,13 @@ class YeuThich extends React.Component {
                         marginTop: 20,
                         }}>
             <View style={{width: '40%'}}>
-            <Image source={require('../../../img/room4.jpg')}
+            <Image source={require('./img/room4.jpg')}
                     style={styles.imgSuggest} />
             </View>
             <View style={{width: '60%', marginLeft: 15, marginTop: 10}}>
               <Text style={{fontFamily: 'serif', fontWeight: '700', fontSize: 11.5, color: '#1B51DA'}}>Noble Apartment Studio 1</Text>
               <Text>
-                <Image source={require('../../../img/location.png')}
+                <Image source={require('./img/location.png')}
                 style={styles.iconInfo} />   <Text style={styles.moreInfo}>Cầu Giấy, Hà Nội, Việt Nam</Text>
               </Text> 
               <Text style={{fontFamily: 'serif', fontWeight: '700', fontSize: 11, color: '#3E3C3C', marginTop: 5}}>1,000,000₫  <Text style={{fontSize: 8, color: '#696666'}}>(1 đêm)</Text></Text>
@@ -86,13 +86,13 @@ class YeuThich extends React.Component {
                         marginTop: 20,
                         }}>
             <View style={{width: '40%'}}>
-            <Image source={require('../../../img/room3.jpg')}
+            <Image source={require('./img/room3.jpg')}
                     style={styles.imgInfo} />
             </View>
             <View style={{width: '60%', marginLeft: 15, marginTop: 10}}>
               <Text style={{fontFamily: 'serif', fontWeight: '700', fontSize: 11.5, color: '#1B51DA'}}>Luxury Apartment - The Golden</Text>
               <Text>
-                <Image source={require('../../../img/location.png')}
+                <Image source={require('./img/location.png')}
                 style={styles.iconInfo} />   <Text style={styles.moreInfo}>Hoàn Kiếm, Hà Nội, Việt Nam</Text>
               </Text> 
               <Text style={{fontFamily: 'serif', fontWeight: '700', fontSize: 11, color: '#3E3C3C', marginTop: 5}}>3,500,000₫  <Text style={{fontSize: 8, color: '#696666'}}>(1 đêm)</Text></Text>
@@ -135,13 +135,13 @@ class DatCho extends React.Component {
                 
                         }}>
             <View style={{width: '40%'}}>
-            <Image source={require('../../../img/room2.jpg')}
+            <Image source={require('./img/room2.jpg')}
                     style={styles.imgSuggest} />
             </View>
             <View style={{width: '60%', marginLeft: 15, marginTop: 10}}>
               <Text style={{fontFamily: 'serif', fontWeight: '700', fontSize: 11.5, color: '#1B51DA',}}>Mường Thanh Luxury Apartment</Text>
               <Text>
-                <Image source={require('../../../img/location.png')}
+                <Image source={require('./img/location.png')}
                 style={styles.iconInfo} />   <Text style={styles.moreInfo}>Ngũ Hành Sơn, Đà Nẵng, Việt Nam</Text>
               </Text> 
               <Text style={{fontFamily: 'serif', fontWeight: '700', fontSize: 11, color: '#3E3C3C', marginTop: 5}}>1,800,000₫  <Text style={{fontSize: 8, color: '#696666'}}>(1 đêm)</Text></Text>
@@ -159,13 +159,13 @@ class DatCho extends React.Component {
                         marginTop: 20,
                         }}>
             <View style={{width: '40%'}}>
-            <Image source={require('../../../img/room4.jpg')}
+            <Image source={require('./img/room4.jpg')}
                     style={styles.imgSuggest} />
             </View>
             <View style={{width: '60%', marginLeft: 15, marginTop: 10}}>
               <Text style={{fontFamily: 'serif', fontWeight: '700', fontSize: 11.5, color: '#1B51DA'}}>Noble Apartment Studio 1</Text>
               <Text>
-                <Image source={require('../../../img/location.png')}
+                <Image source={require('./img/location.png')}
                 style={styles.iconInfo} />   <Text style={styles.moreInfo}>Cầu Giấy, Hà Nội, Việt Nam</Text>
               </Text> 
               <Text style={{fontFamily: 'serif', fontWeight: '700', fontSize: 11, color: '#3E3C3C', marginTop: 5}}>1,000,000₫  <Text style={{fontSize: 8, color: '#696666'}}>(1 đêm)</Text></Text>
@@ -217,17 +217,17 @@ class TaiKhoan extends React.Component {
         <>
           <View style={{flexDirection: 'row', flexWrap: 'wrap', justifyContent: 'flex-start', marginTop: 40}}>
               <View style={{width: '33.33%'}}>
-                <Image source={require('../../../img/profile/edit.png')}
+                <Image source={require('./img/profile/edit.png')}
                       style={{width: 20, height: 20, marginLeft: '85%', marginTop: '10%'}} />
               </View>
               <View style={{width: '30%'}}>
-                <Image source={require('../../../img/man.png')}
+                <Image source={require('./img/man.png')}
                       style={{width: 55, height: 55, marginLeft: '30%'}} />
                 <Text style={{ fontSize: 11, textAlign: 'center', fontWeight: '700',}}>Alex Hitchen</Text>
                 <Text style={{fontSize: 8, textAlign: 'center', color: 'gray', fontWeight: '700'}}>Hà Nội, Việt Nam</Text>
               </View>
               <View style={{width: '30%'}}>
-                <Image source={require('../../../img/profile/settings.png')}
+                <Image source={require('./img/profile/settings.png')}
                       style={{width: 20, height: 20, marginLeft: '0%', marginTop: '12%'}} />
               </View>
           </View>
@@ -249,7 +249,7 @@ class TaiKhoan extends React.Component {
           <View style={{flexDirection: 'row', flexWrap: 'wrap', justifyContent: 'flex-start', marginTop: 30}}>
           <Text style={{fontSize: 11, color: 'black', fontWeight: '700', width: '100%', marginLeft: '7%',  marginBottom: '1%'}}>Chuyến đi trước</Text>
               <View style={{width: '33.33%', position: 'relative'}}>
-                <Image source={require('../../../img/profile/distance.png')}
+                <Image source={require('./img/profile/distance.png')}
                       style={{width: 20, height: 20, position: 'absolute', top: 15, right: -15}} />
                 <Text style={{fontSize: 8, textAlign: 'center', color: 'gray', fontWeight: '700',}}>07.02.2020</Text>
                 <Text style={{fontSize: 14, textAlign: 'center', fontWeight: '700'}}>07:25</Text>
@@ -257,7 +257,7 @@ class TaiKhoan extends React.Component {
                 
               </View>
               <View style={{width: '30%', position: 'relative'}}>
-                <Image source={require('../../../img/profile/distance.png')}
+                <Image source={require('./img/profile/distance.png')}
                       style={{width: 20, height: 20, position: 'absolute', top: 15, right: -15}} />
                 <Text style={{ fontSize: 8, textAlign: 'center', color: 'gray', fontWeight: '700',}}>08.02.2020</Text>
                 <Text style={{fontSize: 14, textAlign: 'center', fontWeight: '700'}}>18:40</Text>
@@ -272,28 +272,28 @@ class TaiKhoan extends React.Component {
           <View style={{flexDirection: 'row', flexWrap: 'wrap', justifyContent: 'flex-start', marginTop: 30}}>
           <Text style={{fontSize: 11, color: 'black', fontWeight: '700', width: '100%', marginLeft: '7%',  marginBottom: '1%'}}>Chuyến đi gần đây</Text>
               <View style={{width: '22%', marginLeft: '5%', marginRight: '1%'}}>
-                <Image source={require('../../../img/room1.jpg')}
+                <Image source={require('./img/room1.jpg')}
                       style={styles.imgInfo} />
                 <Text style={{fontSize: 8, textAlign: 'center', color: 'gray', fontWeight: '700',}}>Luxury Apartment - The Golden</Text>
                 <Text style={{fontSize: 10, textAlign: 'center', color: 'gray', fontWeight: '700'}}>Cà Mau</Text>
                 
               </View>
               <View style={{width: '22%', marginRight: '1%'}}>
-                <Image source={require('../../../img/room2.jpg')}
+                <Image source={require('./img/room2.jpg')}
                       style={styles.imgInfo} />
                 <Text style={{fontSize: 8, textAlign: 'center', color: 'gray', fontWeight: '700',}}>Luxury Apartment - The Golden</Text>
                 <Text style={{fontSize: 10, textAlign: 'center', color: 'gray', fontWeight: '700'}}>Cà Mau</Text>
                 
               </View>
               <View style={{width: '22%', marginRight: '1%'}}>
-                <Image source={require('../../../img/room3.jpg')}
+                <Image source={require('./img/room3.jpg')}
                       style={styles.imgInfo} />
                 <Text style={{fontSize: 8, textAlign: 'center', color: 'gray', fontWeight: '700',}}>Luxury Apartment - The Golden</Text>
                 <Text style={{fontSize: 10, textAlign: 'center', color: 'gray', fontWeight: '700'}}>Cà Mau</Text>
                 
               </View>
               <View style={{width: '22%', marginRight: '1%'}}>
-                <Image source={require('../../../img/room4.jpg')}
+                <Image source={require('./img/room4.jpg')}
                       style={styles.imgInfo} />
                 <Text style={{fontSize: 8, textAlign: 'center', color: 'gray', fontWeight: '700',}}>Luxury Apartment - The Golden</Text>
                 <Text style={{fontSize: 10, textAlign: 'center', color: 'gray', fontWeight: '700'}}>Cà Mau</Text>
@@ -314,7 +314,7 @@ const TabNavigator  = createMaterialBottomTabNavigator  (
       navigationOptions: {
         tabBarLabel: 'Trang chủ',
         tabBarIcon: ({focused, tintColor:color}) => (
-          <Image source={require('../../../img/home.png')}
+          <Image source={require('./img/home.png')}
                     style={{width: 22, height: 22, tintColor: color,}} />
         ),
         
@@ -325,7 +325,7 @@ const TabNavigator  = createMaterialBottomTabNavigator  (
       navigationOptions: {
         tabBarLabel: 'Yêu thích',
         tabBarIcon: ({focused, tintColor:color}) => (
-          <Image source={require('../../../img/heart.png')}
+          <Image source={require('./img/heart.png')}
                     style={{width: 22, height: 22, tintColor: color}} />
         ),
        
@@ -336,7 +336,7 @@ const TabNavigator  = createMaterialBottomTabNavigator  (
       navigationOptions: {
         tabBarLabel: 'Đặt chỗ',
         tabBarIcon: ({focused, tintColor:color}) => (
-          <Image source={require('../../../img/booking.png')}
+          <Image source={require('./img/booking.png')}
                     style={{width: 22, height: 22, tintColor: color}} />
         ),
        
@@ -347,7 +347,7 @@ const TabNavigator  = createMaterialBottomTabNavigator  (
       navigationOptions: {
         tabBarLabel: 'Tin nhắn',
         tabBarIcon: ({focused, tintColor:color}) => (
-          <Image source={require('../../../img/email.png')}
+          <Image source={require('./img/email.png')}
                     style={{width: 22, height: 22, tintColor: color}} />
         ),
       },
@@ -357,7 +357,7 @@ const TabNavigator  = createMaterialBottomTabNavigator  (
       navigationOptions: {
         tabBarLabel: 'Tài khoản',
         tabBarIcon: ({focused, tintColor:color}) => (
-          <Image source={require('../../../img/user.png')}
+          <Image source={require('./img/user.png')}
                     style={{width: 22, height: 22, tintColor: color}} />
         ),
         marginRight: 30,
