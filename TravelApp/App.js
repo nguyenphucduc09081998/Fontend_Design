@@ -7,7 +7,8 @@
  */
 
 import React from 'react';
-import { RoomDetails, FilterRoom, Profile } from './src/components';
+import { RoomDetails, FilterRoom, HomeScreen, BottomTabs } from './src/components';
+
 
 
 // export default class App extends React.Component {
@@ -19,8 +20,10 @@ import { RoomDetails, FilterRoom, Profile } from './src/components';
 const App: () => React$Node = () => {
   return (
     <>
-    <Profile></Profile>
+    {/* <RoomDetails></RoomDetails> */}
     {/* <FilterRoom></FilterRoom> */}
+    {/* <HomeScreen></HomeScreen> */}
+    <BottomTabs></BottomTabs>
     </>
   );
 };

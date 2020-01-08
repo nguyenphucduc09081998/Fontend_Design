@@ -1,11 +1,11 @@
 import React from 'react';
 //import react in project
-import { StyleSheet, View, Text, Image } from 'react-native';
+import { StyleSheet, View, Text, Image, TouchableOpacity } from 'react-native';
 //import all the required component
 import AppIntroSlider from 'react-native-app-intro-slider';
+import { withNavigation } from 'react-navigation';
 
-
-export default class RoomDetailSlider extends React.Component {
+class RoomDetailSlider extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -31,13 +31,21 @@ export default class RoomDetailSlider extends React.Component {
     //If false show the Intro Slides
     //Intro slides
     return (
-      <View style={{ height: '35%' }}>
+      <View style={{ height: '35%', position: 'relative' }}>
         <AppIntroSlider
           slides={slides}
           renderItem={this._renderItem}
           showNextButton={false}
           showDoneButton={false}
         />
+        <TouchableOpacity
+                  style={{position: "absolute", top: 0, left: 0, marginTop: 10, marginLeft: 10}}
+                    onPress={() => {
+                   this.props.navigation.navigate('Trang chủ');
+                  }}>
+          <Image source={require('./img/back.png')}
+                          style={{width: 20, height: 20}} />
+        </TouchableOpacity>
       </View>
     );
   }
@@ -91,3 +99,5 @@ const slides = [
     image: require('./img/room5.jpg'),
   },
 ];
+
+export default withNavigation(RoomDetailSlider);

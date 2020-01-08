@@ -5,44 +5,99 @@ import {
   ScrollView,
   View, Image,
   CheckBox,
-  TouchableHighlight
+  TouchableHighlight,
+  Button,
+  TouchableOpacity,
+  TextInput
 } from 'react-native';
-import { Dropdown } from 'react-native-material-dropdown';
-import ModalFilterView from './modal';
-export {
-  ModalFilterView,
-};
 
-export default class HomeScreen extends React.Component {
+import { withNavigation } from 'react-navigation';
+
+class HomeScreen extends React.Component {
   constructor(props) {
     super(props);
-    this.state = {date:"2016-05-15"}
+    this.state = {
+      date:"2016-05-15",
+    }
   }
 
-  render() {
-
+  render = () => {
     return (
       <ScrollView style={styles.container}>
+        <View style={{marginBottom: 20}}>
+            <View style={{flexDirection: 'row', flexWrap: 'wrap', width: '100%', marginLeft: 10, marginTop: 10}}>
+                <View style={{width: '80%'}}>
+                  <Image source={require('./img/travel.png')}
+                            style={{width: 40, height: 40, borderRadius: 50, marginBottom: 14}} />
+                </View>
+                <View style={{width: '20%'}}>
+                  <TouchableOpacity  onPress={() => {
+                   this.props.navigation.navigate('FilterRoom');
+                  }}>
+                      <Image source={require('./img/seo.png')}
+                            style={{width: 40, height: 40, borderRadius: 50, marginBottom: 14}} />
+                  </TouchableOpacity>
+                </View>
+            </View>
+            
+            <Text style={{marginLeft: 10, fontSize: 15, fontWeight: '600'}}>Bạn muốn đi đâu</Text>
+            <TextInput style = {styles.input}
+               underlineColorAndroid = "transparent"
+               placeholder = "Thử tìm kiếm 'Ha Noi'"
+               placeholderTextColor = "#C6C6C6"
+               autoCapitalize = "none"/>
+               <View style={{flexDirection: 'row', flexWrap: 'wrap', width: '100%', marginLeft: 10, marginTop: 20}}>
+                  <View style={{width: '19%'}}>
+                    <Image source={require('./img/nearby.png')}
+                            style={{width: 40, height: 40, borderRadius: 50, marginLeft: 4}} />
+                    <Text style={{fontSize: 11, fontWeight: '600', marginLeft: 4}}>Gần đây</Text>
+                  </View>
+                  <View style={{width: '19%'}}>
+                    <Image source={require('./img/hanoi.webp')}
+                            style={{width: 40, height: 40, borderRadius: 50, marginLeft: 4}} />
+                    <Text style={{fontSize: 11, fontWeight: '600', marginLeft: 7}}>Hà Nội</Text>
+                  </View>
+                  <View style={{width: '19%'}}>
+                    <Image source={require('./img/phuquoc.png')}
+                            style={{width: 40, height: 40, borderRadius: 50, marginLeft: 4}} />
+                    <Text style={{fontSize: 11, fontWeight: '600'}}>Phú Quốc</Text>
+                  </View>
+                  <View style={{width: '19%'}}>
+                    <Image source={require('./img/hoian.webp')}
+                            style={{width: 40, height: 40, borderRadius: 50, marginLeft: 4}} />
+                    <Text style={{fontSize: 11, fontWeight: '600', marginLeft: 7}}>Hội An</Text>
+                  </View>
+                  <View style={{width: '19%'}}>
+                    <Image source={require('./img/camau.jpg')}
+                            style={{width: 40, height: 40, borderRadius: 50, marginLeft: 4}} />
+                    <Text style={{fontSize: 11, fontWeight: '600', marginLeft: 6}}>Cà Mau</Text>
+                  </View>
+               </View>
+        </View>
         <View>
             <Text style={{marginLeft: 10, fontSize: 15, fontWeight: '600'}}>Điểm đến phổ biến</Text>
             <View style={{flexDirection: 'row', flexWrap: 'wrap', width: '100%', marginLeft: 10}}>
+                <View style={{width: '46%', marginRight: 10}}>
+                  <TouchableOpacity  onPress={() => {
+                   this.props.navigation.navigate('RoomDetails');
+                  }}>
+                  <Image source={require('./img/hochiminh.jpg')}
+                          style={styles.imgHot} />
+                  <Text style={styles.imgText}>Hồ Chí Minh</Text>
+                  </TouchableOpacity>
+                </View>
               <View style={{width: '46%', marginRight: 10}}>
-                <Image source={require('./img/hochiminh.webp')}
-                        style={styles.imgHot} />
-                <Text style={styles.imgText}>Hồ Chí Minh</Text>
-              </View>
-              <View style={{width: '46%', marginRight: 10}}>
-              <Image source={require('./img/hochiminh.webp')}
+              <Image source={require('./img/hanoi.jpg')}
                       style={styles.imgHot} />
                 <Text style={styles.imgText}>Hà Nội</Text>
               </View>
               <View style={{width: '46%', marginRight: 10}}>
-                <Image source={require('./img/hochiminh.webp')}
+                <Image source={require('./img/hoianBackground.webp')}
                         style={styles.imgHot} />
                   <Text style={styles.imgText}>Hội An</Text>
               </View>
               <View style={{width: '46%', marginRight: 10}}>
-                <Image source={require('./img/hochiminh.webp')}
+                <Image source={require('./img/phuquoc.jpg')}
                         style={styles.imgHot} />
                   <Text style={styles.imgText}>Phú Quốc</Text>
               </View>
@@ -263,8 +318,6 @@ export default class HomeScreen extends React.Component {
             </View>
         </View>
         
-        
-        <ModalFilterView></ModalFilterView>
       </ScrollView>
       
     );
@@ -272,6 +325,15 @@ export default class HomeScreen extends React.Component {
 }
 
 const styles = StyleSheet.create({
+  input: {
+    marginTop: 10,
+    width: '90%',
+    height: 30,
+    borderColor: '#C6C6C6',
+    borderWidth: 1, 
+    borderRadius: 5,
+    marginLeft: '3%'
+ },
   borderBot: {
     borderBottomWidth: 0.5, 
     borderBottomColor: '#8A8383', 
@@ -399,3 +461,4 @@ const typographyData = [
   { value: 'Caption' },
 ];
 
+export default withNavigation(HomeScreen);
