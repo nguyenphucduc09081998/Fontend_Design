@@ -7,7 +7,7 @@
  */
 
 import React from 'react';
-import { RoomDetails, FilterRoom, HomeScreen, BottomTabs } from './src/components';
+import { RoomDetails, FilterRoom, HomeScreen, BottomTabs, Payment } from './src/components';
 
 
 
@@ -23,7 +23,8 @@ const App: () => React$Node = () => {
     {/* <RoomDetails></RoomDetails> */}
     {/* <FilterRoom></FilterRoom> */}
     {/* <HomeScreen></HomeScreen> */}
-    <BottomTabs></BottomTabs>
+    {/* <BottomTabs></BottomTabs> */}
+    <Payment></Payment>
     </>
   );
 };
