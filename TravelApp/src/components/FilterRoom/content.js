@@ -60,7 +60,7 @@ export default class ContentFilterMore extends React.Component {
         </View>
 
         <View style={{flexDirection: 'row', marginBottom: 20}}>
-          <View style={{height: 20, marginTop: 10, marginLeft: 20, width: '44%'}}>
+          <View style={{height: 20, marginTop: 10, marginLeft: 10, width: '44%'}}>
             <Text style={{ color: '#373737', fontFamily: 'notoserif', fontWeight: '700', fontSize: 13}}>Check In</Text>
             <DatePicker
             style={styles.datePicker}
@@ -128,7 +128,7 @@ export default class ContentFilterMore extends React.Component {
           </View>
 
           <View style={{flexDirection: 'row', marginBottom: 60,}}>
-            <View style={{height: 20, marginTop: 10, marginLeft: 20, width: '25%'}}>
+            <View style={{height: 20, marginTop: 10, marginLeft: 10, width: '25%'}}>
             <Dropdown
                     label='Phòng'
                     baseColor='#EA0C41'
@@ -337,9 +337,9 @@ const styles = StyleSheet.create({
   },
   input: {
     marginTop: 10,
-    height: 34,
     borderColor: '#C6C6C6',
-    borderWidth: 1
+    borderWidth: 1,
+    width: '100%'
  },
  datePicker: {
   marginTop: 10,
@@ -347,7 +347,7 @@ const styles = StyleSheet.create({
 
   marginBottom: 30
   },
-  container: {paddingLeft: 20, paddingRight: 40, backgroundColor: '#fff' },
+  container: {paddingLeft: 10, paddingRight: 10, backgroundColor: '#fff', },
   head: { height: 40, backgroundColor: '#f1f8ff' },
   text: { margin: 6, textAlign: 'center', fontFamily: 'serif' },
   textPrice: {
