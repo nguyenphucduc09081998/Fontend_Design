@@ -33,7 +33,6 @@ export default class Payment extends React.Component {
             <ScrollView>
                <View style={styles.header}>
                </View>
-               <View style={styles.}></View>
             </ScrollView>
         )
     }

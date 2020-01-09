@@ -23,8 +23,8 @@ const App: () => React$Node = () => {
     {/* <RoomDetails></RoomDetails> */}
     {/* <FilterRoom></FilterRoom> */}
     {/* <HomeScreen></HomeScreen> */}
-    {/* <BottomTabs></BottomTabs> */}
-    <Payment></Payment>
+    <BottomTabs></BottomTabs>
+    {/* <Payment></Payment> */}
     </>
   );
 };
