@@ -17,9 +17,9 @@ import {
 } from 'react-native';
 import DatePicker from 'react-native-datepicker';
 
-import { createAppContainer  } from 'react-navigation';
+import { withNavigation } from 'react-navigation';
 
-export default class Profile extends React.Component {
+class Profile extends React.Component {
     
     constructor(props){
         super(props);
@@ -34,7 +34,7 @@ export default class Profile extends React.Component {
                 <View style={[styles.container]}>
                     <View style={styles.avt_gr}>
                         <View style={[styles.col_md_4]}> 
-                            <Image source={require('../../../img/avatar.png')}/>
+                            <Image source={require('../../../img/man.png')}/>
                             <Text>Lê Minh Hiếu</Text>
                         </View>
                         <View style={styles.col_md_4}>
@@ -203,3 +203,4 @@ var styles = StyleSheet.create({
         textAlign: 'right'
     }
 })
+export default withNavigation(Profile);

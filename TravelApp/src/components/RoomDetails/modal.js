@@ -5,13 +5,16 @@ import {
   View, 
   Modal,
   TouchableHighlight,
+  TouchableOpacity
 } from 'react-native';
 import ContentMore from './content';
 export {
   ContentMore,
 };
 
-export default class ModalView extends Component {
+import { withNavigation } from 'react-navigation';
+
+class ModalView extends Component {
 
   state = {
     modalVisible: false,
@@ -66,10 +69,13 @@ export default class ModalView extends Component {
                       </TouchableHighlight>
                     </View>
                     <View style={{width: '50%', paddingTop: 0, marginTop: 0}}>
-                    <TouchableHighlight
-                      style={styles.button}>
+                    <TouchableOpacity
+                      style={styles.button}
+                      onPress={() => {
+                      this.props.navigation.navigate('Payment');
+                      }}>
                       <Text style={{color: 'white',fontFamily: 'serif', fontSize: 15, fontWeight: '700'}}>Đặt Ngay</Text>
-                    </TouchableHighlight>
+                    </TouchableOpacity>
                   </View>
                 </View>
                
@@ -106,6 +112,8 @@ export default class ModalView extends Component {
             </View>
           </View>
         </View>
+
+        
     );
   }
 
@@ -134,3 +142,5 @@ const styles = StyleSheet.create({
     marginTop: 20,
   },
 });
+
+export default withNavigation(ModalView);
