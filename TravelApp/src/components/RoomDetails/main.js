@@ -15,7 +15,6 @@ import {
 } from 'react-native/Libraries/NewAppScreen';
 
 import CalendarsScreen from './calendar';
-import ModalView from './modal';
 
 import { createAppContainer  } from 'react-navigation';
 import { createMaterialTopTabNavigator } from 'react-navigation-tabs';
@@ -55,7 +54,6 @@ class TomTat extends React.Component {
             <Text h4 style={{ color: '#A19F9F', fontWeight: '700', fontFamily: 'serif' }}>Cơ Sở Vật Chất</Text>
         </View>
         
-        <ModalView></ModalView>
         </>
       </ScrollView>
       </SafeAreaView>
@@ -196,8 +194,7 @@ class TienNghi extends React.Component {
               </View>
             </View>
         </View>
-        
-        <ModalView></ModalView>
+      
         </>
       </ScrollView>
       </SafeAreaView>
@@ -242,7 +239,6 @@ class GiaVaDatLich extends React.Component {
             <CalendarsScreen></CalendarsScreen>
         </View>
 
-        <ModalView></ModalView>
         </>
       </ScrollView>
       </SafeAreaView>
@@ -446,8 +442,7 @@ class DanhGia extends React.Component {
             next to The Harbour Bridge and a few other places as well.
             </Text>
         </View>
-        
-        <ModalView></ModalView>
+      
         </>
       </ScrollView>
       </SafeAreaView>

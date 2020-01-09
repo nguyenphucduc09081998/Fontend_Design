@@ -4,6 +4,34 @@
     
 }
 
+.trangchu{
+    width: 100%;
+    overflow-x:hidden;
+}
+
+.trangchu .trangchu_blk {
+    width: 100%; 
+    height: 834px; 
+    position: relative;
+}
+
+.trangchu .trangchu_blk .navbar{
+    padding-top: 30px; 
+    font-family: open sans,sans-serif;
+}
+
+.trangchu .trangchu_blk .navbar .logo a{
+    font-size: 21px;
+    color: #f4f4f8;
+    font-weight: 800;
+}
+
+.trangchu .trangchu_blk .navbar .container{
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 14%;
+}
+
 .popular_place,
 .chosen_place,
 .hot_place,
@@ -408,14 +436,14 @@
     border-bottom-right-radius: 15px;
     display: flex;
     flex-wrap: wrap;
-    height: 350px;
+    height: 320px;
     margin-right: 48px;
     margin-bottom: 30px;
+    overflow: hidden;
 }
 
 .hot_place .hot_blk .hot_info .hot_details{
     background: white;
-    height: 97.5%;
     padding-left: 19px;
 }
 
@@ -449,7 +477,7 @@
 
 .hot_place .hot_blk .hot_info img{
     width: 100%;
-    height: 79.5%;
+    height: 100%;
     margin-bottom: 10px;
     position: relative;
     /*background-repeat: no-repeat;
@@ -457,10 +485,16 @@
     background-position: center center;*/
 }
 
+.hot_place .hot_blk .hot_info .hot_details,
+.hot_place .hot_blk .hot_info .img-blk{
+    width: 100%;
+    height: 100%;
+}
+
 .hot_place .hot_blk .hot_info .offer_name{
     position: absolute;
     left: 15px;
-    bottom: 103px;
+    bottom: 19px;
     width: 180px;
     height: 33px;
     background: #fa9e1b;
@@ -914,7 +948,7 @@ and (max-width: 2000px){
     .suggest_place .suggest_blk .suggest_info .suggest_details .suggest_price .right{
         width: 49%;
     }
-
+    
 
 }
 
@@ -927,6 +961,23 @@ and (max-width: 1832px){
 
     
 }
+
+@media only screen 
+and (min-width: 1648px)
+and (max-width: 1800px){
+    .suggest_place .suggest_blk .suggest_info {
+        height: 443px;
+    }   
+}
+
+@media only screen 
+and (min-width: 1200px)
+and (max-width: 1648px){
+    .suggest_place .suggest_blk .suggest_info {
+        height: 386px;
+    }   
+}
+
 
 @media only screen 
 and (max-width: 1564px){
@@ -957,9 +1008,6 @@ and (max-width: 1880px){
         width: 47%;
     }
 
-    .hot_place .hot_blk .hot_info .hot_details{
-        height: 88.5%;
-    }
 
     .hot_place .hot_blk .hot_details .hot_max_customer span {
         font-size: 12.5px;
@@ -967,6 +1015,8 @@ and (max-width: 1880px){
     .hot_place .hot_blk .hot_details .hot_view_details {
         margin-top: 17px;
     }
+
+
 }
 
 @media only screen 
@@ -974,22 +1024,17 @@ and (min-width: 1200px)
 and (max-width: 1700px){
     .hot_place .hot_blk .hot_info{
         width: 46%;
+        height: 247px;
     }
 
-    .hot_place .hot_blk .hot_info .hot_details{
-        height: 80.5%;
-    }
-
-    .hot_place .hot_blk .hot_details .hot_max_customer span {
+    .hot_place .hot_blk .hot_details .hot_max_customer {
         display: none;
-    }
-    .hot_place .hot_blk .hot_details .hot_view_details {
-        margin-top: 0px;
+        
     }
 
     .hot_place .hot_blk .hot_info .hot_details p {
         font-size: 13px;
-        margin-top: 12px;
+        
     }
 
     .hot_place .hot_blk .hot_details .hot_price div {
@@ -1000,6 +1045,8 @@ and (max-width: 1700px){
         font-size: 20px;
     }
 }
+
+
 
 .country_blk .country_info .img_blk{
     display: flex;
@@ -1030,15 +1077,129 @@ and (max-width: 1700px){
     flex-wrap: wrap;
 }
 
+
 @media only screen 
-and (min-width: 1114px)
-and (max-width: 1620px){
-    .tutorial_blk .tutorial_info h5{
-        
+and (min-width: 1720px)
+and (max-width: 2000px){
+    .trangchu .trangchu_blk .navbar .container .logo{
+        width: 30%;
+    }
+
+    .trangchu .trangchu_blk .navbar .container .collapse{
+        width: 50%;
+    }
+
+    .trangchu .trangchu_blk .navbar .container .nav-last{
+        width: 10%;
     }
 }
 
+@media only screen 
+and (min-width: 1220px)
+and (max-width: 1720px){
+    .trangchu .trangchu_blk .navbar .container{
+        margin-left: 8%;
+    }
+    .trangchu .trangchu_blk .navbar .container .logo{
+        width: 30%;
+    }
 
+    .trangchu .trangchu_blk .navbar .container .collapse{
+        width: 50%;
+    }
+
+    .trangchu .trangchu_blk .navbar .container .nav-last{
+        width: 10%;
+    }
+}
+
+@media only screen 
+and (min-width: 1320px)
+and (max-width: 1590px){
+    .trangchu .trangchu_blk .navbar .container{
+        margin-left: 8%;
+    }
+    .trangchu .trangchu_blk .navbar .container .logo{
+        width: 30%;
+    }
+
+    .trangchu .trangchu_blk .navbar .container .collapse{
+        width: 50%;
+    }
+
+    .trangchu .trangchu_blk .navbar .container .nav-last{
+        width: 13%;
+    }
+
+    .trangchu .trangchu_blk .navbar .container .nav-last .icon
+    {
+        display: none;
+    }
+}
+
+@media only screen 
+and (min-width: 1220px)
+and (max-width: 1320px){
+    .trangchu .trangchu_blk .navbar .container{
+        margin-left: 8%;
+    }
+    .trangchu .trangchu_blk .navbar .container .logo{
+        width: 25%;
+    }
+
+    .trangchu .trangchu_blk .navbar .container .collapse{
+        width: 50%;
+    }
+
+    .trangchu .trangchu_blk .navbar .container .nav-last{
+        width: 20%;
+    }
+
+    .trangchu .trangchu_blk .navbar .container .nav-last .icon
+    {
+        display: none;
+    }
+
+}
+
+@media only screen 
+and (min-width: 1520px)
+and (max-width: 1880px){
+
+
+   .country_blk .country_info .country_details .tour .country_tour{
+        display: none;
+   }
+
+
+   .country_blk .country_info .country_details .tour {
+        margin-top: 5%;
+   }
+}
+
+.country_blk .country_info .country_details .intro_blk .country_intro p{
+    font-size: 15px;
+}
+
+@media only screen 
+and (min-width: 800px)
+and (max-width: 1520px){
+   .country_blk .country_info .country_details .intro_blk .country_intro{
+        display: none;
+   }
+
+   .country_blk .country_info .country_details .tour .country_tour{
+        display: none;
+   }
+
+   .country_blk .country_info .country_details .tour {
+        margin-top: 5%;
+   }
+}
+
+.country_blk .country_info .country_details .intro_blk .country_intro p{
+    font-size: 15px;
+}
 
 
 

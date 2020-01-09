@@ -7,7 +7,7 @@ html {
     position: absolute;
     top: 30px;
     right: 14px;
-    width: 26%;
+    width: 18%;
     height: 48%;
     border-radius: 0;
 }
@@ -16,7 +16,7 @@ html {
     position: absolute;
     top: 30px;
     right: 14px;
-    width: 26%;
+    width: 18%;
     height: 48%;
     border-radius: 0;
 }
@@ -27,7 +27,7 @@ html {
 }*/
 
 #datepicker1 {
-    width: 97%;
+    width: 100%;
     position: relative;
 }
 
@@ -75,7 +75,7 @@ html {
 .duplicate-box>div {
     overflow: hidden;
     margin-top: 17px;
-    font-family: Lora;
+    font-family: open sans,sans-serif;
     font-weight: bold;
     color: #504d4d;
     letter-spacing: -0.015em;
@@ -86,7 +86,7 @@ html {
 }
 
 .price-box>div {
-    font-family: "Times New Roman", Times, serif !important;
+    font-family: open sans,sans-serif !important;
     font-weight: 500;
     color: #504d4db8;
     font-size: 18px;
@@ -294,7 +294,7 @@ html {
 .info-box-2 .blk-info .blk-info-detail  {
     background-color: #FFFFFF;
     border: 1.5px solid #c6c6c661;
-    font-family: Lora;
+    font-family: open sans,sans-serif;
     letter-spacing: -0.015em;
     padding-top: 15px;
 }
@@ -322,9 +322,10 @@ html {
 
 .info-box .blk-info .blk-info-detail p,
 .info-box-2 .blk-info .blk-info-detail p {
-    font-size: 21px;
+    font-size: 19px;
     color: #6A6767;
     margin-top: 13px;
+    padding-right: 2%;
 }
 
 .info-box-2 .blk-info .blk-info-detail p{
@@ -349,7 +350,7 @@ html {
     width: 9%;
     opacity: 0.5;
     margin-left: 10px;
-    margin-right: 15px;
+    margin-right: 9%;
     margin-bottom: 9px;
     margin-top: 6px;
 }
@@ -390,7 +391,7 @@ html {
 .blk-info .hot-tag,
 .blk-info .voucher-tag,
 .blk-info .rent-tag {
-    font-family: Lora;
+    font-family: open sans,sans-serif;
     letter-spacing: -0.015em;
     font-size: 20px;
     background-color: #ea0c41b3;
@@ -412,9 +413,9 @@ html {
 }
 
 .blk-info .voucher-tag h5 {
-    font-size: 17px;
-    padding-top: 2px;
-    padding-left: 8px;
+    font-size: 15px;
+    padding-top: 3px;
+    padding-left: 11px;
 }
 
 .blk-info .rent-tag {
@@ -509,18 +510,204 @@ html {
         }
     } */
 
-@media screen and (max-width:1720) and (min-width:1025) {
-    .info-box .blk-info .blk-info-detail label {
-        color: #01fcfc;
+
+@media screen and (max-width:1720px) and (min-width:1025px) {
+    .info-box .blk-info .blk-info-detail .blk-info-footer>div span{
+    	font-size: 14px;
     }
-    .btn-danger {
-        background-color: rgb(1, 255, 234);
+
+    .info-box .blk-info .blk-info-detail p{
+    	font-size: 17px;
     }
-    #pageId {
-        padding-left: 100px;
-        padding-top: 30px;
-        padding-bottom: 5px;
+    .blk-info .voucher-tag,
+	.blk-info .arrow-left,
+	.blk-info .rent-tag {
+		display: none;
+	}
+
+	.info-box-2 .blk-info .blk-info-detail span{
+		font-size: 15px;
+	}
+
+	.info-box-2 .blk-info .blk-info-detail .owner span{
+		font-size: 15px !important;
+	}
+
+	.info-box-2 .blk-info .blk-info-detail .owner img{
+		width: 40px;
+		height: 40px;
+	}
+
+	.info-box-2 .blk-info .blk-info-detail p{
+		font-size: 14px;
+	}
+}
+
+@media screen and (max-width:1590px) and (min-width:1025px) {
+	.info-box .blk-info .blk-info-detail p{
+    	font-size: 15px;
     }
+
+    #icon2, #icon1 {
+    	width: 22%;
+    }
+
+    .info-box-2 .blk-info .blk-info-detail label {
+    	font-size: 17px;
+	}
+
+	.info-box-2 .blk-info .blk-info-detail span{
+		font-size: 13px;
+	}
+
+	#img-filter{
+		display: none;
+	}
+}
+
+@media screen and (max-width:1468px) and (min-width:1025px) {
+	.info-box-2 .blk-info .blk-info-detail label {
+    	font-size: 15px;
+	}
+
+	.info-box-2 .blk-info .blk-info-detail span{
+		font-size: 12px;
+	}
+}
+
+@media screen and (max-width:1328px) and (min-width:1312px){
+	#icon2, #icon1 {
+    	display: none;
+    }
+
+    .info-box-2 .blk-info .blk-info-detail span{
+		font-size: 11px;
+	}
+}
+
+@media screen and (max-width:1186px) and (min-width:600px){
+	.info-box-2 .blk-info .blk-info-detail p {
+	    display: none;
+	}
+	.info-box-2 .blk-info .blk-info-detail .blk-info-footer {
+	    margin-top: 10px;
+	}
+
+	.filter-box>div .filter-title {
+	    float: left;
+	    font-size: 17px;
+	}
+}
+
+@media screen and (max-width:1312px) and (min-width:600px){
+
+    .info-box-2 .blk-info .blk-info-detail .blk-info-footer span{
+		font-size: 10px;
+	}
+
+	.info-box-2 .blk-info .blk-info-detail label {
+	    font-size: 13px;
+	}
+	.info-box-2 .blk-info .blk-info-detail span {
+	    font-size: 10.5px;
+	}
+}
+@media screen and (max-width:1338px) and (min-width:1186px){
+	.info-box .blk-info .blk-info-detail .blk-info-footer>div img{
+    	margin-left: 0px;
+    }
+    .info-box .blk-info .blk-info-detail label{
+		font-size: 17px;
+	}
+	.info-box .blk-info .blk-info-detail span{
+		font-size: 13px;
+	}
+	.info-box .blk-info .blk-info-detail p {
+    	font-size: 13px;
+	}
+    .blk-info .voucher-tag,
+	.blk-info .arrow-left,
+	.blk-info .rent-tag {
+		display: none;
+	}
+
+	.blk-info .hot-tag {
+	    width: 46px;
+	    height: 25px;
+	    top: 8px;
+	    right: 7px;
+	}
+
+	.blk-info .hot-tag h5 {
+    	font-size: 14px;
+	}
+
+	.info-box .blk-info .blk-img img{
+		width: 100% !important;
+		height: 100% !important;
+	}
+
+	#icon2, #icon1 {
+    	width: 25%;
+    }
+
+    .block-area label {
+    	font-size: 12px;
+    }
+    .filter-box>div .filter-title {
+        font-size: 18px;
+    }
+}
+
+@media screen and (max-width:1186px) and (min-width:768px){
+	.info-box .blk-info .blk-info-detail label{
+		font-size: 19px;
+	}
+	.info-box .blk-info .blk-info-detail span{
+		font-size: 14px;
+	}
+	.info-box .blk-info .blk-info-detail p
+	{
+    	font-size: calc(13px - 0.05vw);
+	}
+
+	.info-box .blk-info .blk-info-detail .blk-info-footer>div span{
+		font-size: 11px;
+	}
+	
+	.blk-info .voucher-tag,
+	.blk-info .arrow-left,
+	.blk-info .rent-tag {
+		display: none;
+	}
+
+	.info-box .blk-info .blk-img img{
+		width: 100% !important;
+		height: 100% !important;
+	}
+
+	.blk-info .hot-tag {
+	    width: 46px;
+	    height: 25px;
+	    top: 8px;
+	    right: 7px;
+	}
+
+	.blk-info .hot-tag h5 {
+    	font-size: 14px;
+	}
+
+	.info-box .blk-info .blk-info-detail .blk-info-footer{
+		display: none;
+	}
+
+	.block-area label {
+    	font-size: 11px;
+    }
+	
+	.custom-select{
+		font-size: 12px;
+	}
 }
 
 
@@ -534,7 +721,7 @@ html {
         background-color: rgb(0, 255, 85);
     } */
     .filter-box>div .filter-title {
-        font-size: 20px;
+        font-size: 18px;
     }
     .filter-box>div .reset {
         /* float: right; */
@@ -553,6 +740,9 @@ html {
     #icon2 {
         display: none;
     }
+    .custom-select{
+		font-size: 11px;
+	}
     .time_in {
         display: none;
         padding-left: 15px;

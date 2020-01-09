@@ -53,12 +53,12 @@ class HomeScreen extends React.Component {
                     <Text style={{fontSize: 11, fontWeight: '600', marginLeft: 4}}>Gần đây</Text>
                   </View>
                   <View style={{width: '19%'}}>
-                    <Image source={require('../../../img/hanoi_web.webp')}
+                    <Image source={require('../../../img/hanoi.jpg')}
                             style={{width: 40, height: 40, borderRadius: 50, marginLeft: 4}} />
                     <Text style={{fontSize: 11, fontWeight: '600', marginLeft: 7}}>Hà Nội</Text>
                   </View>
                   <View style={{width: '19%'}}>
-                    <Image source={require('../../../img/phuquoc_png.png')}
+                    <Image source={require('../../../img/phuquocBackground.png')}
                             style={{width: 40, height: 40, borderRadius: 50, marginLeft: 4}} />
                     <Text style={{fontSize: 11, fontWeight: '600'}}>Phú Quốc</Text>
                   </View>

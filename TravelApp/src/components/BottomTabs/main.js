@@ -8,6 +8,7 @@ import {
   ScrollView,
   SafeAreaView,
   Animated,
+  TouchableOpacity,
 } from 'react-native';
 
 import {
@@ -17,6 +18,8 @@ import {
 import HomeScreen from '../HomeScreen/index';
 import RoomDetails from '../RoomDetails/index';
 import FilterRoom from '../FilterRoom/filtering';
+import Profile from '../Profile/index';
+import Payment from '../Payment/index';
 import { createAppContainer  } from 'react-navigation';
 import { createMaterialBottomTabNavigator } from 'react-navigation-material-bottom-tabs';
 import { Table, Rows } from 'react-native-table-component';
@@ -217,8 +220,12 @@ class TaiKhoan extends React.Component {
         <>
           <View style={{flexDirection: 'row', flexWrap: 'wrap', justifyContent: 'flex-start', marginTop: 40}}>
               <View style={{width: '33.33%'}}>
-                <Image source={require('../../../img/profile/edit.png')}
+                  <TouchableOpacity  onPress={() => {
+                   this.props.navigation.navigate('Profile');
+                  }}>
+                  <Image source={require('../../../img/profile/edit.png')}
                       style={{width: 20, height: 20, marginLeft: '85%', marginTop: '10%'}} />
+                      </TouchableOpacity>
               </View>
               <View style={{width: '30%'}}>
                 <Image source={require('../../../img/man.png')}
@@ -375,6 +382,18 @@ const TabNavigator  = createMaterialBottomTabNavigator  (
         activeColor: 'red',
       },
     },
+    'Profile': { 
+      screen: () => <Profile/>, 
+      navigationOptions: {
+        activeColor: 'red',
+      },
+    },
+    'Payment': { 
+      screen: () => <Payment/>, 
+      navigationOptions: {
+        activeColor: 'red',
+      },
+    },
   },
   {
     shifting: true,
@@ -386,7 +405,7 @@ const TabNavigator  = createMaterialBottomTabNavigator  (
     shadowRadius: 2,  
     elevation: 5,
     marginLeft: 20,
-    width: '130%',
+    width: '170%',
 
     },  
     // inactiveTintColor: '#f0edf6',
