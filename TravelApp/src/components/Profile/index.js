@@ -34,7 +34,7 @@ class Profile extends React.Component {
                 <View style={[styles.container]}>
                     <View style={styles.avt_gr}>
                         <View style={[styles.col_md_4]}> 
-                            <Image source={require('../../../img/man.png')}/>
+                            <Image source={require('../../../img/man.png')} style={{marginLeft: 5}}/>
                             <Text>Lê Minh Hiếu</Text>
                         </View>
                         <View style={styles.col_md_4}>
@@ -65,7 +65,7 @@ class Profile extends React.Component {
                                 <TextInput style={styles.Input}/>
                             </View>                            
                             <View style={styles.form_group}>
-                                <Text>Ngày sinh: </Text>
+                                <Text style={{marginTop: '2%'}}>Ngày sinh: </Text>
                                 <DatePicker
                                     style={styles.datePicker}
                                     date={this.state.date}
@@ -82,7 +82,7 @@ class Profile extends React.Component {
                                         left: -2,
                                         top: 9,
                                         marginLeft: 10,
-                                        width: '20%',
+                                        width: '10%',
                                         height: '55%',
                                     },
                                     dateInput: {
@@ -90,6 +90,7 @@ class Profile extends React.Component {
                                         borderWidth: 1,
                                         borderColor: '#C6C6C6',
                                         height: 34,
+                                        borderRadius: 7, 
                                     },
                         
                                     // ... You can check the source to find the other keys.
@@ -141,10 +142,10 @@ class Profile extends React.Component {
 }
 var styles = StyleSheet.create({
     container: {
-      flex: 1,
-      justifyContent: 'space-around',
-      paddingHorizontal: 20,
-      paddingBottom: 100,
+        flex: 1,
+        justifyContent: 'space-around',
+        paddingHorizontal: 20,
+        paddingBottom: 10,
         width: '100%',
         flexWrap: 'wrap'
     },
@@ -172,7 +173,8 @@ var styles = StyleSheet.create({
         fontWeight: 'bold',
     },
     sub_title: {
-        color: '#797474'
+        color: '#797474',
+        fontSize: 11
     },
     button: {
         alignItems: 'center',
@@ -182,7 +184,8 @@ var styles = StyleSheet.create({
         width: '100%',
         width: 150,
         height: 30,
-        left: 23
+        left: 23,
+        borderRadius: 14
     },
     Input: {
         borderColor: '#CCC9C9',
@@ -201,6 +204,10 @@ var styles = StyleSheet.create({
     right: {
         flexDirection: 'row-reverse',
         textAlign: 'right'
-    }
+    },
+    datePicker: {
+        width: '100%',
+               
+    },
 })
 export default withNavigation(Profile);

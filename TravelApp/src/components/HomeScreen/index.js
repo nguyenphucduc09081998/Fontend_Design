@@ -79,7 +79,7 @@ class HomeScreen extends React.Component {
             <View style={{flexDirection: 'row', flexWrap: 'wrap', width: '100%', marginLeft: 10}}>
                 <View style={{width: '46%', marginRight: 10}}>
                   <TouchableOpacity  onPress={() => {
-                   this.props.navigation.navigate('RoomDetails');
+                   this.props.navigation.navigate('FilterRoom');
                   }}>
                   <Image source={require('../../../img/hochiminh.jpg')}
                           style={styles.imgHot} />
@@ -87,19 +87,31 @@ class HomeScreen extends React.Component {
                   </TouchableOpacity>
                 </View>
               <View style={{width: '46%', marginRight: 10}}>
-              <Image source={require('../../../img/hanoi.jpg')}
-                      style={styles.imgHot} />
-                <Text style={styles.imgText}>Hà Nội</Text>
+                  <TouchableOpacity  onPress={() => {
+                   this.props.navigation.navigate('FilterRoom');
+                  }}>
+                  <Image source={require('../../../img/hanoi.jpg')}
+                        style={styles.imgHot} />
+                  <Text style={styles.imgText}>Hà Nội</Text>
+                </TouchableOpacity>
               </View>
               <View style={{width: '46%', marginRight: 10}}>
-                <Image source={require('../../../img/hoianBackground.webp')}
-                        style={styles.imgHot} />
-                  <Text style={styles.imgText}>Hội An</Text>
+                  <TouchableOpacity  onPress={() => {
+                   this.props.navigation.navigate('FilterRoom');
+                  }}>
+                    <Image source={require('../../../img/hoianBackground.webp')}
+                          style={styles.imgHot} />
+                    <Text style={styles.imgText}>Hội An</Text>
+                  </TouchableOpacity>
               </View>
               <View style={{width: '46%', marginRight: 10}}>
-                <Image source={require('../../../img/phuquoc.jpg')}
-                        style={styles.imgHot} />
-                  <Text style={styles.imgText}>Phú Quốc</Text>
+                  <TouchableOpacity  onPress={() => {
+                   this.props.navigation.navigate('FilterRoom');
+                  }}>
+                    <Image source={require('../../../img/phuquoc.jpg')}
+                          style={styles.imgHot} />
+                    <Text style={styles.imgText}>Phú Quốc</Text>
+                  </TouchableOpacity>
               </View>
             </View>
             <View style={styles.borderBot}></View>
@@ -107,120 +119,136 @@ class HomeScreen extends React.Component {
         
           
         <View style={{marginTop: 10, marginLeft: 10}}>
-          <Text style={{fontSize: 15, fontWeight: '600'}}>Địa điểm hot nhất</Text>
-          <Text style={{fontSize: 10, color: '#929191' }}>Tận hưởng không gian sống tuyệt vời tại thương hiệu đô thị hàng đầu Việt Nam
+          <Text style={{fontSize: 14, fontWeight: '600'}}>Địa điểm hot nhất</Text>
+          <Text style={{fontSize: 9, color: '#929191' }}>Tận hưởng không gian sống tuyệt vời tại thương hiệu đô thị hàng đầu Việt Nam
 </Text>
           <View style={{flexDirection: 'row', flexWrap: "wrap"}}>
             <View style={{         
-                          marginRight: 10,
-                          width: '47%'
+                          marginRight: 12,
+                          width: '46%'
                           }}>
-              <View style={{}}>
-              <Image source={require('../../../img/room2.jpg')}
-                      style={styles.imgInfo} />
-              </View>
-              <View style={{ marginTop: 10}}>
-                <Text style={{fontFamily: 'serif', fontWeight: '700', fontSize: 11.5, color: '#1B51DA',}}>Mường Thanh Luxury Apartment</Text>
-                <Text style={styles.moreInfo}>10 khách · 2 phòng ngủ · 2 phòng tắm</Text>
-                <View style={{flexDirection: 'row', flexWrap: 'wrap'}}>
-                  <View style={{width: '70%'}}>
-                    <Text style={{fontFamily: 'serif', fontWeight: '700', fontSize: 11, color: '#3E3C3C', marginTop: 5}}>1,800,000₫  <Text style={{fontSize: 8, color: '#696666'}}>(1 đêm)</Text></Text>
-                  </View>
-                  <View style={{width: '30%'}}>
-                    <TouchableHighlight
-                      style={styles.buttonStar}
-                      >
-                      <Text style={{color: '#fff',fontFamily: 'serif', fontSize: 9, fontWeight: '700'}}>4.5 Star</Text>
-                    </TouchableHighlight>
-                  </View>
+                <TouchableOpacity  onPress={() => {
+                   this.props.navigation.navigate('RoomDetails');
+                  }}>
+                <View style={{}}>
+                  <Image source={require('../../../img/room2.jpg')}
+                        style={styles.imgInfo} />
                 </View>
-                
-                <View style={{borderBottomWidth: 0.7, borderBottomColor: '#c6c6c6', paddingBottom: 6}}></View>
-              </View>
+                <View style={{ marginTop: 10}}>
+                  <Text style={{fontFamily: 'serif', fontWeight: '700', fontSize: 9, color: '#1B51DA',}}>San House Luxury Apartment</Text>
+                  <Text style={styles.moreInfo}>10 khách · 2 phòng ngủ · 2 phòng tắm</Text>
+                  <View style={{flexDirection: 'row', flexWrap: 'wrap'}}>
+                    <View style={{width: '70%'}}>
+                      <Text style={{fontFamily: 'serif', fontWeight: '700', fontSize: 11, color: '#3E3C3C', marginTop: 5}}>1,800,000₫  <Text style={{fontSize: 8, color: '#696666'}}>(1 đêm)</Text></Text>
+                    </View>
+                    <View style={{width: '30%'}}>
+                      <TouchableHighlight
+                        style={styles.buttonStar}
+                        >
+                        <Text style={{color: '#fff',fontFamily: 'serif', fontSize: 9, fontWeight: '700'}}>4.5 Star</Text>
+                      </TouchableHighlight>
+                    </View>
+                  </View>
+                  
+                  <View style={{borderBottomWidth: 0.7, borderBottomColor: '#c6c6c6', paddingBottom: 6}}></View>
+                </View>
+              </TouchableOpacity>
+            </View>
+
+            <View style={{         
+                          marginRight: 12,
+                          width: '46%'
+                          }}>
+              <TouchableOpacity  onPress={() => {
+                this.props.navigation.navigate('RoomDetails');
+              }}>
+                <View style={{}}>
+                  <Image source={require('../../../img/room3.jpg')}
+                        style={styles.imgInfo} />
+                </View>
+                <View style={{ marginTop: 10}}>
+                  <Text style={{fontFamily: 'serif', fontWeight: '700', fontSize: 9, color: '#1B51DA',}}>Homestay Hoàn Kiếm Luxury</Text>
+                  <Text style={styles.moreInfo}>10 khách · 2 phòng ngủ · 2 phòng tắm</Text>
+                  <View style={{flexDirection: 'row', flexWrap: 'wrap'}}>
+                    <View style={{width: '70%'}}>
+                      <Text style={{fontFamily: 'serif', fontWeight: '700', fontSize: 11, color: '#3E3C3C', marginTop: 5}}>1,800,000₫  <Text style={{fontSize: 8, color: '#696666'}}>(1 đêm)</Text></Text>
+                    </View>
+                    <View style={{width: '30%'}}>
+                      <TouchableHighlight
+                        style={styles.buttonStar}
+                        >
+                        <Text style={{color: '#fff',fontFamily: 'serif', fontSize: 9, fontWeight: '700'}}>4.5 Star</Text>
+                      </TouchableHighlight>
+                    </View>
+                  </View>
+                  
+                  <View style={{borderBottomWidth: 0.7, borderBottomColor: '#c6c6c6', paddingBottom: 6}}></View>
+                </View>
+              </TouchableOpacity>
             </View>
 
             <View style={{         
                           marginRight: 10,
-                          width: '47%'
+                          width: '46%'
                           }}>
-              <View style={{}}>
-              <Image source={require('../../../img/room3.jpg')}
-                      style={styles.imgInfo} />
-              </View>
-              <View style={{ marginTop: 10}}>
-                <Text style={{fontFamily: 'serif', fontWeight: '700', fontSize: 11.5, color: '#1B51DA',}}>Hoàn Kiếm Luxury Home</Text>
-                <Text style={styles.moreInfo}>10 khách · 2 phòng ngủ · 2 phòng tắm</Text>
-                <View style={{flexDirection: 'row', flexWrap: 'wrap'}}>
-                  <View style={{width: '70%'}}>
-                    <Text style={{fontFamily: 'serif', fontWeight: '700', fontSize: 11, color: '#3E3C3C', marginTop: 5}}>1,800,000₫  <Text style={{fontSize: 8, color: '#696666'}}>(1 đêm)</Text></Text>
-                  </View>
-                  <View style={{width: '30%'}}>
-                    <TouchableHighlight
-                      style={styles.buttonStar}
-                      >
-                      <Text style={{color: '#fff',fontFamily: 'serif', fontSize: 9, fontWeight: '700'}}>4.5 Star</Text>
-                    </TouchableHighlight>
-                  </View>
+              <TouchableOpacity  onPress={() => {
+                this.props.navigation.navigate('RoomDetails');
+              }}>
+                <View style={{}}>
+                <Image source={require('../../../img/room4.jpg')}
+                        style={styles.imgInfo} />
                 </View>
-                
-                <View style={{borderBottomWidth: 0.7, borderBottomColor: '#c6c6c6', paddingBottom: 6}}></View>
-              </View>
-            </View>
-
-            <View style={{         
-                          marginRight: 10,
-                          width: '47%'
-                          }}>
-              <View style={{}}>
-              <Image source={require('../../../img/room4.jpg')}
-                      style={styles.imgInfo} />
-              </View>
-              <View style={{ marginTop: 10}}>
-                <Text style={{fontFamily: 'serif', fontWeight: '700', fontSize: 11.5, color: '#1B51DA',}}>Noble Apartment Studio - Silver</Text>
-                <Text style={styles.moreInfo}>10 khách · 2 phòng ngủ · 2 phòng tắm</Text>
-                <View style={{flexDirection: 'row', flexWrap: 'wrap'}}>
-                  <View style={{width: '70%'}}>
-                    <Text style={{fontFamily: 'serif', fontWeight: '700', fontSize: 11, color: '#3E3C3C', marginTop: 5}}>1,800,000₫  <Text style={{fontSize: 8, color: '#696666'}}>(1 đêm)</Text></Text>
+                <View style={{ marginTop: 10}}>
+                  <Text style={{fontFamily: 'serif', fontWeight: '700', fontSize: 9, color: '#1B51DA',}}>Noble Apartment Studio Silver</Text>
+                  <Text style={styles.moreInfo}>10 khách · 2 phòng ngủ · 2 phòng tắm</Text>
+                  <View style={{flexDirection: 'row', flexWrap: 'wrap'}}>
+                    <View style={{width: '70%'}}>
+                      <Text style={{fontFamily: 'serif', fontWeight: '700', fontSize: 11, color: '#3E3C3C', marginTop: 5}}>1,800,000₫  <Text style={{fontSize: 8, color: '#696666'}}>(1 đêm)</Text></Text>
+                    </View>
+                    <View style={{width: '30%'}}>
+                      <TouchableHighlight
+                        style={styles.buttonStar}
+                        >
+                        <Text style={{color: '#fff',fontFamily: 'serif', fontSize: 9, fontWeight: '700'}}>4.5 Star</Text>
+                      </TouchableHighlight>
+                    </View>
                   </View>
-                  <View style={{width: '30%'}}>
-                    <TouchableHighlight
-                      style={styles.buttonStar}
-                      >
-                      <Text style={{color: '#fff',fontFamily: 'serif', fontSize: 9, fontWeight: '700'}}>4.5 Star</Text>
-                    </TouchableHighlight>
-                  </View>
+                  
+                  <View style={{borderBottomWidth: 0.7, borderBottomColor: '#c6c6c6', paddingBottom: 6}}></View>
                 </View>
-                
-                <View style={{borderBottomWidth: 0.7, borderBottomColor: '#c6c6c6', paddingBottom: 6}}></View>
-              </View>
+              </TouchableOpacity>
             </View>
             
             <View style={{         
                           marginRight: 10,
-                          width: '47%'
+                          width: '46%'
                           }}>
-              <View style={{}}>
-              <Image source={require('../../../img/room5.jpg')}
-                      style={styles.imgInfo} />
-              </View>
-              <View style={{ marginTop: 10}}>
-                <Text style={{fontFamily: 'serif', fontWeight: '700', fontSize: 11.5, color: '#1B51DA',}}>Luxury Apartment - The Golden</Text>
-                <Text style={styles.moreInfo}>10 khách · 2 phòng ngủ · 2 phòng tắm</Text>
-                <View style={{flexDirection: 'row', flexWrap: 'wrap'}}>
-                  <View style={{width: '70%'}}>
-                    <Text style={{fontFamily: 'serif', fontWeight: '700', fontSize: 11, color: '#3E3C3C', marginTop: 5}}>1,800,000₫  <Text style={{fontSize: 8, color: '#696666'}}>(1 đêm)</Text></Text>
-                  </View>
-                  <View style={{width: '30%'}}>
-                    <TouchableHighlight
-                      style={styles.buttonStar}
-                      >
-                      <Text style={{color: '#fff',fontFamily: 'serif', fontSize: 9, fontWeight: '700'}}>4.5 Star</Text>
-                    </TouchableHighlight>
-                  </View>
+              <TouchableOpacity  onPress={() => {
+                this.props.navigation.navigate('RoomDetails');
+              }}>
+                <View style={{}}>
+                  <Image source={require('../../../img/room5.jpg')}
+                        style={styles.imgInfo} />
                 </View>
-                
-                <View style={{borderBottomWidth: 0.7, borderBottomColor: '#c6c6c6', paddingBottom: 6}}></View>
-              </View>
+                <View style={{ marginTop: 10}}>
+                  <Text style={{fontFamily: 'serif', fontWeight: '700', fontSize: 9, color: '#1B51DA',}}>Luxury Apartment - The Golden</Text>
+                  <Text style={styles.moreInfo}>10 khách · 2 phòng ngủ · 2 phòng tắm</Text>
+                  <View style={{flexDirection: 'row', flexWrap: 'wrap'}}>
+                    <View style={{width: '70%'}}>
+                      <Text style={{fontFamily: 'serif', fontWeight: '700', fontSize: 11, color: '#3E3C3C', marginTop: 5}}>1,800,000₫  <Text style={{fontSize: 8, color: '#696666'}}>(1 đêm)</Text></Text>
+                    </View>
+                    <View style={{width: '30%'}}>
+                      <TouchableHighlight
+                        style={styles.buttonStar}
+                        >
+                        <Text style={{color: '#fff',fontFamily: 'serif', fontSize: 9, fontWeight: '700'}}>4.5 Star</Text>
+                      </TouchableHighlight>
+                    </View>
+                  </View>
+                  
+                  <View style={{borderBottomWidth: 0.7, borderBottomColor: '#c6c6c6', paddingBottom: 6}}></View>
+                </View>
+              </TouchableOpacity>
             </View>
           </View>
 
@@ -235,30 +263,38 @@ class HomeScreen extends React.Component {
 
 
         <View style={{marginTop: 15, marginLeft: 10, }}>
-          <Text style={{fontSize: 15, fontWeight: '600'}}>Đề xuất cho bạn</Text>
-          <Text style={{fontSize: 10, color: '#929191' }}>Tận hưởng không gian sống tuyệt vời tại thương hiệu đô thị hàng đầu Việt Nam
+          <Text style={{fontSize: 14, fontWeight: '600'}}>Đề xuất cho bạn</Text>
+          <Text style={{fontSize: 9, color: '#929191' }}>Tận hưởng không gian sống tuyệt vời tại thương hiệu đô thị hàng đầu Việt Nam
 </Text>
           <View style={{flexDirection: 'row',          
                         marginRight: 5,
                 
                         }}>
             <View style={{width: '40%'}}>
-            <Image source={require('../../../img/room2.jpg')}
+              <TouchableOpacity  onPress={() => {
+                this.props.navigation.navigate('RoomDetails');
+              }}>
+                <Image source={require('../../../img/room2.jpg')}
                     style={styles.imgSuggest} />
+              </TouchableOpacity>
             </View>
             <View style={{width: '60%', marginLeft: 15, marginTop: 10}}>
-              <Text style={{fontFamily: 'serif', fontWeight: '700', fontSize: 11.5, color: '#1B51DA',}}>Mường Thanh Luxury Apartment</Text>
-              <Text>
-                <Image source={require('../../../img/location.png')}
-                style={styles.iconInfo} />   <Text style={styles.moreInfo}>Ngũ Hành Sơn, Đà Nẵng, Việt Nam</Text>
-              </Text> 
-              <Text style={{fontFamily: 'serif', fontWeight: '700', fontSize: 11, color: '#3E3C3C', marginTop: 5}}>1,800,000₫  <Text style={{fontSize: 8, color: '#696666'}}>(1 đêm)</Text></Text>
-              <View style={{borderBottomWidth: 0.7, borderBottomColor: '#c6c6c6', paddingBottom: 6}}></View>
-              <View style={{width: '95%'}}>
-                <Text style={{fontSize:10, color: '#6A6767', marginTop: 6}} >
-                Được xây dựng theo tiêu chuẩn 5 sao Mường Thanh Luxury Đà Nẵng nằm bên bờ biển Mỹ Khê xinh đẹp, quý phái,... 
-                </Text>
-              </View>
+              <TouchableOpacity  onPress={() => {
+                this.props.navigation.navigate('RoomDetails');
+              }}>
+                <Text style={{fontFamily: 'serif', fontWeight: '700', fontSize: 10, color: '#1B51DA',}}>Mường Thanh Luxury Apartment</Text>
+                <Text>
+                  <Image source={require('../../../img/location.png')}
+                  style={styles.iconInfo} />   <Text style={styles.moreInfo}>Ngũ Hành Sơn, Đà Nẵng, Việt Nam</Text>
+                </Text> 
+                <Text style={{fontFamily: 'serif', fontWeight: '700', fontSize: 11, color: '#3E3C3C', marginTop: 5}}>1,800,000₫  <Text style={{fontSize: 8, color: '#696666'}}>(1 đêm)</Text></Text>
+                <View style={{borderBottomWidth: 0.7, borderBottomColor: '#c6c6c6', paddingBottom: 6}}></View>
+                <View style={{width: '95%'}}>
+                  <Text style={{fontSize: 9, color: '#6A6767', marginTop: 6}} >
+                  Được xây dựng theo tiêu chuẩn 5 sao Mường Thanh Luxury Đà Nẵng nằm bên bờ biển Mỹ Khê xinh đẹp, quý phái,... 
+                  </Text>
+                </View>
+              </TouchableOpacity>
             </View>
           </View>
 
@@ -267,22 +303,30 @@ class HomeScreen extends React.Component {
                         marginTop: 20,
                         }}>
             <View style={{width: '40%'}}>
-            <Image source={require('../../../img/room4.jpg')}
+              <TouchableOpacity  onPress={() => {
+                this.props.navigation.navigate('RoomDetails');
+              }}>
+              <Image source={require('../../../img/room4.jpg')}
                     style={styles.imgSuggest} />
+              </TouchableOpacity>
             </View>
             <View style={{width: '60%', marginLeft: 15, marginTop: 10}}>
-              <Text style={{fontFamily: 'serif', fontWeight: '700', fontSize: 11.5, color: '#1B51DA'}}>Noble Apartment Studio 1</Text>
-              <Text>
-                <Image source={require('../../../img/location.png')}
-                style={styles.iconInfo} />   <Text style={styles.moreInfo}>Cầu Giấy, Hà Nội, Việt Nam</Text>
-              </Text> 
-              <Text style={{fontFamily: 'serif', fontWeight: '700', fontSize: 11, color: '#3E3C3C', marginTop: 5}}>1,000,000₫  <Text style={{fontSize: 8, color: '#696666'}}>(1 đêm)</Text></Text>
-              <View style={{borderBottomWidth: 0.7, borderBottomColor: '#c6c6c6', paddingBottom: 6}}></View>
-              <View style={{width: '95%'}}>
-                <Text style={{fontSize:10, color: '#6A6767', marginTop: 6}} >
-                Được xây dựng theo tiêu chuẩn 5 sao Mường Thanh Luxury Đà Nẵng nằm bên bờ biển Mỹ Khê xinh đẹp, quý phái,... 
-                </Text>
-              </View>
+              <TouchableOpacity  onPress={() => {
+                this.props.navigation.navigate('RoomDetails');
+              }}>
+                <Text style={{fontFamily: 'serif', fontWeight: '700', fontSize: 10, color: '#1B51DA'}}>Noble Apartment Studio 1</Text>
+                <Text>
+                  <Image source={require('../../../img/location.png')}
+                  style={styles.iconInfo} />   <Text style={styles.moreInfo}>Cầu Giấy, Hà Nội, Việt Nam</Text>
+                </Text> 
+                <Text style={{fontFamily: 'serif', fontWeight: '700', fontSize: 11, color: '#3E3C3C', marginTop: 5}}>1,000,000₫  <Text style={{fontSize: 8, color: '#696666'}}>(1 đêm)</Text></Text>
+                <View style={{borderBottomWidth: 0.7, borderBottomColor: '#c6c6c6', paddingBottom: 6}}></View>
+                <View style={{width: '95%'}}>
+                  <Text style={{fontSize: 9, color: '#6A6767', marginTop: 6}} >
+                  Được xây dựng theo tiêu chuẩn 5 sao Mường Thanh Luxury Đà Nẵng nằm bên bờ biển Mỹ Khê xinh đẹp, quý phái,... 
+                  </Text>
+                </View>
+              </TouchableOpacity>
             </View>
           </View>
 
@@ -291,22 +335,30 @@ class HomeScreen extends React.Component {
                         marginTop: 20,
                         }}>
             <View style={{width: '40%'}}>
-            <Image source={require('../../../img/room3.jpg')}
+              <TouchableOpacity  onPress={() => {
+                this.props.navigation.navigate('RoomDetails');
+              }}>
+              <Image source={require('../../../img/room3.jpg')}
                     style={styles.imgInfo} />
+            </TouchableOpacity>
             </View>
             <View style={{width: '60%', marginLeft: 15, marginTop: 10}}>
-              <Text style={{fontFamily: 'serif', fontWeight: '700', fontSize: 11.5, color: '#1B51DA'}}>Luxury Apartment - The Golden</Text>
-              <Text>
-                <Image source={require('../../../img/location.png')}
-                style={styles.iconInfo} />   <Text style={styles.moreInfo}>Hoàn Kiếm, Hà Nội, Việt Nam</Text>
-              </Text> 
-              <Text style={{fontFamily: 'serif', fontWeight: '700', fontSize: 11, color: '#3E3C3C', marginTop: 5}}>3,500,000₫  <Text style={{fontSize: 8, color: '#696666'}}>(1 đêm)</Text></Text>
-              <View style={{borderBottomWidth: 0.7, borderBottomColor: '#c6c6c6', paddingBottom: 6}}></View>
-              <View style={{width: '95%'}}>
-                <Text style={{fontSize:10, color: '#6A6767', marginTop: 6}} >
-                Được xây dựng theo tiêu chuẩn 5 sao Mường Thanh Luxury Đà Nẵng nằm bên bờ biển Mỹ Khê xinh đẹp, quý phái,... 
-                </Text>
-              </View>
+              <TouchableOpacity  onPress={() => {
+                this.props.navigation.navigate('RoomDetails');
+              }}>
+                <Text style={{fontFamily: 'serif', fontWeight: '700', fontSize: 10, color: '#1B51DA'}}>Luxury Apartment - The Golden</Text>
+                <Text>
+                  <Image source={require('../../../img/location.png')}
+                  style={styles.iconInfo} />   <Text style={styles.moreInfo}>Hoàn Kiếm, Hà Nội, Việt Nam</Text>
+                </Text> 
+                <Text style={{fontFamily: 'serif', fontWeight: '700', fontSize: 11, color: '#3E3C3C', marginTop: 5}}>3,500,000₫  <Text style={{fontSize: 8, color: '#696666'}}>(1 đêm)</Text></Text>
+                <View style={{borderBottomWidth: 0.7, borderBottomColor: '#c6c6c6', paddingBottom: 6}}></View>
+                <View style={{width: '95%'}}>
+                  <Text style={{fontSize: 9, color: '#6A6767', marginTop: 6}} >
+                  Được xây dựng theo tiêu chuẩn 5 sao Mường Thanh Luxury Đà Nẵng nằm bên bờ biển Mỹ Khê xinh đẹp, quý phái,... 
+                  </Text>
+                </View>
+              </TouchableOpacity>
             </View>
           </View>
           <View style={{paddingTop: 0, marginTop: 0, marginLeft: '30%'}}>
@@ -328,7 +380,7 @@ const styles = StyleSheet.create({
   input: {
     marginTop: 10,
     width: '90%',
-    height: 30,
+    height: 45,
     borderColor: '#C6C6C6',
     borderWidth: 1, 
     borderRadius: 5,
