@@ -1,6 +1,6 @@
 hr{
     margin: 0px;
-    width: 90%;
+    width: 80%;
 }
  body{
 background: rgba(205, 205, 205, 0.41);
@@ -109,13 +109,7 @@ color: #000000;
     color: #686262;
     
     }
-    .menu-left{
-        background: white;
-        margin-right: 15px;
-        margin-top: 30px;
-        padding-top: 30px;
-    padding-bottom: 20px;
-    }
+    
 .fsdfsdf{
     padding: 0px;
 }
@@ -322,7 +316,7 @@ letter-spacing: -0.015em;
 color: #797474;
 }
 .form_input_1{
-    /* height: 60px; */
+    height: 60px;
 }
 
 .form_input_1 .name_kh p{
@@ -337,8 +331,8 @@ line-height: 43px;
 letter-spacing: -0.015em;
 
 color: #000000;
-    /* padding-top: 20px;
-    float: right; */
+    padding-top: 20px;
+    float: right;
 }
 .form_input_1 .type_input p{
     margin-bottom: 0px;
@@ -411,6 +405,7 @@ color: rgba(0, 0, 0, 0.73);
     background: #f9f9f9;
 } */
 
+
 .robot span{
     margin-left: 20px;
 }
@@ -418,10 +413,16 @@ color: rgba(0, 0, 0, 0.73);
     margin-left: 0px;
 }
 
+
+
+
+
+
+
 .input_contry{
     display: flex;
     background: #fff;
-    width: 80%;
+    width: 50%;
 }
 
 .input_contry img{
@@ -433,102 +434,72 @@ color: rgba(0, 0, 0, 0.73);
    margin-left:7px;
     
 } */
-
-@media screen and (max-width:320px){
-    .sdfdsfdsfsdfdsf{
-        background: rgb(187, 255, 0);
+@media only screen and (max-width: 1620px){
+    .input_contry img{
+        padding-left:2px;
+        padding-right:0px; 
     }
-}
-@media screen and (max-width:520px) and (min-width:320px){
-    .menu-left {
-        margin-top: 5px;
-        padding-top: 5px;
-    }
-    .sub_title{
-        font-size: 25px;
-    }
-    .name_kh{
-        padding-left: unset;
-        margin-bottom: unset;
-    }
-    .sample_font_size{
-        margin-bottom: unset;
-    }
-    .contai_row_4{
-        padding-right: 15px;
-        margin-right: 15px;
-        margin-top: 5px;
-        padding-top: 5px;
-    }
-    .date_form_from{
-        margin-bottom: 15px;
-    }
-    .div_credit .float_left{
-        margin-bottom: unset;
-    }
-    /* .sdfdsfdsfsdfdsf{
-        background: rgb(255, 0, 0);
-    } */
-}
-
-@media screen and (max-width:1024px) and (min-width:769px){
-    .menu-left {
-
-        margin-top: 5px;
-        padding-top: 5px;
+    .input_contry span{
+       font-size:15px;
+     }
+    .input_contry {
+        height: 24px;
+     }
+     .input_contry input{
+         margin-left:5px; 
+         
+     }
+  }
+  @media only screen and (max-width: 1200){
     
-    }
-    .contai_row_4{
-        
-    padding-right: 15px;
-    margin-right: 15px;
-
-        margin-top: 5px;
-        padding-top: 5px;
-    }
-    /* .sdfdsfdsfsdfdsf{
-        background: rgb(255, 0, 128);
-    } */
-}
-@media screen and (max-width:768px) and (min-width:481px){
-    .menu-left {
-
-        margin-top: 5px;
-        padding-top: 5px;
+     .input_contry input{
+         margin-left:5px;
+         
+     }
+     .input_contry img{
+         display: none;
+     }
+  }
+  @media only screen and (max-width: 960){
     
-    }
-    .contai_row_4{
+    /* .input_contry input{
+        margin-left:3px;
         
-    padding-right: 15px;
-    margin-right: 15px;
-
-        margin-top: 5px;
-        padding-top: 5px;
-    }
-    /* .sdfdsfdsfsdfdsf{
-        background: rgb(0, 255, 242);
     } */
+ }
+ @media only screen and (max-width: 960px) and (min-width: 540px){
+    .input_contry input{
+        margin-left:1px;
+   }
+   .input_contry span{
+    font-size:10px;
+  }
+   .date_to{
+    font-size: 13px;
+  }
+  .input_contry img{
+    display: none;
 }
-
-/* @media (max-width:568px) and (min-width:320x){
-
-    .name_kh{
-        padding-left: unset !important;
-        margin-bottom: unset;
-    }
-    .sample_font_size{
-        margin-bottom: unset;
-    }
-    .contai_row_4{
-        padding-right: 15px;
-        margin-right: 15px;
-        margin-top: 5px;
-        padding-top: 5px;
-    }
-    .date_form_from{
-        margin-bottom: 15px;
-    }
-    .div_credit .float_left{
-        margin-bottom: unset;
-    }
-} */
+ }
+ @media only screen and (max-width: 540px){
+    
+    /* .input_contry input{
+        margin-left:3px;
+        
+    } */
+    .date_to{
+        font-size: 14px;
+      }
+ }
+ @media only screen and (max-width: 1200px) and (min-width: 960px){
+    .input_contry input{
+        margin-left:3px;
+   }
+   
+  .input_contry img{
+    display: none;
+}
+  .date_to{
+    font-size: 10px;
+  }
+ }
