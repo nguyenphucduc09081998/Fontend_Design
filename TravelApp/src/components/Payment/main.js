@@ -25,12 +25,12 @@ class Credit extends React.Component {
           <View style={{flexDirection: 'row', width: '100%', marginTop: 10
                     }}>
               <View style={{width: '35%'}}>
-                  <Text style={{fontSize: 12, color: 'black', marginTop: '13%'}} >Mã thẻ Credit/Debit:<Text style={{color: 'red'}}>*</Text></Text>
+                  <Text style={{fontSize: 12, color: 'black', marginTop: '13%'}} >Mã thẻ Credit Card:<Text style={{color: 'red'}}>*</Text></Text>
               </View>
               <View style={{width: '55%'}}>
               <TextInput style = {styles.input}
                   underlineColorAndroid = "transparent"
-                  placeholder = "Mã thẻ Credit/Debit"
+                  placeholder = "Mã thẻ Credit Card"
                   placeholderTextColor = "#C6C6C6"
                   autoCapitalize = "none"/>
               </View>
@@ -108,7 +108,7 @@ class Paypal extends React.Component {
 
 const TabPaymentNavigator  = createMaterialTopTabNavigator(
   {
-    'Credit/Debit card': Credit,
+    'Credit card': Credit,
     'Paypal': Paypal,
   },
   {
@@ -121,7 +121,6 @@ const TabPaymentNavigator  = createMaterialTopTabNavigator(
       
       },
       tabStyle: {
-        width: 120,
         borderColor: '#C6C6C6',
         borderWidth: 0.4,
         borderRadius: 10
@@ -129,8 +128,8 @@ const TabPaymentNavigator  = createMaterialTopTabNavigator(
       style: {
         backgroundColor: 'white',
         borderColor: 'black',
-    
-        width: '65%',
+        marginRight: 10,
+        width: '97%',
         height: 35,
 
       },
@@ -185,7 +184,7 @@ const styles = StyleSheet.create({
   },
   input: {
     marginTop: 10,
-    height: 28,
+    height: 35,
     borderColor: '#C6C6C6',
     borderWidth: 1,
     fontSize: 10,
@@ -194,7 +193,8 @@ const styles = StyleSheet.create({
 });
 
 const cardType = [
-  { value: 'Thẻ A'},
-  { value: 'Thẻ B' },
-  { value: 'Thẻ C' },
+  { value: 'Vietcombank'},
+  { value: 'Argribank' },
+  { value: 'ACB' },
+  { value: 'BIDV' },
 ];

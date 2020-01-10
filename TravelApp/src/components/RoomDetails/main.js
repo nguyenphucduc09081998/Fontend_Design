@@ -468,7 +468,7 @@ const TabNavigator  = createMaterialTopTabNavigator(
         fontFamily: 'Lora',
       },
       tabStyle: {
-        width: 100,
+       
       },
       style: {
         backgroundColor: 'white',

@@ -69,8 +69,7 @@ export default class ContentMore extends React.Component {
 const styles = StyleSheet.create({
   image: {
     width: 14, 
-    height: 14, 
-    borderColor: 'black', 
+    height: 14,  
     borderWidth: 1, 
     marginLeft: 5,
   },

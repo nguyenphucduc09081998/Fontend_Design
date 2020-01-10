@@ -218,32 +218,9 @@ export default class Payment extends React.Component {
                     <TabPayment></TabPayment>
                 </View>
                 <View style={{borderBottomWidth: 0.7, borderBottomColor: '#c6c6c6', marginTop: 20}}></View>
-                <View style={styles.input_profile}>
-                    <View style={styles.title_profile}>
-                        <Text style={styles.title}>Thông tin thêm</Text>
-                        <Text style={styles.sub_title}>Đánh giá của bạn về phòng ở</Text>
-                        <View style={{flexDirection: 'row', width: '100%'
-                                    }}>
-                            <View style={{width: '30%'}}>
-                                <Text style={{fontSize: 12, color: 'black', marginTop: '30%'}} >Loại thẻ:<Text style={{color: 'red'}}>*</Text></Text>
-                            </View>
-                            <View style={{width: '50%'}}>
-                                <Dropdown
-                                    baseColor='#EA0C41'
-                                    textColor='#8D7E7E'
-                                    rippleCentered={true}
-                                    data={review}
-                                    value={'Đánh giá của bạn'}
-                                    fontSize={12}
-                                    labelFontSize={13}
-                                    />
-                            </View>
-                        </View>
-                    </View>
-                </View>
                 <TouchableOpacity
                         style={styles.button}
-                        onPress={() => Alert.alert('Cannot press this one')}
+                        onPress={() => Alert.alert('Thanh toán thành công')}
                         >
                         <Text 
                             style={{color: '#fff',fontFamily: 'serif', fontSize: 14, fontWeight: '700'}}>
@@ -282,16 +259,16 @@ var styles = StyleSheet.create({
     },
     input: {
         marginTop: 10,
-        height: 28,
         borderColor: '#C6C6C6',
         borderWidth: 1,
         fontSize: 10,
-        borderRadius: 10
+        borderRadius: 10,
+        height: 35
      },
      inputPhone: {
         marginTop: 10,
-        height: 28,
         borderColor: '#C6C6C6',
+        height: 35,
         borderWidth: 1,
         fontSize: 10,
         borderRadius: 10,
@@ -302,11 +279,11 @@ var styles = StyleSheet.create({
      inputPhoneLeft: {
         width: '30%', 
         flexDirection: 'row', 
-        marginTop: '4.5%', 
+        marginTop: '4.5%',
+        height: 35, 
         borderColor: '#C6C6C6',
         borderWidth: 1,
         borderRadius: 10,
-        height: 28,
         borderTopRightRadius: 0,
         borderBottomRightRadius: 0,
         borderRightWidth: 0,
